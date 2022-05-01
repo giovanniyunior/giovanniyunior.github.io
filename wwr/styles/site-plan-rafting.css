@@ -20,15 +20,15 @@ Fonts are separated by a | */
   --paragraph-weight: 100;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-white: #242325;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #242325; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #242325;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --paragraph-background-color: #FFFD82  ;
+  --nav-link-color: #276FBF;
+  --nav-background-color: #F03A47;
+  --nav-hover-link-color: #8DE4FF;
+  --nav-hover-background-color: #276FBF;
 }
 
 
