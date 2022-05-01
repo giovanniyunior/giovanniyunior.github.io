@@ -1,4 +1,8 @@
-ul {
+nav  {
+  list-style-type: none;
+  display: flex;
+}
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,7 +14,7 @@ ul {
     float: left;
   }
   
-  li a {
+  nav a {
     display: block;
     color: white;
     text-align: center;
@@ -19,6 +23,6 @@ ul {
   }
   
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
+  nav a:hover {
     background-color: #111;
   } 
