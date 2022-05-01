@@ -1,3 +1,10 @@
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+}
 nav  {
   list-style-type: none;
   display: flex;
