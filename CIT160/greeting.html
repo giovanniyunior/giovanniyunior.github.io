@@ -11,12 +11,14 @@
          * Processing: Create a greeting for that person
          * Output: The greeting
          */
-        function greetUser() {
+        function registerUser() {
             // This line prompts the user to type in his name.
             let name = prompt("Please enter your name");
+            let email = prompt("Please enter your email");
+
         
             // Create a personalized greeting for the user.
-            let greeting = "Hello " + name + ".  I hope you are well today.";
+            let greeting = "Hello " + name + " We send the tickect to your email " +email;
         
             // The next line causes the computer to display
             // a greeting to the user in a popup window.
@@ -26,6 +28,6 @@
     </head>
     
     <body>                                      
-        <button type="button" onclick="greetUser()">Hello</button>
+        <button type="button" onclick="registerUser()">Register</button>
     </body>
 </html>
