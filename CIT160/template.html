@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <script></script>
-</head>
-<body>
-    <div id=""></div>
-    <label></label>
-    <input type="" id="">
-    <button type=""></button>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template</title>
+        <script>
+            let variable;
+            function handleOnClick(){
+                document.getElementById('div').innerHTML = this.variable;
+            };
+            function handleOnChange(event){
+                this.variable = document.getElementById('input').value;
+
+            };
+
+        </script>
+    </head>
+    <body>
+        <div id="div">Div Template</div>
+        <label for="input">Input Template</label>
+        <input type="text" id="input" onchange="handleOnChange()">
+        <button type="button" onclick="handleOnClick()">Button template</button>
+        
+    </body>
 </html>

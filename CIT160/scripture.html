@@ -19,8 +19,8 @@
             // Use string concatenation to create a verse
             // of scripture personalized for the user.
             
-            let scripture = "My beloved son, " + name+ ", I rejoice exceedingly that your Lord Jesus Christ hath been mindful of you, and hath called you to his ministry, and to his holy work.<br><br>"+
-            "I am mindful of you always in my prayers, continually praying unto God the Father in the name of his Holy Child, Jesus, that he, through his infinite goodness and grace, will keep you through the endurance of faith on his name to the end."
+            let scripture = "My beloved son, " + name+ ", I rejoice exceedingly that your Lord Jesus Christ hath been mindful of you, <br>and hath called you to his ministry, and to his holy work.<br><br>"+
+            "I am mindful of you always in my prayers, continually praying unto God the Father in the name of his Holy Child, <br> Jesus, that he, through his infinite goodness and grace, will keep you through the endurance of faith on his name to the end."
         
             // Display the scripture in the div that has the id "outputDiv".
             document.getElementById('outputDiv').innerHTML = scripture;
@@ -28,9 +28,10 @@
         </script>
     </head>
     <body>
+        <h1>Personalize your favorite scripture</h1> <br><br>  
         <label>Enter your name: </label> <br><br>                          
         <input type="text" id="nameInputBox"> <br><br>     
-        <button type="button" onclick="applyScripture()">Send</button>
+        <button type="button" onclick="applyScripture()">Send</button> <br><br> 
         <div id="outputDiv"></div>
     </body> 
 </html>
