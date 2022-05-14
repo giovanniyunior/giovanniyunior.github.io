@@ -1,0 +1,32 @@
+#content {
+    margin: 0 auto;
+    max-width: 1600px;
+    text-align: center;
+}
+#hero-msg h1{
+    text-align: center;
+}
+#hero-msg h4{
+    text-align: center;
+
+}
+#background {
+    height: 725px;
+}
+
+.button-box {
+    text-align: center;
+
+}
+body {
+    background-color: #fcfbfb; 
+
+}
+main section{
+    text-align: center;
+
+}
+nav a {
+    text-align: center;
+
+}
