@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mileage</title>
+        <script>
+            let first;
+            let last;
+            let gallons;
+
+            function handleOnChange(){
+                this.first = document.getElementById('input').value;
+
+            };
+            function handleOnChange2(){
+                this.last = document.getElementById('input2').value;
+
+            };
+            function handleOnChange3(){
+                this.gallons = document.getElementById('input3').value;
+
+            };
+
+            function handleOnClick(){
+                let result = (this.last - this.first) / this.gallons
+
+                document.getElementById('div').innerHTML = result + ' mpg';
+            };
+
+        </script>
+    </head>
+    <body>
+        <label for="input">First Odometer Reading</label>
+        <input type="Number" id="input" onchange="handleOnChange()"><br>
+        <label for="input2">Last Odometer Reading</label>
+        <input type="Number" id="input2" onchange="handleOnChange2()"><br>
+        <label for="input2">Gallons Used</label>
+        <input type="Number" id="input3" onchange="handleOnChange3()"><br>
+        <button type="button" onclick="handleOnClick()">Calculate Mileage</button><br>
+        <div id="div"></div>
+
+        
+    </body>
+</html>
