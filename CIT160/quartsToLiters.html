@@ -6,34 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Quarts To Liters</title>
         <script>
-            let quarts = 0;
-
-            function handleOnChange(event){
-                this.quarts = document.getElementById('input').value;
-
-            };
-
-            function handleOnClick(){
+            /** Input: Number of quarts to convert 
+             * Processing: Number of quarts divided by 1.0567 
+             * Output: number of liters 
+            **/
+             function handleOnClick(){
+                let quarts = parseFloat(document.getElementById('input').value);
                 let denominator = 1.0567;
-                let result = this.quarts / denominator; 
-                console.log('QQ :: '+denominator);
-                if(this.quarts != null){
-                    document.getElementById('div').innerHTML = result;
-
-                }
-                console.log('RR :: '+result);
-
-
+                let result = quarts / denominator; 
+                document.getElementById('div').innerHTML = result;
             };
 
         </script>
     </head>
     <body>
+        <h2>Convert Quarts to Liters</h2><br>
         <label for="input">Quarts</label>
         <input type="number" id="input" required onchange="handleOnChange()"/><br><br>
         <button type="button" onclick="handleOnClick()">Convert to Liters</button><br><br>
         <div id="div"></div>
-
-        
     </body>
 </html>

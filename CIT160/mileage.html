@@ -6,25 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mileage</title>
         <script>
-            let first;
-            let last;
-            let gallons;
-
-            function handleOnChange(){
-                this.first = document.getElementById('input').value;
-
-            };
-            function handleOnChange2(){
-                this.last = document.getElementById('input2').value;
-
-            };
-            function handleOnChange3(){
-                this.gallons = document.getElementById('input3').value;
-
-            };
+            /** Input: First Odometer Reading, Last Odometer Reading, and number of gallons used
+             * Processing: subtract the first odometer reading from the last one and divide the result by the number of gallons used 
+             * Output: the mileage in miles per gallons
+            **/
 
             function handleOnClick(){
-                let result = (this.last - this.first) / this.gallons
+                let first = document.getElementById('input').value;
+
+                let last = document.getElementById('input2').value;
+
+                let gallons = document.getElementById('input3').value;
+
+                let result = (last - first) / gallons
 
                 document.getElementById('div').innerHTML = result + ' mpg';
             };
@@ -32,13 +26,14 @@
         </script>
     </head>
     <body>
+        <h2>Calculate the mileage</h2>
         <label for="input">First Odometer Reading</label>
         <input type="Number" id="input" onchange="handleOnChange()"><br>
         <label for="input2">Last Odometer Reading</label>
         <input type="Number" id="input2" onchange="handleOnChange2()"><br>
         <label for="input2">Gallons Used</label>
         <input type="Number" id="input3" onchange="handleOnChange3()"><br>
-        <button type="button" onclick="handleOnClick()">Calculate Mileage</button><br>
+        <button type="button" onclick="handleOnClick()">Calculate</button><br>
         <div id="div"></div>
 
         
