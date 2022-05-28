@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template</title>
+        <script>
+            let variable;
+            function handleOnClick(){
+                let message;
+                let number1 = parseFloat(document.getElementById('number1').value);
+                let number2 = parseFloat(document.getElementById('number2').value);
+                let operator = document.getElementById('operator').value;
+                let result = parseFloat(document.getElementById('result').value);
+
+                if(operator === '*'){
+                    let check = number1 * number2;
+                    if(check === result){
+                        message = 'Correct! Good job!';
+                    } else {
+                        message = 'Incorrect! Try again!';
+                    }
+
+                } else if(operator === '+'){
+                    let check = number1 + number2;
+                    if(check === result){
+                        message = 'Correct! Good job!';
+                    } else {
+                        message = 'Incorrect! Try again!';
+                    }
+                } else if(operator === '-'){
+                    let check = number1 - number2;
+                    if(check === result){
+                        message = 'Correct! Good job!';
+                    } else {
+                        message = 'Incorrect! Try again!';
+                    }
+                } else if(operator === '/'){
+                    let check = number1 / number2;
+                    if(check === result){
+                        message = 'Correct! Good job!';
+                    } else {
+                        message = 'Incorrect! Try again!';
+                    }
+                } else {
+                    message = 'Something is wrong'
+                }
+                document.getElementById('div').innerHTML = message;
+            };
+
+
+        </script>
+    </head>
+    <body>
+        <h2>Let's practice math</h2>
+        <h4>Write a math operation and check your result, example: <br> 4*5=20</h4>
+        <input type="number" id="number1" size="2" onchange="handleOnChange()" value="4">
+        <input type="text" id="operator" size="1" onchange="handleOnChange()" value="*">
+        <input type="number" id="number2" size="2" onchange="handleOnChange()" value="5">
+        <label for="input">=</label>
+        <input type="number" id="result" size="3" onchange="handleOnChange()" value="20"> <br><br>
+
+        <button type="button" onclick="handleOnClick()">check</button><br><br>
+        
+        <div id="div"></div>
+
+    </body>
+</html>

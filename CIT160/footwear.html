@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>footwear</title>
+        <script>
+            let weather;
+            let result;
+
+            function handleOnChange(event){
+                this.weather = document.getElementById('input').value;
+            };
+
+            function handleOnClick(){
+                if (this.weather === 'hot'){
+                    this.result = 'sandals';
+                } else if (this.weather === 'rain'){
+                    this.result = 'galoshes';
+
+                } else if (this.weather === 'snow'){
+                    this.result = 'boots';
+
+                } else {
+                    this.result = 'shoes';
+                }
+                document.getElementById('div').innerHTML = this.result;
+            };
+
+        </script>
+    </head>
+    <body>
+        <h2>Select your weather</h2><br>
+        <label for="input">Weather</label>
+        <input type="text" id="input" onchange="handleOnChange()">
+        <button type="button" onclick="handleOnClick()">Start</button><br><br>
+
+        <div id="div">Get Your Foor Wear</div>
+
+        
+    </body>
+</html>
