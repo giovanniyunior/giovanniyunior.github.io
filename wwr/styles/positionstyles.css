@@ -188,8 +188,6 @@
   background-color: gold; 
   grid-row: 3/8;
   grid-column: 1/5;
-  align-self: flex-end;
-  justify-self: end;
   clear: none;
 } 
 .blue5 {
