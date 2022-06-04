@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template</title>
+    <script>
+        function results(){
+            let day = new Date().getDay();
+            let subtotal = document.getElementById('number').value;
+            let subtotalF
+                if( (day == 2 || day == 3) && subtotal > 50 ){
+        
+        
+                let tenPercent = subtotal * 0.1;
+                let subtotalT  = subtotal - tenPercent;
+                subtotalF      = subtotalT * 1.06;
+            }
+                else {
+                subtotalF = subtotal * 1.06;
+                
+            } 
+        
+        
+            document.getElementById('output').innerHTML = subtotalF.toFixed(2);
+        } 
+    </script>
+    </head>
+    
+    
+    <body>         
+        <h3>Calculate your total amount due:</h3>
+    
+    
+    <input type="number" placeholder="Subtotal" id="number"/>
+    
+    
+    <button type="button"  onclick="results()"> Calculate </button> <br>
+    
+    
+    <div id="output"></div>
+    
+    
+    </body>      
+</html>

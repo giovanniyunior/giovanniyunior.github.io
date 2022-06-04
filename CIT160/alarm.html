@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template</title>
+        <script>
+            function results(){
+                let now        = new Date();
+                let month      = now.getMonth();
+                let dayOfMonth = now.getDate();
+                let dayOfWeek  = now.getDay();
+                let year       = now.getFullYear()
+                let date       = year + '/' + month + '/' + dayOfWeek;
+            
+            
+                let NewYear         = year + '/' + 0  + '/' +  1;
+                let IndependenceDay = year + '/' + 6  + '/' +  4;
+                let Christmas       = year + '/' + 11 + '/' + 25;
+            
+                if (dayOfWeek == 0 || dayOfWeek == 7 || date == NewYear || date == IndependenceDay  || date == Christmas){
+                    let  message = 'Sleep In';
+                }
+                else {
+                    message = 'Get Up!';
+                } 
+            
+            
+                document.getElementById('output').innerHTML = message;
+               
+            } 
+        </script>
+    </head>
+    
+    
+    <body>         
+        <h3>Can you sleep in or not?</h3>
+    
+        <button type="button"  onclick="results()"> Calculate </button>
+    
+        <div id="output"></div>
+    
+    
+    </body>       
+</html>
