@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>powers</title>
+
+        <script>
+            /**
+            * ---DEFINING TABLE--
+            * Input: Number of results
+            * Processing: calculate the power of 2 for each iteration
+            * Output: Powers of 2
+            */
+
+             function handleOnClick(){
+                let size = parseFloat(document.getElementById('input').value);
+                let finalResult = '';
+                for(let i=0;i<size;i++){
+                    let result = '';
+                    result = Math.pow(2, i);
+                    let operation = i == size - 1 ? result : result+', ';
+                    this.finalResult += operation;
+                }
+                this.finalResult = this.finalResult.replace('undefined','');
+
+                document.getElementById('div').innerHTML = this.finalResult;
+            };
+
+        </script>
+    </head>
+    <body>
+        <h2>Powers of 2</h2><br>
+        <label for="input">Number of results</label>
+        <input type="text" id="input">
+        <button type="button" onclick="handleOnClick()">Start</button><br><br>
+
+        <div id="div"></div>
+
+        
+    </body>
+</html>

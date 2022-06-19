@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fiveTimes</title>
+
+        <script>
+            /**
+            * ---DEFINING TABLE--
+            * Input: Number of rows
+            * Processing: 5 Multiply by the iteration of the number of rows
+            * Output: Five Times Table
+            */
+
+            let size = 0;
+            let table = '';
+
+
+            function handleOnClick(){
+                this.size = parseFloat(document.getElementById('input').value);
+                for(let i=0;i<this.size;i++){
+
+                    let result = 5 * i;
+                    let operation = '5 x '+i+' = '+ result + '<br>';
+                    this.table += operation;
+
+                }
+                this.table = this.table.replace('undefined','');
+                document.getElementById('div').innerHTML = this.table;
+            };
+
+        </script>
+    </head>
+    <body>
+        <h2>Five Times Table</h2><br>
+        <label for="input">Number of rows</label>
+        <input type="text" id="input">
+        <button type="button" onclick="handleOnClick()">Start</button><br><br>
+
+        <div id="div"></div>
+
+        
+    </body>
+</html>

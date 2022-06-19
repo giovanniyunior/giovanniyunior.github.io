@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+<script>
+/* Input: two numbers
+ * Processing: check if the sum of both numbers is greater than 20 or if each number is greater than 5, and set the result to True, otherwise is False
+ * Output: True or False
+ */
+ function handleOnClick(){
+    let one = parseFloat(document.getElementById('one').value);
+    let two = parseFloat(document.getElementById('two').value);
+    let result = 'False';
+    if((one  > 5 && two > 5) || one + two > 20){
+       result = 'True';
+    }
+    document.getElementById('output').innerHTML = result;
+   
+   
+ }
+
+</script>
+</head>
+
+<body>
+Please enter two numbers:
+<input type="text" id="one" size="5">
+<input type="text" id="two" size="5">
+<button type="button" onclick="handleOnClick()">Click</button>
+<div id="output"></div>
+</body>
+</html>

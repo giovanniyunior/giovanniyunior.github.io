@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+<script>
+/* Input: Three numbers, start, end, divisor
+ * Processing: Loop values from start number to end number. Check if there are divisors
+ * Output: Show the divisors
+ */
+function dividers(){
+    let start = parseFloat(document.getElementById('start').value);
+    let end = parseFloat(document.getElementById('end').value);
+    let divisor = parseFloat(document.getElementById('divisor').value);
+    let result = '';
+
+    for(let i = start; i <= end; i++){
+        if(i %divisor == 0){
+            result  += i+' ';
+        }
+
+    }
+
+    document.getElementById('output').innerHTML = result;
+
+}
+</script>
+</head>
+
+<body>
+Start: <input type="text" id="start" size="5"><br>
+End: <input type="text" id="end" size="5"><br>
+Divisor: <input type="text" id="divisor" size="5"><br>
+<button type="button" onclick="dividers()">Click</button>
+<div id="output"></div>
+</body>
+</html>
