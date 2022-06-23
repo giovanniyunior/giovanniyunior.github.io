@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WindChill</title>
         <script>
+            /** Input: Temperature and Wind Speed 
+            * Processing: Get the value of temperature and wind speed, and use the formula for the windchill
+            * Output: show the wind chill
+            **/
             function doInputOutput(){
                 let temperature = parseFloat(document.getElementById('temperature').value);
                 let windSpeed = parseFloat(document.getElementById('windSpeed').value);
@@ -14,11 +18,12 @@
             }
             function windChill(tempF, speed){
                 let f =  35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed,0.16)) + (0.4275 * tempF * Math.pow(speed,0.16));
-                return f;
+                return f.toFixed(2);
             }
         </script>
     </head>
     <body>
+        <h2>Calculate the Wind Chill</h2>
         <label for="temperature">Temperature</label>
         <input type="text" id="temperature"><br><br>
         <label for="windSpeed">Wind Speed</label>
