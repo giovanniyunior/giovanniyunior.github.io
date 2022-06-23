@@ -160,6 +160,11 @@
     width:  80px;
 
 }
+.space-contactUs {
+    padding-top: 40px;
+    align-items: center;
+
+}
 body {
     background-color: white; 
     font-family: "Montserrat", sans-serif;
