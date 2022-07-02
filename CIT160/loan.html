@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LoanCalculator</title>
+        <script>
+            /** Input:  
+            * Processing: 
+            * Output:
+            **/
+
+            let payment;
+            function doPayment (){
+                let amountInvested = parseFloat(document.getElementById('AmountInvested').value);
+                let annualRate = parseFloat(document.getElementById('AnnualRate').value);
+                let numberYears = parseFloat(document.getElementById('NumberYears').value);
+                let periodsPerYears = parseFloat(document.getElementById('PeriodsPerYears').value);
+                let result = computePayment(amountInvested,annualRate,numberYears,periodsPerYears);
+                document.getElementById('div1').innerHTML = '$'+result.toFixed(2);
+
+
+            }
+            function doBalance (){
+                let amountInvested = parseFloat(document.getElementById('AmountInvested').value);
+                let annualRate = parseFloat(document.getElementById('AnnualRate').value);
+                let numberYears = parseFloat(document.getElementById('NumberYears').value);
+                let periodsPerYears = parseFloat(document.getElementById('PeriodsPerYears').value);
+                let PaymentsToDate = parseFloat(document.getElementById('PaymentsToDate').value);
+
+                let result = computeBalance(amountInvested,annualRate,numberYears,periodsPerYears,PaymentsToDate);
+                document.getElementById('div2').innerHTML = '$'+result.toFixed(2);
+
+                
+            }
+            function computePayment (principal, annualRate, years, periodsPerYear){
+                let r = (annualRate/periodsPerYear);
+                let n = years * periodsPerYear;
+                let result = (principal*r)/(1-Math.pow((1+r), -n)); 
+                this.payment = result.toFixed(2);
+                return result;
+            }
+            function computeBalance (principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate){
+                let r = annualRate/periodsPerYear;
+                let p = this.payment;
+                let result = (principal * Math.pow(1+r, numberOfPaymentPaidToDate)) - p*(Math.pow(1+r, numberOfPaymentPaidToDate)-1)/r; 
+                return result;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Investment Calculator</h2>
+        <label for="AmountInvested">Amount Invested</label>
+        <input type="text" id="AmountInvested"><br><br>
+        <label for="AnnualRate">Annual Rate</label>
+        <input type="text" id="AnnualRate"><br><br>
+        <label for="NumberYears">Number of Years</label>
+        <input type="text" id="NumberYears"><br><br>
+        <label for="PeriodsPerYears">Payments Per Year</label>
+        <input type="text" id="PeriodsPerYears"><br><br>
+        <button type="button" onclick="doPayment()">Get Future Value</button>
+        <div id="div1"></div><br>
+        <label for="PaymentsToDate">Number of Payments Paid to Date</label>
+        <input type="text" id="PaymentsToDate"><br><br>
+        <button type="button" onclick="doBalance()">Get Future Value</button>
+        <div id="div2"></div>
+    </body>
+</html>

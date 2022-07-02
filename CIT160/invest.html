@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>InvestmentCalculator</title>
+        <script>
+            /** Input:  
+            * Processing: 
+            * Output:
+            **/
+            function doFV (){
+                let amountInvested = parseFloat(document.getElementById('AmountInvested').value);
+                let annualRate = parseFloat(document.getElementById('AnnualRate').value);
+                let numberYears = parseFloat(document.getElementById('NumberYears').value);
+                let periodsPerYears = parseFloat(document.getElementById('PeriodsPerYears').value);
+                let result = computeFutureValue(amountInvested,annualRate,numberYears,periodsPerYears);
+                document.getElementById('div').innerHTML = '$'+result.toFixed(2);
+
+            }
+            function computeFutureValue(principal, annualRate, years, periodsPerYear){
+                let r = 1 + annualRate/periodsPerYear;
+                let n = years * periodsPerYear;
+                let result = principal * Math.pow(r, n); 
+                return result;
+            }
+
+        </script>
+    </head>
+    <body>
+        <h2>Investment Calculator</h2>
+        <label for="AmountInvested">Amount Invested</label>
+        <input type="text" id="AmountInvested"><br><br>
+        <label for="AnnualRate">Annual Rate</label>
+        <input type="text" id="AnnualRate"><br><br>
+        <label for="NumberYears">Number of Years</label>
+        <input type="text" id="NumberYears"><br><br>
+        <label for="PeriodsPerYears">Periods Per Years</label>
+        <input type="text" id="PeriodsPerYears"><br><br>
+        <button type="button" onclick="doFV()">Get Future Value</button><br><br>
+        <div id="div"></div>
+    </body>
+</html>
