@@ -97,7 +97,7 @@ margin-block-end: 0;
   text-align: center;
 
 }
-#img-msg h1{
+#img-msg h2{
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
     text-align: center;
