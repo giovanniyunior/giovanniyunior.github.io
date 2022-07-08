@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency</title>
     <link  rel="stylesheet" href="styles/style.css" />
-    <script src="js/travelwithus.js"></script>
 
   </head> 
   <body>
@@ -31,21 +30,15 @@
 
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade" id="img-box">
-            <div class="numbertext">1 / 3</div>
             <img src="images/traveling.webp" id="img" style="">
-            <div class="text">Caption Text</div>
           </div>
 
           <div class="mySlides fade" id="img-box">
-            <div class="numbertext">2 / 3</div>
-            <img src="images/traveling.webp" id="img" style="">
-            <div class="text">Caption Two</div>
+            <img src="images/mountain.jpg" id="img" style="">
           </div>
 
           <div class="mySlides fade" id="img-box">
-            <div class="numbertext">3 / 3</div>
-            <img src="images/traveling.webp" id="img" style="">
-            <div class="text">Caption Three</div>
+            <img src="images/travelExperience.jpg" id="img" style="">
           </div>
 
           <!-- Next and previous buttons -->
@@ -54,18 +47,16 @@
           <section id="img-msg">
             <h1>Enjoy Traveling</h1>
           </section>
+          <!-- The dots/circles -->
+
+          <div id="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-
         
+        <script src="js/travelwithus.js"></script>
 
         <section>
             <div id="text-travel1">

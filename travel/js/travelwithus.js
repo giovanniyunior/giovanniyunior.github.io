@@ -1,5 +1,5 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
+showSlidesAuto();
 
 // Next/previous controls
 function plusSlides(n) {
@@ -14,11 +14,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  console.log('N :: ' + n);
-
-  console.log('SLIDES :: ' + slides+' '+slides.length);
   let dots = document.getElementsByClassName("dot");
-  console.log('DOTS :: ' + dots+' '+dots.length);
 
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -30,4 +26,22 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+function showSlidesAuto() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  dots[slideIndex-1].className += " active";
+
+  setTimeout(showSlidesAuto, 10000); // Change image every 2 seconds
 }
