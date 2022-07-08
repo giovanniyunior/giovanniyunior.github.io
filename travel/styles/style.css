@@ -102,6 +102,11 @@ margin-block-end: 0;
     color: var(--headline-color-on-white);
     text-align: center;
 }
+#img-msg h1{
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  text-align: center;
+}
 
 
 #img-contact {
