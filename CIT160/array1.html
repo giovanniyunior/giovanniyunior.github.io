@@ -34,13 +34,11 @@
             document.getElementById('output').innerHTML = output;
         }
         function addEnds(list) {
-            let index = list.length() - 1;
-            return list[0] + List[index];
+            return list[0] + list[list.length - 1];
         }
         function getMiddle(list) {
-            let index = Math.floor((list.length() - 1) / 2);
-
-            return list[index];
+            
+            return list.length % 2 == 0 ? (list[list.length / 2] + list[list.length / 2 - 1]) / 2 : list[Math.floor(list.length / 2)];
         }
  
 
@@ -49,6 +47,6 @@
     
     <body>         
         <button type="button" onclick="test()">Start</button><br><br>
-        <div id="output"></div>
+        <div id="output">test</div>
     </body>      
 </html>
