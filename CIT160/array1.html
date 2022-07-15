@@ -25,8 +25,10 @@
 
             // Build a string to display to the user.
             let output =
+                    '<h3>The Sum of the ends values</h3>'+
                     sum1 + '<br>' +
                     sum2 + '<br>' +
+                    '<h3>The middle values</h3>'+
                     mid1 + '<br>' +
                     mid2;
 
@@ -45,8 +47,13 @@
         </script>
     </head>
     
-    <body>         
+    <body>        
+        <h2>Get the middle values and the sum of ends values</h2> 
+        <h4>Array 1</h4>
+        <p>[ 17, 8, 9, 5, 20 ]</p>
+        <h4>Array 2</h4>
+        <p>[ 12, 4, 8, 15, 17, 5, 20, 11 ]</p> <br>
         <button type="button" onclick="test()">Start</button><br><br>
-        <div id="output">test</div>
+        <div id="output"></div>
     </body>      
 </html>

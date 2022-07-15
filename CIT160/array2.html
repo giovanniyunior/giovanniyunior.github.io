@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array</title>
+        <script>
+        /* Defining Table
+        * Input: no user input
+        * Processing: Test the countEvens and multiply functions by calling them.
+        * Output: The values returned from the countEvens and multiply functions.
+        */
+        function test() {
+            let list1 = [ 17, 8, 9, 5, 20 ];
+            let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+            // Test the countEvens function by calling it two times.
+            let count1 = countEvens(list1);
+            let count2 = countEvens(list2);
+
+            // Test the multiply function by calling it two times.
+            let mult1 = multiply(list1,3);
+            let mult2 = multiply(list2,2);
+
+            // Build a string to display to the user.
+            let output =
+                    count1 + '<br>' +
+                    count2 + '<br>' +
+                    mult1 + '<br>' +
+                    mult2;
+
+            // Display the output string for the user to see.
+            document.getElementById('output').innerHTML = output;
+        }
+        function countEvens(list){
+            let sum = 0;
+            for(let i=0;i<list.length;i++){
+                let number = list[i] % 2;
+                if(number == 0){
+                    sum += 1;
+                }
+            }
+            return sum;
+        }
+        function multiply(list, multiplier){
+            let array = new Array();
+            for(let i=0;i<list.length;i++){
+                array.push(list[i] * multiplier);
+            }
+            return array;
+
+        }
+
+
+
+        </script>
+    </head>
+    
+    <body>        
+        <h2>Get the count of even integer and the multiplication of each element</h2> 
+        <h4>Array 1</h4>
+        <p>[ 17, 8, 9, 5, 20 ]</p>
+        <h4>Array 2</h4>
+        <p>[ 12, 4, 8, 15, 17, 5, 20, 11 ]</p> <br>
+        <button type="button" onclick="test()">Start</button><br><br>
+        <div id="output"></div>
+    </body>      
+</html>
