@@ -45,11 +45,4 @@ function showSlidesAuto() {
 
   setTimeout(showSlidesAuto, 10000); // Change image every 2 seconds
 }
-function displayElement(myId){
-  let element = document.getElementById(myId);
-  if(element.style.display === "none") {
-    element.style.display = "block";
-  } else {
-    element.style.display = "none";
-  }
-}
+

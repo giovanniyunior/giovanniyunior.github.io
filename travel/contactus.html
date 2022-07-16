@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency</title>
     <link  rel="stylesheet" href="styles/style.css" />
-  </head> 
+    <script src="js/contactUs.js"></script>
+    </head> 
   <body>
     <div id="content">
       <header>
@@ -31,7 +32,7 @@
         </div>
         <div class="contact-box">
             <h4 id="h4-contact">Be part of our community by sharing your travel experiences. We need you to help others, your experiences matter. Share with us your trip experience, and tell us about recommended sites for photos and recommended stays.</h4>
-            <img id="img-contact" src="images/type.jpg" alt="TypeComments">
+            <img id="img-contact" src="images/type.jpg" alt="TypeComments" onmouseover="displayElement('img-contact')">
 
           <div id="form">
             <div class="space-contactUs">
@@ -50,7 +51,7 @@
                           <textarea type="text" id="msg" name="user_message"></textarea>
                       </li>
                       <li class="li-button">
-                          <button type="submit">Send</button>
+                          <button type="button" onclick="displayElement('img-contact')">Send</button>
                       </li>
                   </ul>
       
