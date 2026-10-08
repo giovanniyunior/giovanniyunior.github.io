@@ -895,7 +895,25 @@ var $ = function(id){ return document.getElementById(id); };
 function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
 function pic(key){ return IMG[key] ? '<img src="' + IMG[key] + '" alt="">' : key; }
 var canSpeak = 'speechSynthesis' in window;
-function say(t){ if (!canSpeak) return; try{ var u = new SpeechSynthesisUtterance(t); u.lang = 'en-US'; u.rate = .68; u.pitch = 1.1; speechSynthesis.cancel(); speechSynthesis.speak(u); }catch(e){} }
+var enVoice = null;
+function pickVoice(){
+  try{
+    var vs = speechSynthesis.getVoices(), fun = /Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Good News|Jester|Organ|Superstar|Trinoids|Whisper|Wobble|Zarvox|Albert|Fred|Junior|Ralph|Kathy|Grandma|Grandpa|Rocko|Shelley|Sandy|Reed|Eddy|Flo/;
+    var prefer = ['Samantha','Google US English','Microsoft Aria','Microsoft Jenny','Microsoft Zira','Ava','Allison','Susan','Karen','Moira','Tessa','Daniel','Google UK English Female'];
+    for (var i = 0; i < prefer.length && !enVoice; i++) enVoice = vs.filter(function(v){ return v.name.indexOf(prefer[i]) === 0; })[0] || null;
+    if (!enVoice) enVoice = vs.filter(function(v){ return /^en-US/.test(v.lang) && !fun.test(v.name); })[0] || vs.filter(function(v){ return /^en/.test(v.lang) && !fun.test(v.name); })[0] || null;
+  }catch(e){}
+}
+if (canSpeak){ pickVoice(); try{ speechSynthesis.onvoiceschanged = function(){ if (!enVoice) pickVoice(); }; }catch(e){} }
+function say(t){
+  if (!canSpeak) return;
+  try{
+    speechSynthesis.cancel();
+    (Array.isArray(t) ? t : [t]).forEach(function(part){ var u = new SpeechSynthesisUtterance(part); u.lang = 'en-US'; if (enVoice) u.voice = enVoice; u.rate = .68; u.pitch = 1.1; speechSynthesis.speak(u); });
+  }catch(e){}
+}
+/* a letter's name: a single lowercase letter on its own is read as the letter name ("ei", "bi", "si"…), never "capital" */
+function letterName(L){ return L.toLowerCase(); }
 function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
 document.querySelectorAll('img[data-i]').forEach(function(im){ if (IMG[im.dataset.i]) im.src = IMG[im.dataset.i]; });
 
@@ -1238,7 +1256,7 @@ var ABC = {
 };
 /* spelled so the device voice says the letter name only ("ei" for A), never "capital A" */
 var NAMES = {A:'ay',B:'bee',C:'see',D:'dee',E:'ee',F:'eff',G:'gee',H:'aitch',I:'eye',J:'jay',K:'kay',L:'ell',M:'em',N:'en',O:'oh',P:'pee',Q:'cue',R:'are',S:'ess',T:'tee',U:'you',V:'vee',W:'double you',X:'ex',Y:'why',Z:'zee'};
-var SOUND = {A:'aah',B:'buh',C:'kuh',D:'duh',E:'eh',F:'fff',G:'guh',H:'hhh',I:'ih',J:'juh',K:'kuh',L:'lll',M:'mmm',N:'nnn',O:'aw',P:'puh',Q:'kwuh',R:'rrr',S:'sss',T:'tuh',U:'uh',V:'vvv',W:'wuh',X:'ks',Y:'yuh',Z:'zzz'};
+var SOUND = {A:'ah',B:'buh',C:'kuh',D:'duh',E:'eh',F:'fff',G:'guh',H:'hhh',I:'ih',J:'juh',K:'kuh',L:'lll',M:'mmm',N:'nnn',O:'aw',P:'puh',Q:'kwuh',R:'rrr',S:'sss',T:'tuh',U:'uh',V:'vvv',W:'wuh',X:'ks',Y:'yuh',Z:'zzz'};
 var LETTERS = Object.keys(ABC);
 var LCOL = ['#e9577f','#f28c1c','#2b8fd6','#16a34a','#c74fd0','#e2513b','#0ea5a4','#ca8a04'];
 var curL = store.get('k4f-letter'); if (LETTERS.indexOf(curL) < 0) curL = 'C';
@@ -1255,9 +1273,9 @@ function pickL(L){
     '<div class="row"><button class="btn" type="button" id="pL">‹ ' + LETTERS[(idx+25)%26] + '</button><button class="btn" type="button" id="nL">' + LETTERS[(idx+1)%26] + ' ›</button></div>';
   $('pL').onclick = function(){ pickL(LETTERS[(idx+25)%26]); };
   $('nL').onclick = function(){ pickL(LETTERS[(idx+1)%26]); };
-  $('sName').onclick = function(){ say(NAMES[L]); };
+  $('sName').onclick = function(){ say(letterName(L)); };
   $('sSound').onclick = function(){ say(SOUND[L] + '... ' + SOUND[L] + '... ' + first[0]); };
-  $('sSent').onclick = function(){ say(NAMES[L] + ' is for ' + first[0]); };
+  $('sSent').onclick = function(){ say([letterName(L), 'is for ' + first[0] + '.']); };
   $('words').innerHTML = ABC[L].map(function(w, i){ return '<button class="wcard" type="button" data-w="' + i + '"><span class="pic">' + pic(w[1]) + '</span><b>' + mark(w[0], L) + '</b></button>'; }).join('');
   $('words').querySelectorAll('u').forEach(function(u){ u.style.color = col; });
   $('words').querySelectorAll('.wcard').forEach(function(b){ b.onclick = function(){ say(ABC[L][+b.dataset.w][0]); }; });
@@ -1527,7 +1545,7 @@ $('clueShow').onclick = function(){ $('myplants').classList.remove('hide'); $('c
 
 /* our activity: trace, spell, color, build "my" */
 $('swTraceBtn').onclick = function(){ animateWrite($('swTrace')); say('my'); };
-$('swSpellBtn').onclick = function(){ $('spell').classList.add('on'); say('em. why. my!'); };
+$('swSpellBtn').onclick = function(){ $('spell').classList.add('on'); say([letterName('m'), letterName('y'), 'my!']); };
 var CRAY = ['#e9577f','#f28c1c','#f2c935','#2fbf4a','#2b8fd6','#9b6fd8'], cray = CRAY[0];
 $('crayons').innerHTML = CRAY.map(function(c, i){ return '<button type="button" aria-label="crayon" data-c="' + c + '" aria-pressed="' + (i === 0) + '" style="background:' + c + '"></button>'; }).join('');
 $('crayons').querySelectorAll('button').forEach(function(b){ b.onclick = function(){ cray = b.dataset.c; $('crayons').querySelectorAll('button').forEach(function(o){ o.setAttribute('aria-pressed', String(o === b)); }); }; });
@@ -1538,11 +1556,11 @@ function drawBuild(){
   document.querySelectorAll('.bbox').forEach(function(z){ z.innerHTML = ''; z.classList.remove('ok'); z.onclick = function(){ if (buildPick){ var el = buildPick; buildPick = null; placeTile(el, z); } }; });
   $('btiles').innerHTML = '<div class="btile" data-l="y" role="button" tabindex="0">y</div><div class="btile" data-l="m" role="button" tabindex="0">m</div>';
   $('btiles').querySelectorAll('.btile').forEach(function(el){ draggable(el, function(z){ if (z.classList.contains('bbox')) placeTile(el, z); },
-    function(){ var was = buildPick === el; $('btiles').querySelectorAll('.btile').forEach(function(o){ o.classList.remove('sel'); }); buildPick = was ? null : el; if (!was){ el.classList.add('sel'); say(el.dataset.l === 'm' ? 'em' : 'why'); } }); });
+    function(){ var was = buildPick === el; $('btiles').querySelectorAll('.btile').forEach(function(o){ o.classList.remove('sel'); }); buildPick = was ? null : el; if (!was){ el.classList.add('sel'); say(letterName(el.dataset.l)); } }); });
 }
 function placeTile(el, z){
   if (z.querySelector('.btile')) return;
-  if (el.dataset.l === z.dataset.want){ el.classList.remove('sel'); z.appendChild(el); z.classList.add('ok'); if (document.querySelectorAll('.bbox.ok').length === 2) say('em. why. my! Great job!'); }
+  if (el.dataset.l === z.dataset.want){ el.classList.remove('sel'); z.appendChild(el); z.classList.add('ok'); if (document.querySelectorAll('.bbox.ok').length === 2) say([letterName('m'), letterName('y'), 'my! Great job!']); }
   else { z.classList.remove('no'); void z.offsetWidth; z.classList.add('no'); say('Try again!'); }
 }
 $('buildReset').onclick = drawBuild; drawBuild();
@@ -1613,7 +1631,7 @@ function drawCater(){
   }; });
 }
 $('cDraw').onclick = function(){ animateWrite($('cWrite')); };
-$('cC').onclick = function(){ say('see is for caterpillar. kuh, kuh, caterpillar!'); };
+$('cC').onclick = function(){ say([letterName('C'), 'is for caterpillar.', 'kuh, kuh, caterpillar!']); };
 $('cAgain').onclick = drawCater;
 var CQ = ['What is the caterpillar doing? 🍃','What does it need? 💧','Where does it live? 🌿'];
 var CA = ['It is eating the leaf!','It needs food, like leaves.','It lives on the plant. The plant is its home!'];
@@ -1635,10 +1653,10 @@ function drawGrid(){
   $('agrid').querySelectorAll('button').forEach(function(b){ b.onclick = function(){
     var c = b.dataset.c;
     if (/[0-9]/.test(c)){ pulse(b, 'no'); $('abcSay').textContent = 'That is number ' + WORDS[+c] + '!'; say('That is number ' + WORDS[+c] + '. It is not a letter!'); return; }
-    if (b.classList.contains('ok')){ say(NAMES[c.toUpperCase()]); return; }
+    if (b.classList.contains('ok')){ say(letterName(c)); return; }
     b.classList.add('ok'); abcFound++; $('abcStars').textContent = '⭐'.repeat(abcFound);
     var line = abcFound === 6 ? 'You found all the letters! 🎉' : (c === c.toUpperCase() ? 'Big ' : 'Little ') + c + '!';
-    $('abcSay').textContent = line; say((c === c.toUpperCase() ? 'Big ' : 'Little ') + NAMES[c.toUpperCase()] + (abcFound === 6 ? '. You found all the letters!' : ''));
+    $('abcSay').textContent = line; say([c === c.toUpperCase() ? 'Big' : 'Little', letterName(c)].concat(abcFound === 6 ? ['You found all the letters!'] : []));
   }; });
 }
 $('abcReset').onclick = drawGrid; drawGrid();
@@ -1647,9 +1665,9 @@ $('abcReset').onclick = drawGrid; drawGrid();
 var ATR = [['a','#e8464a'],['B','#169c3c'],['C','#e8464a']], atrCur = 0;
 $('aTraceTabs').innerHTML = ATR.map(function(t, i){ return '<button type="button" data-i="' + i + '" aria-selected="' + (i === 0) + '" style="font-size:44px;width:110px;font-family:var(--body);font-weight:700">' + t[0] + '</button>'; }).join('');
 function pickTrace(i){ atrCur = i; $('aTraceTabs').querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-selected', String(+b.dataset.i === i)); }); mountWrite($('aWrite'), [ATR[i][0]], ATR[i][1]); }
-$('aTraceTabs').querySelectorAll('button').forEach(function(b){ b.onclick = function(){ pickTrace(+b.dataset.i); say(NAMES[ATR[+b.dataset.i][0].toUpperCase()]); }; });
+$('aTraceTabs').querySelectorAll('button').forEach(function(b){ b.onclick = function(){ pickTrace(+b.dataset.i); say(letterName(ATR[+b.dataset.i][0])); }; });
 $('aDraw').onclick = function(){ animateWrite($('aWrite')); };
-$('aName').onclick = function(){ say(NAMES[ATR[atrCur][0].toUpperCase()]); };
+$('aName').onclick = function(){ say(letterName(ATR[atrCur][0])); };
 $('aSound').onclick = function(){ var L = ATR[atrCur][0].toUpperCase(); say(SOUND[L] + '... ' + SOUND[L]); };
 
 /* What is the...? */
