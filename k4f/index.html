@@ -947,7 +947,14 @@ function audioCtx(){
   if (actx && actx.state === 'suspended'){ try{ actx.resume(); }catch(e){} }
   return actx;
 }
-function sysText(k){ return k.indexOf('snd:') === 0 ? SOUND[k.slice(4)] : k; }
+var SOUNDWORD = {E:'egg', I:'iguana', X:'fox'};   /* a word that starts with (or shows) the letter's short sound */
+var LETTERKEY = /^(name|sound|for|big|little):([A-Z])$/;
+function sysText(k){
+  if (k.indexOf('snd:') === 0) return SOUND[k.slice(4)];
+  var m = LETTERKEY.exec(k); if (!m) return k;
+  var L = m[2], n = L.toLowerCase(), w = (ABC[L] && ABC[L][0][0]) || '', sw = SOUNDWORD[L] || w;
+  return m[1] === 'name' ? n : m[1] === 'sound' ? n + ' says ' + SOUND[L] + ', ' + SOUND[L] + ', ' + sw : m[1] === 'for' ? n + ' is for ' + w : (m[1] === 'big' ? 'Big ' : 'Little ') + n;
+}
 function clipBuf(k){
   if (vBuf[k]) return vBuf[k];
   var b64 = bank()[k]; if (!b64 || !audioCtx()) return null;
@@ -1014,6 +1021,7 @@ function say(t){
   var my = ++vToken; stopVoice(); audioCtx();
   var srcs = parts.map(function(k){
     var c = clipBuf(k); if (c) return c;
+    if (LETTERKEY.test(k)) return null;
     if (LIVE.state === 'ready'){ if (LIVE.fast || LIVE.mem[k]) return liveGen(k); liveGen(k); return null; }
     liveInit(); return null;
   });
@@ -1030,7 +1038,7 @@ function say(t){
 }
 window.k4fSay = say;
 /* a letter's name: a single lowercase letter on its own is read as the letter name ("ei", "bi", "si"…), never "capital" */
-function letterName(L){ return L.toLowerCase(); }
+function letterName(L){ return 'name:' + L.toUpperCase(); }
 function shuffle(a){ a = a.slice(); for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
 document.querySelectorAll('img[data-i]').forEach(function(im){ if (IMG[im.dataset.i]) im.src = IMG[im.dataset.i]; });
 
@@ -1405,8 +1413,8 @@ function pickL(L){
   $('pL').onclick = function(){ pickL(LETTERS[(idx+25)%26]); };
   $('nL').onclick = function(){ pickL(LETTERS[(idx+1)%26]); };
   $('sName').onclick = function(){ say(letterName(L)); };
-  $('sSound').onclick = function(){ say(['snd:' + L, 'snd:' + L, first[0]]); };
-  $('sSent').onclick = function(){ say([letterName(L), 'is for ' + first[0] + '.']); };
+  $('sSound').onclick = function(){ say('sound:' + L); };
+  $('sSent').onclick = function(){ say('for:' + L); };
   $('words').innerHTML = ABC[L].map(function(w, i){ return '<button class="wcard" type="button" data-w="' + i + '"><span class="pic">' + pic(w[1]) + '</span><b>' + mark(w[0], L) + '</b></button>'; }).join('');
   $('words').querySelectorAll('u').forEach(function(u){ u.style.color = col; });
   $('words').querySelectorAll('.wcard').forEach(function(b){ b.onclick = function(){ say(ABC[L][+b.dataset.w][0]); }; });
@@ -1610,21 +1618,9 @@ function applyPhotos(root){
     im.src = u; p.appendChild(im);
   });
 }
-(function loadPhotos(){
-  try{
-    var keys = Object.keys(WIKI), titles = keys.map(function(k){ return WIKI[k][0]; });
-    fetch('https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&piprop=thumbnail&pithumbsize=640&redirects=1&titles=' + encodeURIComponent(titles.join('|')))
-      .then(function(r){ return r.json(); })
-      .then(function(d){
-        var q = d.query || {}, fin = {}, byTitle = {};
-        titles.forEach(function(t){ fin[t] = t; });
-        (q.normalized || []).concat(q.redirects || []).forEach(function(n){ titles.forEach(function(t){ if (fin[t] === n.from) fin[t] = n.to; }); });
-        Object.keys(q.pages || {}).forEach(function(id){ var pg = q.pages[id]; if (pg.thumbnail) byTitle[pg.title] = pg.thumbnail.source; });
-        keys.forEach(function(k){ var u = byTitle[fin[WIKI[k][0]]]; if (u) WURL[k] = u; });
-        applyPhotos();
-      }).catch(function(){});
-  }catch(e){}
-})();
+/* real photos (Wikimedia Commons), linked directly so they load anywhere images are allowed */
+WURL = {"sunflower": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/500px-Sunflower_sky_backdrop.jpg", "cactus": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Carnegiea_gigantea_in_Saguaro_National_Park_near_Tucson%2C_Arizona_during_November_%2858%29.jpg/500px-Carnegiea_gigantea_in_Saguaro_National_Park_near_Tucson%2C_Arizona_during_November_%2858%29.jpg", "tree": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Usamljeni_jasen_-_panoramio_%28cropped%29.jpg/500px-Usamljeni_jasen_-_panoramio_%28cropped%29.jpg", "rose": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Rosa_rubiginosa_1.jpg/500px-Rosa_rubiginosa_1.jpg", "fern": "https://upload.wikimedia.org/wikipedia/commons/4/40/Dryopteris_filix_mas_nf.jpg", "tulip": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG/500px-%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG", "palm": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Coconut_Tree_Kappil_Beach.jpg/500px-Coconut_Tree_Kappil_Beach.jpg", "lily": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Nymphaea_alba.001_-_Breendonk.jpg/500px-Nymphaea_alba.001_-_Breendonk.jpg", "pine": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Pinus_jeffreyi_at_Lassen_Volcanic_National_Park.jpg/500px-Pinus_jeffreyi_at_Lassen_Volcanic_National_Park.jpg", "monstera": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Monstera_deliciosa2.jpg/500px-Monstera_deliciosa2.jpg", "desert": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Rub_al_Khali_002.JPG/500px-Rub_al_Khali_002.JPG", "rainforest": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Aerial_view_of_the_Amazon_Rainforest.jpg/500px-Aerial_view_of_the_Amazon_Rainforest.jpg", "pond": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Cornjum%2C_Martenastate_010.jpg/500px-Cornjum%2C_Martenastate_010.jpg", "mountain": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/500px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"};
+applyPhotos();
 
 /* sight word MY: look & describe, then listen & guess */
 var MYPLANTS = [
@@ -1762,7 +1758,7 @@ function drawCater(){
   }; });
 }
 $('cDraw').onclick = function(){ animateWrite($('cWrite')); };
-$('cC').onclick = function(){ say([letterName('C'), 'is for caterpillar.', 'snd:C', 'snd:C', 'caterpillar!']); };
+$('cC').onclick = function(){ say(['for:C', 'sound:C']); };
 $('cAgain').onclick = drawCater;
 var CQ = ['What is the caterpillar doing? 🍃','What does it need? 💧','Where does it live? 🌿'];
 var CA = ['It is eating the leaf!','It needs food, like leaves.','It lives on the plant. The plant is its home!'];
@@ -1787,7 +1783,7 @@ function drawGrid(){
     if (b.classList.contains('ok')){ say(letterName(c)); return; }
     b.classList.add('ok'); abcFound++; $('abcStars').textContent = '⭐'.repeat(abcFound);
     var line = abcFound === 6 ? 'You found all the letters! 🎉' : (c === c.toUpperCase() ? 'Big ' : 'Little ') + c + '!';
-    $('abcSay').textContent = line; say([c === c.toUpperCase() ? 'Big' : 'Little', letterName(c)].concat(abcFound === 6 ? ['You found all the letters!'] : []));
+    $('abcSay').textContent = line; say([(c === c.toUpperCase() ? 'big:' : 'little:') + c.toUpperCase()].concat(abcFound === 6 ? ['You found all the letters!'] : []));
   }; });
 }
 $('abcReset').onclick = drawGrid; drawGrid();
@@ -1799,7 +1795,7 @@ function pickTrace(i){ atrCur = i; $('aTraceTabs').querySelectorAll('button').fo
 $('aTraceTabs').querySelectorAll('button').forEach(function(b){ b.onclick = function(){ pickTrace(+b.dataset.i); say(letterName(ATR[+b.dataset.i][0])); }; });
 $('aDraw').onclick = function(){ animateWrite($('aWrite')); };
 $('aName').onclick = function(){ say(letterName(ATR[atrCur][0])); };
-$('aSound').onclick = function(){ var L = ATR[atrCur][0].toUpperCase(); say(['snd:' + L, 'snd:' + L]); };
+$('aSound').onclick = function(){ say('sound:' + ATR[atrCur][0].toUpperCase()); };
 
 /* What is the...? */
 var WHAT = [['stem','a_stem'],['flower','a_flower'],['leaf','a_leaf'],['roots','a_roots']], whatWant = null;
