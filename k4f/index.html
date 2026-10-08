@@ -58,7 +58,7 @@ body.proj .board{background-image:var(--wavyg)}
 .song{display:block;width:230px;border-radius:12px;overflow:hidden;background:#000;position:relative;box-shadow:0 4px 0 rgba(46,35,38,.18);border:3px solid #fff;padding:0;text-align:left}
 .song .sbtn{display:block;width:100%;border:0;padding:0;background:#000;position:relative;text-align:left}
 .song .vid{position:relative;width:100%;aspect-ratio:16/9;background:#000}
-.song .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.song .vid iframe,.song .vid > div:first-child{position:absolute;inset:0;width:100%;height:100%;border:0}
 .song .stop{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;border:0;background:var(--accent);color:#fff;font-family:var(--display);font-size:17px;height:30px;padding:0 8px;white-space:nowrap;overflow:hidden}
 .songs .song .stop{font-size:24px;height:40px}
 .song.on{box-shadow:0 0 0 4px var(--accent),0 4px 0 rgba(46,35,38,.18)}
@@ -918,14 +918,40 @@ function blockMsg(el){
   var s = SONGS[el.dataset.song], k = el.querySelector('.blk'); if (!k) return;
   k.innerHTML = '<span>The song plays on your published page.<br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=' + s[1] + '">Open on YouTube</a></span>'; k.hidden = false;
 }
-function stopSong(){ if (playing){ var p = playing; playing = null; renderSong(p); } }
+function stopSong(){ if (ytPlayer){ try{ ytPlayer.destroy(); }catch(e){} ytPlayer = null; } if (playing){ var p = playing; playing = null; renderSong(p); } }
+var ytReady = false, ytQueue = [];
+function withYT(fn){
+  if (window.YT && window.YT.Player){ fn(); return; }
+  ytQueue.push(fn);
+  if (!document.getElementById('ytapi')){
+    var prev = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = function(){ ytReady = true; if (prev) try{ prev(); }catch(e){} var q = ytQueue; ytQueue = []; q.forEach(function(f){ f(); }); };
+    var sc = document.createElement('script'); sc.id = 'ytapi'; sc.src = 'https://www.youtube.com/iframe_api';
+    sc.onerror = function(){ frameBlocked = true; if (playing) blockMsg(playing); };
+    document.head.appendChild(sc);
+  }
+}
+var ytPlayer = null;
 function playSong(el){
   stopSong(); try{ speechSynthesis.cancel(); }catch(e){}
-  var s = SONGS[el.dataset.song]; el.classList.add('on');
-  el.innerHTML = '<div class="vid"><iframe title="' + esc(s[0]) + '" src="https://www.youtube-nocookie.com/embed/' + s[1] + '?autoplay=1&rel=0&modestbranding=1&playsinline=1&controls=1" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe><div class="blk" hidden></div></div>' +
+  var s = SONGS[el.dataset.song], hid = 'yt' + Date.now(); el.classList.add('on');
+  el.innerHTML = '<div class="vid"><div id="' + hid + '"></div><div class="blk" hidden></div></div>' +
     '<button type="button" class="stop" aria-label="Stop ' + esc(s[0]) + '"><span class="eq"><i></i><i></i><i></i></span>■ Stop</button>';
   el.querySelector('.stop').onclick = stopSong;
-  playing = el; if (frameBlocked) blockMsg(el);
+  playing = el; if (frameBlocked){ blockMsg(el); return; }
+  withYT(function(){
+    if (playing !== el || !document.getElementById(hid)) return;
+    ytPlayer = new YT.Player(hid, {
+      videoId: s[1], width: '100%', height: '100%',
+      playerVars: { autoplay: 1, controls: 1, rel: 0, playsinline: 1, modestbranding: 1 },
+      events: {
+        onReady: function(e){ try{ e.target.unMute(); e.target.setVolume(100); e.target.playVideo(); }catch(_){} },
+        onStateChange: function(e){ if (e.data === 1){ try{ if (e.target.isMuted()) e.target.unMute(); e.target.setVolume(100); }catch(_){} } },
+        onError: function(){ blockMsg(el); }
+      }
+    });
+    window.k4fPlayer = ytPlayer;
+  });
 }
 document.addEventListener('securitypolicyviolation', function(e){ if (/youtube/.test(e.blockedURI || '')){ frameBlocked = true; if (playing) blockMsg(playing); } });
 document.querySelectorAll('[data-song]').forEach(renderSong);
