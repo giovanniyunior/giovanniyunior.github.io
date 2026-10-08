@@ -68,6 +68,9 @@ body.proj .board{background-image:var(--wavyg)}
 @keyframes eq{from{height:3px}to{height:14px}}
 .song .blk{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#fff;background:#222;font-size:14px;padding:6px;line-height:1.25}
 .song .blk[hidden]{display:none}
+.song .tapme{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);background:var(--accent);color:#fff;font-family:var(--display);font-size:16px;border-radius:99px;padding:2px 10px;pointer-events:none;animation:bob 1s ease-in-out infinite alternate}
+.song .tapme[hidden]{display:none}
+.livebanner{font-family:var(--display);font-size:18px;color:#fff;background:var(--accent);border-radius:14px;padding:4px 12px;text-decoration:none;margin-left:10px}
 .song .blk a{color:#fff;text-decoration:underline}
 .song img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
 .song .play{position:absolute;inset:0;display:grid;place-items:center}
@@ -508,7 +511,7 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
 
 <div id="app" data-own>
   <header class="top">
-    <button class="sect home" type="button" id="homeBtn"><span>🏠</span>Home</button><div class="homebar" id="homebar" hidden>K4F · Teacher Maria Laura</div>
+    <button class="sect home" type="button" id="homeBtn"><span>🏠</span>Home</button><div class="homebar" id="homebar" hidden>K4F · Teacher Maria Laura<a class="livebanner" id="livebanner" hidden target="_blank" rel="noopener" href="https://giovanniyunior.github.io/k4f/">🎵 Open the page with music</a></div>
     <nav class="nav" id="nav" role="tablist" aria-label="Slides"></nav>
     <div class="ctl">
       <button type="button" id="prev" aria-label="Previous slide">◀</button>
@@ -908,7 +911,7 @@ var SONGS = {
   weather:["How's the Weather?",'KBL5aXSJTlE','s_weather'], count:['Count 1 to 20','D0Ajq682yrA','s_count'],
   plant:['Parts of a Plant Song','9bFU_wJgvBI','s_plant'], move:['Move!','VsgpUHUYuJI','s_move'], walk:['Walking Walking','fPMjnlTEZwU','s_walk']
 };
-var frameBlocked = false, playing = null;
+var frameBlocked = false, playing = null, LIVE_URL = 'https://giovanniyunior.github.io/k4f/';
 function renderSong(el){
   var s = SONGS[el.dataset.song]; el.classList.remove('on');
   el.innerHTML = '<button type="button" class="sbtn" aria-label="Play ' + esc(s[0]) + '"><img src="' + IMG[s[2]] + '" alt=""><span class="play"><i></i></span><b>▶ ' + esc(s[0]) + '</b></button>';
@@ -916,7 +919,7 @@ function renderSong(el){
 }
 function blockMsg(el){
   var s = SONGS[el.dataset.song], k = el.querySelector('.blk'); if (!k) return;
-  k.innerHTML = '<span>The song plays on your published page.<br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=' + s[1] + '">Open on YouTube</a></span>'; k.hidden = false;
+  k.innerHTML = '<span>🔇 Music can\'t play in this view.<br><a target="_blank" rel="noopener" href="' + LIVE_URL + '#' + cur + '">Open the class page with music</a></span>'; k.hidden = false;
 }
 function stopSong(){ if (ytPlayer){ try{ ytPlayer.destroy(); }catch(e){} ytPlayer = null; } if (playing){ var p = playing; playing = null; renderSong(p); } }
 var ytReady = false, ytQueue = [];
@@ -935,7 +938,7 @@ var ytPlayer = null;
 function playSong(el){
   stopSong(); try{ speechSynthesis.cancel(); }catch(e){}
   var s = SONGS[el.dataset.song], hid = 'yt' + Date.now(); el.classList.add('on');
-  el.innerHTML = '<div class="vid"><div id="' + hid + '"></div><div class="blk" hidden></div></div>' +
+  el.innerHTML = '<div class="vid"><div id="' + hid + '"></div><span class="tapme" hidden>👆 Tap ▶</span><div class="blk" hidden></div></div>' +
     '<button type="button" class="stop" aria-label="Stop ' + esc(s[0]) + '"><span class="eq"><i></i><i></i><i></i></span>■ Stop</button>';
   el.querySelector('.stop').onclick = stopSong;
   playing = el; if (frameBlocked){ blockMsg(el); return; }
@@ -945,8 +948,9 @@ function playSong(el){
       videoId: s[1], width: '100%', height: '100%',
       playerVars: { autoplay: 1, controls: 1, rel: 0, playsinline: 1, modestbranding: 1 },
       events: {
-        onReady: function(e){ try{ e.target.unMute(); e.target.setVolume(100); e.target.playVideo(); }catch(_){} },
-        onStateChange: function(e){ if (e.data === 1){ try{ if (e.target.isMuted()) e.target.unMute(); e.target.setVolume(100); }catch(_){} } },
+        onReady: function(e){ try{ e.target.unMute(); e.target.setVolume(100); e.target.playVideo(); }catch(_){}
+          setTimeout(function(){ try{ if (playing === el && e.target.getPlayerState() !== 1){ var t = el.querySelector('.tapme'); if (t) t.hidden = false; } }catch(_){} }, 2500); },
+        onStateChange: function(e){ if (e.data === 1){ var t = el.querySelector('.tapme'); if (t) t.hidden = true; try{ if (e.target.isMuted()) e.target.unMute(); e.target.setVolume(100); }catch(_){} } },
         onError: function(){ blockMsg(el); }
       }
     });
@@ -1776,6 +1780,7 @@ function placeCyc(el, z){
 }
 $('cycleReset').onclick = drawCycle; drawCycle();
 
+if (IN_CLAUDE) $('livebanner').hidden = false;
 /* start */
 drawNav();
 var hsh = (location.hash || '').slice(1), all = SECTIONS.home.slides.concat(SECTIONS.greet.slides, SECTIONS.proj.slides, SECTIONS.adv.slides);
