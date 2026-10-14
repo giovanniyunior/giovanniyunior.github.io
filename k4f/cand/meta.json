@@ -1,500 +1,74 @@
 {
- "cactus_0.jpg": {
-  "title": "File:Saguaro cactus flower at the Sonoran Desert National Monument (55041650786).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/blmaz/\">BLMArizona</a>",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Saguaro_cactus_flower_at_the_Sonoran_Desert_National_Monument_(55041650786).jpg"
- },
- "cactus_1.jpg": {
-  "title": "File:Saguaro Cactus With Desert Butte In Background At Springtime In AZ.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Ray_Redstone\" title=\"User:Ray Redstone\">Ray Redstone</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Saguaro_Cactus_With_Desert_Butte_In_Background_At_Springtime_In_AZ.jpg"
- },
- "cactus_2.jpg": {
-  "title": "File:2022-06-13 USA, AZ, Saguaro DSC 5309 DxO.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Lrkrol\" title=\"User:Lrkrol\">Laurens R. Krol</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:2022-06-13_USA,_AZ,_Saguaro_DSC_5309_DxO.jpg"
- },
- "cactus_3.jpg": {
-  "title": "File:Saguaro Cactus In Arizona, Sonoran Desert-2013.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Angwinar\" title=\"User:Angwinar\">Angwinar</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Saguaro_Cactus_In_Arizona,_Sonoran_Desert-2013.jpg"
- },
- "cactus_4.jpg": {
-  "title": "File:Saguaro Cactus In Arizona Desert.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Ray_Redstone\" title=\"User:Ray Redstone\">Ray Redstone</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Saguaro_Cactus_In_Arizona_Desert.jpg"
- },
- "cactus_5.jpg": {
-  "title": "File:Desert Cactus at Saguaro NP in AZ 3.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Jeffhollett\" title=\"User:Jeffhollett\">Jeffhollett</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Desert_Cactus_at_Saguaro_NP_in_AZ_3.jpg"
- },
- "palm_0.jpg": {
-  "title": "File:Koh Mak (island), Thailand, Palm trees on the beach.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Koh_Mak_(island),_Thailand,_Palm_trees_on_the_beach.jpg"
- },
- "palm_1.jpg": {
-  "title": "File:Sunset with coconut palm tree, Fiji.jpg",
-  "artist": "Andrew Mandemaker",
-  "license": "CC BY-SA 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Sunset_with_coconut_palm_tree,_Fiji.jpg"
- },
- "palm_2.jpg": {
-  "title": "File:Corong Corong Beach, Coconut palm trees, El Nido, Palawan Island, Philippines.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Corong_Corong_Beach,_Coconut_palm_trees,_El_Nido,_Palawan_Island,_Philippines.jpg"
- },
- "palm_3.jpg": {
-  "title": "File:Koh Mak (island), Thailand, Sunset on the beach with palms.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Koh_Mak_(island),_Thailand,_Sunset_on_the_beach_with_palms.jpg"
- },
- "palm_4.jpg": {
-  "title": "File:Coconut Tree Kappil Beach.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Shishirdasika\" title=\"User:Shishirdasika\">Shishirdasika</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Coconut_Tree_Kappil_Beach.jpg"
- },
- "palm_5.jpg": {
-  "title": "File:Koh Mak (island), Thailand, Sunset on the beach with coconut palms.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Koh_Mak_(island),_Thailand,_Sunset_on_the_beach_with_coconut_palms.jpg"
- },
- "lily_0.jpg": {
-  "title": "File:Pink and white Nymphaea water lily flowers, \u0431\u0435\u043b \u0438 \u0440\u043e\u0437\u043e\u0432 \u043b\u043e\u0442\u043e\u0441.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:%D0%94%D0%B5%D0%BB%D1%84%D0%B8%D0%BD%D0%B0&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:\u0414\u0435\u043b\u0444\u0438\u043d\u0430 (page does not exist)\">\u0414\u0435\u043b\u0444\u0438\u043d\u0430</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pink_and_white_Nymphaea_water_lily_flowers,_%D0%B1%D0%B5%D0%BB_%D0%B8_%D1%80%D0%BE%D0%B7%D0%BE%D0%B2_%D0%BB%D0%BE%D1%82%D0%BE%D1%81.jpg"
- },
- "lily_1.jpg": {
-  "title": "File:Water lily (lat. nymphaea micrantha) in Tashkent Botanical Garden.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Humoyun_Mehridinov\" title=\"User:Humoyun Mehridinov\">Humoyun Mehridinov</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Water_lily_(lat._nymphaea_micrantha)_in_Tashkent_Botanical_Garden.jpg"
- },
- "lily_2.jpg": {
-  "title": "File:Water Lily (Nymphaea nouchali) in Panchatheertha Pond, Thirunelli Temple 01.JPG",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Praveenp\" title=\"User:Praveenp\">Praveenp</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Water_Lily_(Nymphaea_nouchali)_in_Panchatheertha_Pond,_Thirunelli_Temple_01.JPG"
- },
- "lily_3.jpg": {
-  "title": "File:Water Lily (Nymphaea nouchali) in Panchatheertha Pond, Thirunelli Temple 02.JPG",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Praveenp\" title=\"User:Praveenp\">Praveenp</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Water_Lily_(Nymphaea_nouchali)_in_Panchatheertha_Pond,_Thirunelli_Temple_02.JPG"
- },
- "lily_4.jpg": {
-  "title": "File:Courtyard pond water lily Nymphaea at Parham House, West Sussex, England.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Acabashi\" title=\"User:Acabashi\">Acabashi</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Courtyard_pond_water_lily_Nymphaea_at_Parham_House,_West_Sussex,_England.jpg"
- },
- "lily_5.jpg": {
-  "title": "File:Water lily (Nymphaea alba), Woodfry's Farm - geograph.org.uk - 1408002.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/9274\">Trish Steel</a>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Water_lily_(Nymphaea_alba),_Woodfry%27s_Farm_-_geograph.org.uk_-_1408002.jpg"
- },
- "pine_0.jpg": {
-  "title": "File:Mountain overlook with pine tree snow and clouds.jpg",
-  "artist": "Unknown author<span style=\"display: none;\">Unknown author</span>",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Mountain_overlook_with_pine_tree_snow_and_clouds.jpg"
- },
- "pine_1.jpg": {
-  "title": "File:Pino en Farellones, Chile, con la Cordillera de los Andes nevada detr\u00e1s - Pine tree with a snow-capped Chilean Andes in the backdrop.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nbendersky&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nbendersky (page does not exist)\">Nbendersky</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pino_en_Farellones,_Chile,_con_la_Cordillera_de_los_Andes_nevada_detr%C3%A1s_-_Pine_tree_with_a_snow-capped_Chilean_Andes_in_the_backdrop.jpg"
- },
- "pine_2.jpg": {
-  "title": "File:Pino con trasfondo de una nevada Cordillera de los Andes en Farellones, Chile - Pine tree with backdrop of a snow-capped Andes mountains in Farellones, Chile.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nbendersky&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nbendersky (page does not exist)\">Nbendersky</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pino_con_trasfondo_de_una_nevada_Cordillera_de_los_Andes_en_Farellones,_Chile_-_Pine_tree_with_backdrop_of_a_snow-capped_Andes_mountains_in_Farellones,_Chile.jpg"
- },
- "pine_3.jpg": {
-  "title": "File:Chibitiya Snow Peaks and Pine Whispers.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:AdiBangari02&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:AdiBangari02 (page does not exist)\">AdiBangari02</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Chibitiya_Snow_Peaks_and_Pine_Whispers.jpg"
- },
- "pine_4.jpg": {
-  "title": "File:Pino con trasfondo de Cordillera de los Andes nevada, en Farellones, Chile - Pine tree with backdrop of snow-capped Andes, in Farellones, Chile.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nbendersky&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nbendersky (page does not exist)\">Nbendersky</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pino_con_trasfondo_de_Cordillera_de_los_Andes_nevada,_en_Farellones,_Chile_-_Pine_tree_with_backdrop_of_snow-capped_Andes,_in_Farellones,_Chile.jpg"
- },
- "pine_5.jpg": {
-  "title": "File:Pine trees of Chr\u00e9a covered with snow.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:RomaissaMissa9&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:RomaissaMissa9 (page does not exist)\">RomaissaMissa9</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pine_trees_of_Chr%C3%A9a_covered_with_snow.jpg"
- },
- "monstera_0.jpg": {
-  "title": "File:Fruit Salad Plant (Monstera deliciosa).jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mokkie&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mokkie (page does not exist)\">Mokkie</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Fruit_Salad_Plant_(Monstera_deliciosa).jpg"
- },
- "monstera_1.jpg": {
-  "title": "File:Monstera deliciosa variegata.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Eviandriani55&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Eviandriani55 (page does not exist)\">Eviandriani55</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Monstera_deliciosa_variegata.jpg"
- },
- "monstera_2.jpg": {
-  "title": "File:Monstera deliciosa 20zz.jpg",
-  "artist": "Photo by David J. Stang",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Monstera_deliciosa_20zz.jpg"
- },
- "monstera_3.jpg": {
-  "title": "File:Monstera deliciosa Monstera dziurawa 2023-10-31 03.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Nova\" title=\"User:Nova\">Agnieszka Kwiecie\u0144, Nova</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Monstera_deliciosa_Monstera_dziurawa_2023-10-31_03.jpg"
- },
- "monstera_4.jpg": {
-  "title": "File:Monstera deliciosa Monstera dziurawa 2023-10-31 04.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Nova\" title=\"User:Nova\">Agnieszka Kwiecie\u0144, Nova</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Monstera_deliciosa_Monstera_dziurawa_2023-10-31_04.jpg"
- },
- "monstera_5.jpg": {
-  "title": "File:Fruit Salad Plant (Monstera deliciosa) 2.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Mokkie&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Mokkie (page does not exist)\">Mokkie</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Fruit_Salad_Plant_(Monstera_deliciosa)_2.jpg"
- },
- "desert_0.jpg": {
-  "title": "File:Dunes, D\u00e9sert du Thar.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Cl%C3%A9ment_Bardot\" title=\"User:Cl\u00e9ment Bardot\">Cl\u00e9ment Bardot</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Dunes,_D%C3%A9sert_du_Thar.jpg"
- },
- "desert_1.jpg": {
-  "title": "File:Namib-Naukluft Sand Dunes (2011).jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Yathin_sk\" title=\"User:Yathin sk\">Yathin S Krishnappa</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Namib-Naukluft_Sand_Dunes_(2011).jpg"
- },
- "desert_2.jpg": {
-  "title": "File:Mesquite Sand Dunes in Death Valley.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://sites.google.com/site/thebrockeninglory/\">Brocken Inaglory</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Mesquite_Sand_Dunes_in_Death_Valley.jpg"
- },
- "desert_3.jpg": {
-  "title": "File:Sossusvlei sand dunes.jpg",
-  "artist": "Winfried Bruenken (<a href=\"//commons.wikimedia.org/wiki/User:Amrum\" title=\"User:Amrum\">Amrum</a>)",
-  "license": "CC BY-SA 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:Sossusvlei_sand_dunes.jpg"
- },
- "desert_4.jpg": {
-  "title": "File:Morocco Africa Flickr Rosino December 2005 84514010.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/rosino/\">Rosino</a> on Flickr",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Morocco_Africa_Flickr_Rosino_December_2005_84514010.jpg"
- },
- "desert_5.jpg": {
-  "title": "File:Sand Dunes sa.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Meshari_Alawfi\" class=\"mw-redirect\" title=\"User:Meshari Alawfi\">Meshari Alawfi</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sand_Dunes_sa.jpg"
- },
- "rainforest_0.jpg": {
-  "title": "File:Palawan, Tropical jungle rainforest.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Palawan,_Tropical_jungle_rainforest.jpg"
- },
- "rainforest_1.jpg": {
-  "title": "File:Tropical evergreen jungle, Khao Lak, Thailand.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tropical_evergreen_jungle,_Khao_Lak,_Thailand.jpg"
- },
- "rainforest_2.jpg": {
-  "title": "File:Jungle mountains near Vinales Cuba.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:UnifiedFunctionality\" title=\"User:UnifiedFunctionality\">UnifiedFunctionality</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Jungle_mountains_near_Vinales_Cuba.jpg"
- },
- "rainforest_3.jpg": {
-  "title": "File:Jungle Breeze El Yunque National Forest.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:EgorovaSvetlana\" title=\"User:EgorovaSvetlana\">EgorovaSvetlana</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Jungle_Breeze_El_Yunque_National_Forest.jpg"
- },
- "rainforest_4.jpg": {
-  "title": "File:Inside the tropical rainforest (11464713995).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/77742560@N06\">shankar s.</a> from Dubai, united arab emirates",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Inside_the_tropical_rainforest_(11464713995).jpg"
- },
- "rainforest_5.jpg": {
-  "title": "File:Vine Jungle El Yunque National Forest.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:EgorovaSvetlana\" title=\"User:EgorovaSvetlana\">EgorovaSvetlana</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Vine_Jungle_El_Yunque_National_Forest.jpg"
- },
  "pond_0.jpg": {
-  "title": "File:Detail of \"The Water-Lily Pond\" by Claude Monet 02.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Kritzolina\" title=\"User:Kritzolina\">Kritzolina</a>",
+  "title": "File:Hale-Duck Decoy 2.jpg",
+  "artist": "No machine-readable author provided. <a href=\"//commons.wikimedia.org/wiki/User:Peter_I._Vardy\" title=\"User:Peter I. Vardy\">Peter I. Vardy</a> assumed (based on copyright claims).",
   "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Detail_of_%22The_Water-Lily_Pond%22_by_Claude_Monet_02.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Hale-Duck_Decoy_2.jpg"
  },
  "pond_1.jpg": {
-  "title": "File:WLA moma Monet Reflections of Clouds on the Water-Lily Pond.jpg",
-  "artist": "Wikipedia Loves Art participant \"<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/groups/wikipedia_loves_art/pool/tags/Stephen_Sandoval/\">Stephen_Sandoval</a>\"",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:WLA_moma_Monet_Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg"
+  "title": "File:Duck Pond at South Walney Nature Reserve - geograph.org.uk - 267130.jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/2067\">Chris Upson</a>",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Duck_Pond_at_South_Walney_Nature_Reserve_-_geograph.org.uk_-_267130.jpg"
  },
  "pond_2.jpg": {
-  "title": "File:Claude Monet - Reflections of Clouds on the Water-Lily Pond.jpg",
-  "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Claude_Monet\" class=\"extiw\" title=\"w:en:Claude Monet\"><span title=\"French painter (1840\u20131926)\">Claude Monet</span></a></bdi>",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg"
+  "title": "File:Duck pond at Parc Slip Nature Reserve - geograph.org.uk - 7999471.jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/121420\">Alan Hughes</a>\u00a0<span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Duck_pond_at_Parc_Slip_Nature_Reserve_-_geograph.org.uk_-_7999471.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Duck_pond_at_Parc_Slip_Nature_Reserve_-_geograph.org.uk_-_7999471.jpg"
  },
  "pond_3.jpg": {
-  "title": "File:WLA moma Reflections of Clouds on the Water-Lily Pond Monet.jpg",
-  "artist": "Wikipedia Loves Art participant \"<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/groups/wikipedia_loves_art/pool/tags/trish/\">trish</a>\"",
-  "license": "CC BY 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:WLA_moma_Reflections_of_Clouds_on_the_Water-Lily_Pond_Monet.jpg"
+  "title": "File:Gaia Trust nature reserve at Saltpill Duck Pond - geograph.org.uk - 4967803.jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/708\">David Smith</a>\u00a0<span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Gaia_Trust_nature_reserve_at_Saltpill_Duck_Pond_-_geograph.org.uk_-_4967803.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Gaia_Trust_nature_reserve_at_Saltpill_Duck_Pond_-_geograph.org.uk_-_4967803.jpg"
  },
  "pond_4.jpg": {
-  "title": "File:Reflections of Clouds on the Water-Lily Pond.jpg",
-  "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Claude_Monet\" class=\"extiw\" title=\"w:en:Claude Monet\"><span title=\"French painter (1840\u20131926)\">Claude Monet</span></a></bdi>",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg"
+  "title": "File:Duck pond in nature reserve adjacent Tileshed Lane - geograph.org.uk - 2030193.jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/45095\">Alex McGregor</a>\u00a0<span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Duck_pond_in_nature_reserve_adjacent_Tileshed_Lane_-_geograph.org.uk_-_2030193.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Duck_pond_in_nature_reserve_adjacent_Tileshed_Lane_-_geograph.org.uk_-_2030193.jpg"
  },
  "pond_5.jpg": {
-  "title": "File:WLA moma Reflections of Clouds on the Water-Lily Pond by Claude Monet.jpg",
-  "artist": "Wikipedia Loves Art participant \"<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/groups/wikipedia_loves_art/pool/tags/Opal_Art_Seekers_4/\">Opal_Art_Seekers_4</a>\"",
-  "license": "CC BY 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:WLA_moma_Reflections_of_Clouds_on_the_Water-Lily_Pond_by_Claude_Monet.jpg"
+  "title": "File:Grassland at Saltpill Duck Pond (Gaia Trust nature reserve) - geograph.org.uk - 4967814.jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/708\">David Smith</a>\u00a0<span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Grassland_at_Saltpill_Duck_Pond_(Gaia_Trust_nature_reserve)_-_geograph.org.uk_-_4967814.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Grassland_at_Saltpill_Duck_Pond_(Gaia_Trust_nature_reserve)_-_geograph.org.uk_-_4967814.jpg"
  },
  "mountain_0.jpg": {
-  "title": "File:Mount Shasta covered in snow, Siskiyou County, ca.1900-1940 (CHS-5464).jpg",
-  "artist": "Pierce, C.C. (Charles C.), 1861-1946",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Mount_Shasta_covered_in_snow,_Siskiyou_County,_ca.1900-1940_(CHS-5464).jpg"
+  "title": "File:CH.VS.Zermatt Sunnegga Grindjisee Matterhorn 9034 16x9-R 16K.jpg",
+  "artist": "<b>NOTE:</b> This image is a panorama  consisting of multiple frames that were merged or stitched in software. As a result, this image necessarily underwent some form of digital manipulation. These manipulations may include blending, blurring, cloning, and color and perspective adjustments. As a result of these adjustments, the image content may be slightly different from reality at the points where multiple images were combined. This manipulation is often required due to lens, perspective, and parallax distortions.",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg"
  },
  "mountain_1.jpg": {
-  "title": "File:Picturesque America; or, The land we live in. A delineation by pen and pencil of the mountains, rivers, lakes, forests, water-falls, shores, ca\u00f1ons, valleys, cities, and other picturesque features of (14740990766).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/126377022@N07\">Internet Archive Book Images</a>",
-  "license": "No restrictions",
-  "page": "https://commons.wikimedia.org/wiki/File:Picturesque_America;_or,_The_land_we_live_in._A_delineation_by_pen_and_pencil_of_the_mountains,_rivers,_lakes,_forests,_water-falls,_shores,_ca%C3%B1ons,_valleys,_cities,_and_other_picturesque_features_of_(14740990766).jpg"
+  "title": "File:Matterhorn - Oct 2024.jpg",
+  "artist": "mendhak",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matterhorn_-_Oct_2024.jpg"
  },
  "mountain_2.jpg": {
-  "title": "File:Shoshone, and other western wonders (1888) (14598079229).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/126377022@N07\">Internet Archive Book Images</a>",
-  "license": "No restrictions",
-  "page": "https://commons.wikimedia.org/wiki/File:Shoshone,_and_other_western_wonders_(1888)_(14598079229).jpg"
+  "title": "File:Matterhorn and lake.jpg",
+  "artist": "Ursula St\u00fcrmer",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matterhorn_and_lake.jpg"
  },
  "mountain_3.jpg": {
-  "title": "File:Cranberries; - the national cranberry magazine (1963) (20083046124).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/126377022@N07\">Internet Archive Book Images</a>",
-  "license": "No restrictions",
-  "page": "https://commons.wikimedia.org/wiki/File:Cranberries;_-_the_national_cranberry_magazine_(1963)_(20083046124).jpg"
+  "title": "File:Matterhorn 1.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Christof01\" title=\"User:Christof01\">Christof Berger</a>",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matterhorn_1.jpg"
  },
  "mountain_4.jpg": {
-  "title": "File:Young folks' history of Mexico (1883) (14597930368).jpg",
-  "artist": "Ober, Frederick A. (Frederick Albion), 1849-1913",
-  "license": "No restrictions",
-  "page": "https://commons.wikimedia.org/wiki/File:Young_folks%27_history_of_Mexico_(1883)_(14597930368).jpg"
+  "title": "File:Matterhorn's Morning.jpg",
+  "artist": "mendhak",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matterhorn%27s_Morning.jpg"
  },
- "sunflower_0.jpg": {
-  "title": "File:Sunflower sky backdrop.jpg",
-  "artist": "Fir0002",
-  "license": "GFDL 1.2",
-  "page": "https://commons.wikimedia.org/wiki/File:Sunflower_sky_backdrop.jpg"
- },
- "sunflower_1.jpg": {
-  "title": "File:Sunflower head 2026 G1.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:George_Chernilevsky\" title=\"User:George Chernilevsky\">George Chernilevsky</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sunflower_head_2026_G1.jpg"
- },
- "sunflower_2.jpg": {
-  "title": "File:Sunflower macro wide.jpg",
-  "artist": "<b><a href=\"https://en.wikipedia.org/wiki/User:Muhammad_Mahdi_Karim\" class=\"extiw\" title=\"w:User:Muhammad Mahdi Karim\">Muhammad Mahdi Karim</a></b>",
-  "license": "GFDL 1.2",
-  "page": "https://commons.wikimedia.org/wiki/File:Sunflower_macro_wide.jpg"
- },
- "sunflower_3.jpg": {
-  "title": "File:Mexican Sunflower Tithonia rotundifolia Flower 2163px.jpg",
-  "artist": "Photo by and (c)2008 Derek Ramsey (<a href=\"https://en.wikipedia.org/wiki/User:Ram-Man\" class=\"extiw\" title=\"en:User:Ram-Man\">Ram-Man</a>)",
-  "license": "GFDL 1.2",
-  "page": "https://commons.wikimedia.org/wiki/File:Mexican_Sunflower_Tithonia_rotundifolia_Flower_2163px.jpg"
- },
- "sunflower_4.jpg": {
-  "title": "File:Sunflower and a bee.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Tomascastelazo\" title=\"User:Tomascastelazo\">Tomascastelazo</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sunflower_and_a_bee.jpg"
- },
- "sunflower_5.jpg": {
-  "title": "File:Sunflower head 2015 G1.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:George_Chernilevsky\" title=\"User:George Chernilevsky\">George Chernilevsky</a>",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Sunflower_head_2015_G1.jpg"
- },
- "rose_0.jpg": {
-  "title": "File:Red rose with black background.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Laitche\" title=\"User:Laitche\">Laitche</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Red_rose_with_black_background.jpg"
- },
- "rose_1.jpg": {
-  "title": "File:Red Rose Flower IITMandi Himachal Aug19 D72 11473.jpg",
-  "artist": "<table class=\"toccolours\" style=\"width:100%; margin-top:10px;\" cellpadding=\"2\">\n\n<tbody><tr class=\"plainlinks\">\n<td><a href=\"https://upload.wikimedia.org/wikipedia/commons/5/5b/Red_Rose_Flower_IITMandi_Himachal_Aug19_D72_11473.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=api&amp;utm_content=original\" class=\"internal\" title=\"Red Rose Flower IITMandi Himachal Aug19 D72 11473.jpg\">This Photo</a> was taken by <i><b><a href=\"//commons.wikimedia.org/wiki/User:Tagooty\" title=\"User:Tagooty\">Timothy A. Gonsalves</a></b></i>.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email <a rel=\"nofollow\" class=\"external text\" href=\"mailto:tagooty@yahoo.com\">tagooty@yahoo.com</a> or write on <a class=\"external text\" href=\"https://commons.wikimedia.org/w/index.php?title=User_talk:Tagooty&amp;action=edit&amp;section=new\">my talk page</a>, for my information.  Please contact me before commercial use.\n</td></tr></tbody></table>\n<div style=\"clear:both; border:2px solid #00cc00; background-color:#f7f7f7; margin-top:6px;\">\n<table><tbody><tr><td style=\"padding:4px;\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Upload-problem2.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/120px-Upload-problem2.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"57\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/250px-Upload-problem2.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"159\" data-file-height=\"142\"></a></span>\n</td><td style=\"padding:4px;\"><div style=\"margin-top:0.5em;\">Please do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.<br>Otherwise you may upload an edited image with a new name. Please use one of the templates <a href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\">derivative</a> or <a href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\">extract</a>.</div>\n</td></tr></tbody></table></div>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Red_Rose_Flower_IITMandi_Himachal_Aug19_D72_11473.jpg"
- },
- "rose_2.jpg": {
-  "title": "File:Red-Rose-Sitia-Crete.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Petro_Stelte\" title=\"User:Petro Stelte\">Petro Stelte</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Red-Rose-Sitia-Crete.jpg"
- },
- "rose_3.jpg": {
-  "title": "File:Red-Rose-Sitia-Crete-2.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Petro_Stelte\" title=\"User:Petro Stelte\">Petro Stelte</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Red-Rose-Sitia-Crete-2.jpg"
- },
- "rose_4.jpg": {
-  "title": "File:Red-Rose-Sitia-Crete-3.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Petro_Stelte\" title=\"User:Petro Stelte\">Petro Stelte</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Red-Rose-Sitia-Crete-3.jpg"
- },
- "rose_5.jpg": {
-  "title": "File:Rose flower at the Lalbaghgarden Bangalore.jpg",
-  "artist": "<a href=\"https://en.wikipedia.org/wiki/ml:User:Rameshng\" class=\"extiw\" title=\"w:ml:User:Rameshng\">Rameshng</a> at <a href=\"https://en.wikipedia.org/wiki/ml:\" class=\"extiw\" title=\"w:ml:\">Malayalam Wikipedia</a>",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Rose_flower_at_the_Lalbaghgarden_Bangalore.jpg"
- },
- "tulip_0.jpg": {
-  "title": "File:Red and white tulip at Myddelton House, Enfield, London.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Acabashi\" title=\"User:Acabashi\">Acabashi</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Red_and_white_tulip_at_Myddelton_House,_Enfield,_London.jpg"
- },
- "tulip_1.jpg": {
-  "title": "File:Tulip Tulipa clusiana 'Lady Jane' Rock Ledge Flower Edit 2000px.jpg",
-  "artist": "Photo by and (c)2007 Derek Ramsey (<a href=\"https://en.wikipedia.org/wiki/User:Ram-Man\" class=\"extiw\" title=\"en:User:Ram-Man\">Ram-Man</a>).  Co-attribution must be given to the Chanticleer Garden.",
+ "mountain_5.jpg": {
+  "title": "File:Zermatt and Matterhorn.jpg",
+  "artist": "Photo taken June 1996 by <a href=\"//commons.wikimedia.org/wiki/User:Stan_Shebs\" title=\"User:Stan Shebs\">User:Stan Shebs</a>. Photo touched up by <a href=\"//commons.wikimedia.org/wiki/User:Arad\" title=\"User:Arad\">Arad Mojtahedi</a>.",
   "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tulip_Tulipa_clusiana_%27Lady_Jane%27_Rock_Ledge_Flower_Edit_2000px.jpg"
- },
- "tulip_2.jpg": {
-  "title": "File:Tulip cultivar 'Banja Luka' Moscow Oblast, Russia, 21 May 2022 (IMGP1191a2).jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:LexKurochkin\" title=\"User:LexKurochkin\">Alexey V. Kurochkin</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tulip_cultivar_%27Banja_Luka%27_Moscow_Oblast,_Russia,_21_May_2022_(IMGP1191a2).jpg"
- },
- "tulip_3.jpg": {
-  "title": "File:Tulipa suaveolens floriade to Canberra.jpg",
-  "artist": "<a href=\"https://en.wikipedia.org/wiki/User:Jjron\" class=\"extiw\" title=\"en:User:Jjron\">John O'Neill</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tulipa_suaveolens_floriade_to_Canberra.jpg"
- },
- "tulip_4.jpg": {
-  "title": "File:Tulip cultivar 'Banja Luka' 15 May 2022 (IMGP1135p).jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:LexKurochkin\" title=\"User:LexKurochkin\">Alexey V. Kurochkin</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tulip_cultivar_%27Banja_Luka%27_15_May_2022_(IMGP1135p).jpg"
- },
- "tulip_5.jpg": {
-  "title": "File:Small yellow tulip.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Mister_rf\" title=\"User:Mister rf\">Mister rf</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Small_yellow_tulip.jpg"
- },
- "fern_0.jpg": {
-  "title": "File:Adiantum viridimontanum.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Choess\" title=\"User:Choess\">Choess</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Adiantum_viridimontanum.jpg"
- },
- "fern_1.jpg": {
-  "title": "File:Adiantum viridimontanum (Green Mountain maidenhair fern), Westfield, VT (32130952756).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/150919437@N06\">Doug McGrady</a> from Warwick, RI, USA",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Adiantum_viridimontanum_(Green_Mountain_maidenhair_fern),_Westfield,_VT_(32130952756).jpg"
- },
- "fern_2.jpg": {
-  "title": "File:Adiantum viridimontanum (Green Mountain maidenhair fern), Westfield, VT (31358774113).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/150919437@N06\">Doug McGrady</a> from Warwick, RI, USA",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Adiantum_viridimontanum_(Green_Mountain_maidenhair_fern),_Westfield,_VT_(31358774113).jpg"
- },
- "fern_3.jpg": {
-  "title": "File:Adiantum viridimontanum (Green Mountain maidenhair fern), Westfield, VT (32050934101).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/150919437@N06\">Doug McGrady</a> from Warwick, RI, USA",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Adiantum_viridimontanum_(Green_Mountain_maidenhair_fern),_Westfield,_VT_(32050934101).jpg"
- },
- "fern_4.jpg": {
-  "title": "File:Adiantum viridimontanum (Green Mountain maidenhair fern), Westfield, VT (32130954826).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/150919437@N06\">Doug McGrady</a> from Warwick, RI, USA",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Adiantum_viridimontanum_(Green_Mountain_maidenhair_fern),_Westfield,_VT_(32130954826).jpg"
- },
- "fern_5.jpg": {
-  "title": "File:Adiantum viridimontanum (Green Mountain maidenhair fern), Westfield, VT (32130953596).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/150919437@N06\">Doug McGrady</a> from Warwick, RI, USA",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Adiantum_viridimontanum_(Green_Mountain_maidenhair_fern),_Westfield,_VT_(32130953596).jpg"
- },
- "tree_0.jpg": {
-  "title": "File:Lockett Meadow (33989778134).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/42034606@N05\">Coconino National Forest</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lockett_Meadow_(33989778134).jpg"
- },
- "tree_1.jpg": {
-  "title": "File:Lockett Meadow (34669938892).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/42034606@N05\">Coconino National Forest</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lockett_Meadow_(34669938892).jpg"
- },
- "tree_2.jpg": {
-  "title": "File:Lockett Meadow (34448553040).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/42034606@N05\">Coconino National Forest</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lockett_Meadow_(34448553040).jpg"
- },
- "tree_3.jpg": {
-  "title": "File:Lockett Meadow (34832533275).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/42034606@N05\">Coconino National Forest</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lockett_Meadow_(34832533275).jpg"
- },
- "tree_4.jpg": {
-  "title": "File:Lockett Meadow (34447135960).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/42034606@N05\">Coconino National Forest</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lockett_Meadow_(34447135960).jpg"
- },
- "tree_5.jpg": {
-  "title": "File:Lockett Meadow (34703086811).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/42034606@N05\">Coconino National Forest</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lockett_Meadow_(34703086811).jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Zermatt_and_Matterhorn.jpg"
  }
 }
