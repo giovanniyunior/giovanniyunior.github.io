@@ -1,0 +1,19 @@
+name: K4F fetch photos
+on:
+  push:
+    paths: ['k4f/tools/photo_queries.json', 'k4f/tools/fetch_photos.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 k4f/tools/fetch_photos.py
+      - run: |
+          git config user.name "k4f-bot"
+          git config user.email "k4f-bot@users.noreply.github.com"
+          git add k4f/cand
+          git commit -m "K4F: candidate photos from Wikimedia Commons" || echo nothing
+          git push
