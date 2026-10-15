@@ -699,6 +699,41 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
 .artin svg{width:100%;height:auto;display:block}
 @keyframes flap{from{transform:translateY(0) rotate(-8deg)}to{transform:translateY(-14px) rotate(8deg)}}
 @keyframes dangle{from{transform:translateY(-16px)}to{transform:translateY(16px)}}
+
+/* pumpkin surprise game */
+.pmcats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.pmcats button{font-family:var(--display);font-size:28px;border:3px solid #16101c;background:#fff;border-radius:999px;padding:4px 22px;box-shadow:0 3px 0 #16101c}
+.pmcats button[aria-pressed="true"]{background:#f39418;color:#fff}
+.pmstage{display:grid;grid-template-columns:420px 1fr;gap:30px;align-items:center;width:100%;flex:1;min-height:0;padding:0 30px}
+.pmleft{display:grid;justify-items:center;gap:8px}
+.pmpump{border:0;background:none;padding:0;width:330px;cursor:pointer;filter:drop-shadow(0 8px 0 rgba(0,0,0,.15))}
+.pmpump.shake{animation:pshake .5s ease}
+@keyframes pshake{0%,100%{transform:rotate(0)}20%{transform:rotate(-9deg) scale(1.04)}40%{transform:rotate(8deg)}60%{transform:rotate(-6deg)}80%{transform:rotate(4deg)}}
+.pmgo{font-size:34px!important;padding:8px 30px!important;border:3px solid #16101c!important;background:#f39418!important;box-shadow:0 4px 0 #16101c!important}
+.pmleftn{margin:0;font-family:var(--display);font-size:26px;color:#6b4d8a}
+.pmshow{position:relative;height:100%;display:grid;place-items:center;align-content:center;gap:6px;background:radial-gradient(circle,#fff7e6 0,#fff 70%);border-radius:30px}
+.pmhint{font-family:var(--display);font-size:46px;color:#8e3ad6;margin:0}
+.pmitem{display:grid;justify-items:center;gap:4px;animation:pout .8s cubic-bezier(.2,1.5,.4,1)}
+@keyframes pout{0%{transform:translate(-330px,120px) scale(.1) rotate(-30deg);opacity:0}60%{opacity:1}100%{transform:none}}
+.pmvis{height:290px;display:grid;place-items:center;font-size:220px;line-height:1}
+.pmvis img{height:270px;width:auto;max-width:420px;object-fit:contain}
+.pmvis svg{height:270px;width:auto}
+.pmvis .digit{font-size:250px}
+.pmlbl{font-family:var(--display);font-size:64px;color:#16101c;line-height:1}
+.pmlbl u{text-decoration:none;color:#f39418}
+.pmlet{display:flex;align-items:center;gap:20px}
+.pmlet b{font-family:var(--body);font-weight:700;font-size:200px;color:#8e3ad6;line-height:1}
+.pmlet .pic{height:240px;display:grid;place-items:center;font-size:190px}
+.pmlet .pic img{max-height:240px}
+.pmdots{display:flex;flex-wrap:wrap;gap:8px;max-width:300px;justify-content:center}
+.pmdots i{width:42px;height:42px;border-radius:50%;background:var(--c)}
+.pmnum{display:flex;align-items:center;gap:26px}
+.pmtray{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;min-height:84px;padding:0 120px}
+.pmtray button{width:80px;height:80px;border:3px solid #16101c;border-radius:16px;background:#fff;display:grid;place-items:center;font-size:52px;line-height:1;padding:4px;animation:pop .4s;overflow:hidden}
+.pmtray button img{max-width:100%;max-height:100%}
+.pmtray button svg{width:100%;height:100%}
+.pmtray .digit{font-size:56px}
+.pmtray .tl{font-family:var(--body);font-weight:700;font-size:44px;color:#8e3ad6}
 </style>
 
 <div id="app" data-own>
@@ -883,6 +918,24 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
       <img class="deco tl" data-i="notebook" alt=""><img class="deco br" data-i="pencil" alt="">
       <h2 class="title t-l">Let's move!</h2>
       <div class="songs"><div class="song" data-song="move"></div><div class="song" data-song="walk"></div></div>
+    </section>
+
+    <section class="slide" data-s="pump" data-g="greet" style="display:contents" hidden>
+      <div class="spk hw" id="pmSpk">
+        <div class="spkin">
+          <div class="spktitle"><span class="multi" id="pmTitle"></span></div>
+          <div class="pmcats" id="pmCats"></div>
+          <div class="pmstage">
+            <div class="pmleft"><button class="pmpump" type="button" id="pmPump" aria-label="Open the pumpkin"><span data-art="pumpkin" class="artin"></span></button><button class="btn go pmgo" type="button" id="pmGo">🎃 What's inside?</button><p class="pmleftn" id="pmLeft"></p></div>
+            <div class="pmshow" id="pmShow"><p class="pmhint">Tap the pumpkin! 🎃</p></div>
+          </div>
+          <div class="pmtray" id="pmTray"></div>
+        </div>
+        <span class="art" data-art="bat" style="right:40px;top:-14px;width:120px;animation:flap 1.2s ease-in-out infinite alternate"></span>
+        <span class="art" data-art="web" style="left:36px;top:36px;width:90px"></span>
+        <span class="art" data-art="ghost" style="left:-16px;bottom:30px;width:90px;animation:bob 2.4s ease-in-out infinite alternate"></span>
+        <span class="art" data-art="spiderg" style="right:50px;bottom:40px;width:80px;animation:dangle 3s ease-in-out infinite alternate"></span>
+      </div>
     </section>
 
     <section class="slide" data-s="day" data-g="greet" style="display:contents" hidden>
@@ -1215,6 +1268,7 @@ var LETTERKEY = /^(name|sound|for|big|little):([A-Z])$/;
 function sysText(k){
   if (k.indexOf('snd:') === 0) return SOUND[k.slice(4)];
   if (/^num:\d+$/.test(k)) return k.slice(4);
+  var fw = /^forw:([A-Z]):(.+)$/.exec(k); if (fw) return fw[1].toLowerCase() + ' is for ' + fw[2];
   var m = LETTERKEY.exec(k); if (!m) return k;
   var L = m[2], n = L.toLowerCase(), w = (ABC[L] && ABC[L][0][0]) || '', sw = SOUNDWORD[L] || w;
   return m[1] === 'name' ? n : m[1] === 'sound' ? n + ' says ' + SOUND[L] + ', ' + SOUND[L] + ', ' + sw : m[1] === 'for' ? n + ' is for ' + w : (m[1] === 'big' ? 'Big ' : 'Little ') + n;
@@ -1285,7 +1339,7 @@ function say(t){
   var my = ++vToken; stopVoice(); audioCtx();
   var srcs = parts.map(function(k){
     var c = clipBuf(k); if (c) return c;
-    if (LETTERKEY.test(k)) return null;
+    if (LETTERKEY.test(k) || /^forw:/.test(k)) return null;
     if (LIVE.state === 'ready'){ if (LIVE.fast || LIVE.mem[k]) return liveGen(k); liveGen(k); return null; }
     liveInit(); return null;
   });
@@ -1370,7 +1424,7 @@ document.querySelectorAll('[data-song]').forEach(renderSong);
 /* ---------- sections + slides ---------- */
 var SECTIONS = {
   home:{icon:'🏠', label:'Home', slides:[['home','Home','🏠']]},
-  greet:{icon:'🏫', label:'Greeting', slides:[['hello','Hello','croc'],['feel','Feelings','fs_p5'],['days','Days','notebook'],['cal','Calendar','📅'],['school','School days','🔟'],['weather','Weather','sun'],['numbers','Numbers','ruler'],['abc','ABC','pencil'],['plant','Plant','🌸'],['needs','Plants need','🌱'],['rules','Rules','star'],['move','Move','music'],['day','Our day','clock']]},
+  greet:{icon:'🏫', label:'Greeting', slides:[['hello','Hello','croc'],['feel','Feelings','fs_p5'],['days','Days','notebook'],['cal','Calendar','📅'],['school','School days','🔟'],['weather','Weather','sun'],['numbers','Numbers','ruler'],['abc','ABC','pencil'],['plant','Plant','🌸'],['needs','Plants need','🌱'],['rules','Rules','star'],['move','Move','music'],['pump','Pumpkin game','🎃'],['day','Our day','clock']]},
   proj:{icon:'🌿', label:'Plants', slides:[['p-cover','Plants','🌿'],['p-isplant','Is it a plant?','🤔'],['p-my','MY','📝'],['p-live','Where?','🏜️'],['p-who','Who am I?','🔎'],['p-stations','Stations','st1']]},
   adv:{icon:'⭐', label:'Adventure', slides:[['a-cover','Adventure','⭐'],['a-abc','A B C','🔤'],['a-trace','Trace','✏️'],['a-what','What is…?','🌺'],['a-size','Big/small','🐘'],['a-count','Count','🍎'],['a-tracen','Trace 0–9','🔢'],['a-point','Find it','👉'],['a-need','Plant needs','💧'],['a-parts','Plant parts','🍅'],['a-cycle','Cycle','🌱']]}
 };
@@ -2314,6 +2368,40 @@ drawNav();
 var hsh = (location.hash || '').slice(1), all = SECTIONS.home.slides.concat(SECTIONS.greet.slides, SECTIONS.proj.slides, SECTIONS.adv.slides);
 var startAt = all.some(function(s){ return s[0] === hsh; }) ? hsh : 'home';
 if (!all.some(function(s){ return s[0] === startAt; })) startAt = 'home';
+/* ---- pumpkin surprise: one thing comes out each time ---- */
+function splat(c){ return '<svg viewBox="0 0 200 200"><path d="M100 18 C120 18 126 44 146 40 C170 34 186 58 172 78 C160 96 188 108 178 132 C168 156 140 146 130 166 C120 186 84 190 74 168 C64 148 36 160 24 138 C12 116 34 100 26 82 C16 58 40 36 62 44 C80 50 80 18 100 18Z" fill="' + c + '" stroke="' + (c === '#ffffff' ? '#bbb' : 'rgba(0,0,0,.25)') + '" stroke-width="5"/><ellipse cx="78" cy="78" rx="18" ry="11" fill="#fff" opacity=".35"/></svg>'; }
+function shapeSvg(k, c){
+  var d = {circle:'<circle cx="100" cy="100" r="80"/>', square:'<rect x="25" y="25" width="150" height="150" rx="6"/>', triangle:'<path d="M100 18 L184 172 L16 172Z"/>', rectangle:'<rect x="10" y="50" width="180" height="100" rx="6"/>',
+    star:'<path d="M100 12 L124 72 L190 76 L139 117 L156 182 L100 146 L44 182 L61 117 L10 76 L76 72Z"/>', heart:'<path d="M100 178 C40 132 10 100 22 62 C34 26 80 22 100 56 C120 22 166 26 178 62 C190 100 160 132 100 178Z"/>',
+    oval:'<ellipse cx="100" cy="100" rx="90" ry="60"/>', diamond:'<path d="M100 10 L180 100 L100 190 L20 100Z"/>'}[k];
+  return '<svg viewBox="0 0 200 200"><g fill="' + c + '" stroke="#16101c" stroke-width="7" stroke-linejoin="round">' + d + '</g></svg>';
+}
+var PUMP = {
+  colors:{label:'🎨 Colors', items:[['red','#e53b2c'],['orange','#f39418'],['yellow','#f6d21a'],['green','#3cae4a'],['blue','#2b8fd6'],['purple','#8e3ad6'],['pink','#f27bb5'],['brown','#8b5a2b'],['black','#16101c'],['white','#ffffff']].map(function(c){ return {say:c[0], vis:splat(c[1]), lbl:c[0], tray:splat(c[1])}; })},
+  letters:{label:'🔤 A B C D', items:function(){ return [['A',0],['A',1],['A',4],['B',0],['B',2],['B',3],['C',0],['C',1],['C',2],['D',0],['D',1],['D',2]].map(function(x){ var w = ABC[x[0]][x[1]];
+    return {say:'forw:' + x[0] + ':' + w[0], vis:'<div class="pmlet"><b>' + x[0] + x[0].toLowerCase() + '</b><span class="pic">' + pic(w[1]) + '</span></div>', lbl:'<u>' + w[0].charAt(0) + '</u>' + w[0].slice(1), tray:pic(w[1])}; }); }},
+  plants:{label:'🌱 Plant parts', items:[['flower','a_flower'],['leaf','a_leaf'],['stem','a_stem'],['roots','a_roots'],['seed','a_seed'],['fruit','a_tomato']].map(function(p){ return {say:p[0], vis:pic(p[1]), lbl:p[0], tray:pic(p[1])}; })},
+  numbers:{label:'🔢 1 – 10', items:[1,2,3,4,5,6,7,8,9,10].map(function(n){ var dots = ''; for (var i = 0; i < n; i++) dots += '<i style="--c:' + NCOL[n] + '"></i>';
+    return {say:'num:' + n, vis:'<div class="pmnum">' + digit(n) + '<div class="pmdots">' + dots + '</div></div>', lbl:WORDS[n], tray:digit(n)}; })},
+  shapes:{label:'🔷 Shapes', items:[['circle','#e53b2c'],['square','#2b8fd6'],['triangle','#f6d21a'],['rectangle','#3cae4a'],['star','#f39418'],['heart','#f27bb5'],['oval','#8e3ad6'],['diamond','#1fa79c']].map(function(x){ return {say:x[0], vis:shapeSvg(x[0], x[1]), lbl:x[0], tray:shapeSvg(x[0], x[1])}; })}
+};
+var pmCat = 'colors', pmBag = [], pmOut = [];
+$('pmTitle').innerHTML = multi('Pumpkin Surprise!');
+$('pmCats').innerHTML = Object.keys(PUMP).map(function(k){ return '<button type="button" data-k="' + k + '" aria-pressed="' + (k === pmCat) + '">' + PUMP[k].label + '</button>'; }).join('');
+$('pmCats').querySelectorAll('button').forEach(function(b){ b.onclick = function(){ pmCat = b.dataset.k; $('pmCats').querySelectorAll('button').forEach(function(o){ o.setAttribute('aria-pressed', String(o === b)); }); pmFill(); }; });
+function pmFill(){ var src = PUMP[pmCat].items; pmBag = shuffle(typeof src === 'function' ? src() : src.slice()); pmOut = []; $('pmTray').innerHTML = ''; $('pmShow').innerHTML = '<p class="pmhint">Tap the pumpkin! 🎃</p>'; pmCount(); $('pmGo').textContent = "🎃 What's inside?"; }
+function pmCount(){ $('pmLeft').textContent = pmBag.length ? pmBag.length + ' surprises inside' : 'The pumpkin is empty!'; }
+function pmOpen(){
+  if (!pmBag.length){ pmFill(); return; }
+  var it = pmBag.pop(); pmOut.push(it);
+  var pp = $('pmPump'); pp.classList.remove('shake'); void pp.offsetWidth; pp.classList.add('shake');
+  $('pmShow').innerHTML = '<div class="pmitem"><div class="pmvis">' + it.vis + '</div><p class="pmlbl">' + it.lbl + '</p></div>';
+  var tb = document.createElement('button'); tb.type = 'button'; tb.innerHTML = it.tray; tb.onclick = function(){ $('pmShow').innerHTML = '<div class="pmitem"><div class="pmvis">' + it.vis + '</div><p class="pmlbl">' + it.lbl + '</p></div>'; say(it.say); }; $('pmTray').appendChild(tb);
+  say(it.say); pmCount();
+  if (!pmBag.length){ $('pmGo').textContent = '↺ Fill it again'; setTimeout(function(){ if (!pmBag.length) say('The pumpkin is empty!'); }, 2600); }
+}
+$('pmPump').onclick = pmOpen; $('pmGo').onclick = pmOpen;
+pmFill();
 show(startAt);
 pickL(curL);
 })();
