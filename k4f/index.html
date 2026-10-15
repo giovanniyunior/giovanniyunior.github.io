@@ -626,70 +626,79 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
 .stimer{font-family:var(--display);font-size:40px;background:#fff;border-radius:999px;padding:4px 24px;color:var(--forest);min-width:150px;text-align:center}
 .stimer.done{background:#ffd25e;animation:pulse .8s infinite}
 
+/* ===== Calendar + Days of School: classroom-board look (Halloween frame) ===== */
+.spk{position:absolute;inset:2px 0 0 0;z-index:6;border-radius:26px;padding:34px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22120%22%20height%3D%22120%22%20viewBox%3D%220%200%20120%20120%22%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%237b2fbe%22/%3E%3Ccircle%20cx%3D%229%22%20cy%3D%2221%22%20r%3D%222%22%20fill%3D%22%23d6a6ff%22%20opacity%3D%22.7%22/%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%229%22%20r%3D%222%22%20fill%3D%22%23d6a6ff%22%20opacity%3D%22.7%22/%3E%3Crect%20x%3D%2230%22%20y%3D%220%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%2316101c%22/%3E%3Ccircle%20cx%3D%2237%22%20cy%3D%228%22%20r%3D%222.2%22%20fill%3D%22%23f39418%22/%3E%3Ccircle%20cx%3D%2251%22%20cy%3D%226%22%20r%3D%222.2%22%20fill%3D%22%23f6c21a%22/%3E%3Ccircle%20cx%3D%2244%22%20cy%3D%2217%22%20r%3D%222.2%22%20fill%3D%22%23b25ff0%22/%3E%3Ccircle%20cx%3D%2236%22%20cy%3D%2224%22%20r%3D%222.2%22%20fill%3D%22%238fd61e%22/%3E%3Ccircle%20cx%3D%2254%22%20cy%3D%2222%22%20r%3D%222.2%22%20fill%3D%22%23ff5aa5%22/%3E%3Crect%20x%3D%2260%22%20y%3D%220%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%238fd61e%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%232f5e06%22%20stroke-width%3D%22.9%22%20opacity%3D%22.7%22%3E%3Cpath%20d%3D%22M60%200%20L90%2030%20M90%200%20L60%2030%20M75%200%20V30%20M60%2015%20H90%22/%3E%3Ccircle%20cx%3D%2275%22%20cy%3D%2215%22%20r%3D%225%22/%3E%3Ccircle%20cx%3D%2275%22%20cy%3D%2215%22%20r%3D%2210%22/%3E%3C/g%3E%3Crect%20x%3D%2290%22%20y%3D%220%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%2316101c%22/%3E%3Ccircle%20cx%3D%2297%22%20cy%3D%228%22%20r%3D%222.2%22%20fill%3D%22%23f39418%22/%3E%3Ccircle%20cx%3D%22111%22%20cy%3D%226%22%20r%3D%222.2%22%20fill%3D%22%23f6c21a%22/%3E%3Ccircle%20cx%3D%22104%22%20cy%3D%2217%22%20r%3D%222.2%22%20fill%3D%22%23b25ff0%22/%3E%3Ccircle%20cx%3D%2296%22%20cy%3D%2224%22%20r%3D%222.2%22%20fill%3D%22%238fd61e%22/%3E%3Ccircle%20cx%3D%22114%22%20cy%3D%2222%22%20r%3D%222.2%22%20fill%3D%22%23ff5aa5%22/%3E%3Crect%20x%3D%220%22%20y%3D%2230%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%2316101c%22/%3E%3Ccircle%20cx%3D%227%22%20cy%3D%2238%22%20r%3D%222.2%22%20fill%3D%22%23f39418%22/%3E%3Ccircle%20cx%3D%2221%22%20cy%3D%2236%22%20r%3D%222.2%22%20fill%3D%22%23f6c21a%22/%3E%3Ccircle%20cx%3D%2214%22%20cy%3D%2247%22%20r%3D%222.2%22%20fill%3D%22%23b25ff0%22/%3E%3Ccircle%20cx%3D%226%22%20cy%3D%2254%22%20r%3D%222.2%22%20fill%3D%22%238fd61e%22/%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%2252%22%20r%3D%222.2%22%20fill%3D%22%23ff5aa5%22/%3E%3Crect%20x%3D%2230%22%20y%3D%2230%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%238fd61e%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%232f5e06%22%20stroke-width%3D%22.9%22%20opacity%3D%22.7%22%3E%3Cpath%20d%3D%22M30%2030%20L60%2060%20M60%2030%20L30%2060%20M45%2030%20V60%20M30%2045%20H60%22/%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2245%22%20r%3D%225%22/%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2245%22%20r%3D%2210%22/%3E%3C/g%3E%3Crect%20x%3D%2260%22%20y%3D%2230%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%237b2fbe%22/%3E%3Ccircle%20cx%3D%2269%22%20cy%3D%2251%22%20r%3D%222%22%20fill%3D%22%23d6a6ff%22%20opacity%3D%22.7%22/%3E%3Ccircle%20cx%3D%2282%22%20cy%3D%2239%22%20r%3D%222%22%20fill%3D%22%23d6a6ff%22%20opacity%3D%22.7%22/%3E%3Crect%20x%3D%2290%22%20y%3D%2230%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%238fd61e%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%232f5e06%22%20stroke-width%3D%22.9%22%20opacity%3D%22.7%22%3E%3Cpath%20d%3D%22M90%2030%20L120%2060%20M120%2030%20L90%2060%20M105%2030%20V60%20M90%2045%20H120%22/%3E%3Ccircle%20cx%3D%22105%22%20cy%3D%2245%22%20r%3D%225%22/%3E%3Ccircle%20cx%3D%22105%22%20cy%3D%2245%22%20r%3D%2210%22/%3E%3C/g%3E%3Crect%20x%3D%220%22%20y%3D%2260%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%238fd61e%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%232f5e06%22%20stroke-width%3D%22.9%22%20opacity%3D%22.7%22%3E%3Cpath%20d%3D%22M0%2060%20L30%2090%20M30%2060%20L0%2090%20M15%2060%20V90%20M0%2075%20H30%22/%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2275%22%20r%3D%225%22/%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2275%22%20r%3D%2210%22/%3E%3C/g%3E%3Crect%20x%3D%2230%22%20y%3D%2260%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%237b2fbe%22/%3E%3Ccircle%20cx%3D%2239%22%20cy%3D%2281%22%20r%3D%222%22%20fill%3D%22%23d6a6ff%22%20opacity%3D%22.7%22/%3E%3Ccircle%20cx%3D%2252%22%20cy%3D%2269%22%20r%3D%222%22%20fill%3D%22%23d6a6ff%22%20opacity%3D%22.7%22/%3E%3Crect%20x%3D%2260%22%20y%3D%2260%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%2316101c%22/%3E%3Ccircle%20cx%3D%2267%22%20cy%3D%2268%22%20r%3D%222.2%22%20fill%3D%22%23f39418%22/%3E%3Ccircle%20cx%3D%2281%22%20cy%3D%2266%22%20r%3D%222.2%22%20fill%3D%22%23f6c21a%22/%3E%3Ccircle%20cx%3D%2274%22%20cy%3D%2277%22%20r%3D%222.2%22%20fill%3D%22%23b25ff0%22/%3E%3Ccircle%20cx%3D%2266%22%20cy%3D%2284%22%20r%3D%222.2%22%20fill%3D%22%238fd61e%22/%3E%3Ccircle%20cx%3D%2284%22%20cy%3D%2282%22%20r%3D%222.2%22%20fill%3D%22%23ff5aa5%22/%3E%3Crect%20x%3D%2290%22%20y%3D%2260%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%237b2fbe%22/%3E%3Ccircle%20cx%3D%2299%22%20cy%3D%2281%22%20r%3D%222%22%20fill%3D%22%23d6a6ff%22%20opacity%3D%22.7%22/%3E%3Ccircle%20cx%3D%22112%22%20cy%3D%2269%22%20r%3D%222%22%20fill%3D%22%23d6a6ff%22%20opacity%3D%22.7%22/%3E%3Crect%20x%3D%220%22%20y%3D%2290%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%2316101c%22/%3E%3Ccircle%20cx%3D%227%22%20cy%3D%2298%22%20r%3D%222.2%22%20fill%3D%22%23f39418%22/%3E%3Ccircle%20cx%3D%2221%22%20cy%3D%2296%22%20r%3D%222.2%22%20fill%3D%22%23f6c21a%22/%3E%3Ccircle%20cx%3D%2214%22%20cy%3D%22107%22%20r%3D%222.2%22%20fill%3D%22%23b25ff0%22/%3E%3Ccircle%20cx%3D%226%22%20cy%3D%22114%22%20r%3D%222.2%22%20fill%3D%22%238fd61e%22/%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%22112%22%20r%3D%222.2%22%20fill%3D%22%23ff5aa5%22/%3E%3Crect%20x%3D%2230%22%20y%3D%2290%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%238fd61e%22/%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%232f5e06%22%20stroke-width%3D%22.9%22%20opacity%3D%22.7%22%3E%3Cpath%20d%3D%22M30%2090%20L60%20120%20M60%2090%20L30%20120%20M45%2090%20V120%20M30%20105%20H60%22/%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%22105%22%20r%3D%225%22/%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%22105%22%20r%3D%2210%22/%3E%3C/g%3E%3Crect%20x%3D%2260%22%20y%3D%2290%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%237b2fbe%22/%3E%3Ccircle%20cx%3D%2269%22%20cy%3D%22111%22%20r%3D%222%22%20fill%3D%22%23d6a6ff%22%20opacity%3D%22.7%22/%3E%3Ccircle%20cx%3D%2282%22%20cy%3D%2299%22%20r%3D%222%22%20fill%3D%22%23d6a6ff%22%20opacity%3D%22.7%22/%3E%3Crect%20x%3D%2290%22%20y%3D%2290%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%2316101c%22/%3E%3Ccircle%20cx%3D%2297%22%20cy%3D%2298%22%20r%3D%222.2%22%20fill%3D%22%23f39418%22/%3E%3Ccircle%20cx%3D%22111%22%20cy%3D%2296%22%20r%3D%222.2%22%20fill%3D%22%23f6c21a%22/%3E%3Ccircle%20cx%3D%22104%22%20cy%3D%22107%22%20r%3D%222.2%22%20fill%3D%22%23b25ff0%22/%3E%3Ccircle%20cx%3D%2296%22%20cy%3D%22114%22%20r%3D%222.2%22%20fill%3D%22%238fd61e%22/%3E%3Ccircle%20cx%3D%22114%22%20cy%3D%22112%22%20r%3D%222.2%22%20fill%3D%22%23ff5aa5%22/%3E%3C/svg%3E") 0 0/88px 88px;border:7px solid #16101c;box-shadow:0 6px 0 rgba(0,0,0,.18)}
+.spk:not(.hw){background:repeating-conic-gradient(#f7b7c5 0 25%,#fde3ea 0 50%) 0 0/60px 60px;border-color:#e9577f}
+.spkin{position:relative;height:100%;background:#fff;border:9px solid #8fd61e;border-radius:12px;box-shadow:0 0 0 3px #16101c;display:flex;flex-direction:column;align-items:center;gap:12px;padding:46px 30px 14px}
+.spk:not(.hw) .spkin{border-color:#e9577f}
+.spktitle{position:absolute;top:-40px;left:50%;transform:translateX(-50%);background:#fff;border:5px solid #16101c;border-radius:22px;padding:2px 30px 6px;display:flex;align-items:center;gap:16px;white-space:nowrap;z-index:3;box-shadow:0 4px 0 rgba(0,0,0,.15)}
+.multi{font-family:var(--display);font-size:62px;line-height:1.05;-webkit-text-stroke:.09em #16101c;paint-order:stroke fill;letter-spacing:.01em}
+.multi span{display:inline-block}
+.calyear{font-family:var(--display);font-size:46px;color:#16101c;line-height:1}
+.art{position:absolute;pointer-events:none;z-index:7;line-height:0}
+.art svg{width:100%;height:auto;display:block}
+.spk:not(.hw) .hwo{display:none!important}
+.spkbar{display:flex;gap:12px;align-items:center;justify-content:center;margin-top:auto}
+.spkbar .btn{font-size:30px;padding:6px 24px;border:3px solid #16101c;background:#fff;box-shadow:0 3px 0 #16101c}
+.spkbar .btn.go{background:#8e3ad6;color:#fff}
+.spk:not(.hw) .spkbar .btn.go{background:var(--accent)}
+.spkbar .btn:active{transform:translateY(2px);box-shadow:0 1px 0 #16101c}
 /* calendar */
-.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:0;background:#fff;border-radius:22px;overflow:hidden;margin:0 30px;border:4px solid #fff;box-shadow:0 5px 0 rgba(46,35,38,.12)}
-.cal .wd{font-family:var(--display);font-size:28px;color:#fff;text-align:center;padding:6px 0}
-.cal .cd{height:var(--rowh,84px);border-right:2px solid #eedfe2;border-top:2px solid #eedfe2;position:relative;display:grid;place-items:center}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);width:100%;border:4px solid #16101c;border-radius:6px;overflow:hidden;background:#fff}
+.cal .wd{font-family:var(--display);font-size:26px;text-align:center;padding:4px 0;border-right:3px solid #16101c;border-bottom:4px solid #16101c;color:#16101c}
+.cal .wd:nth-child(7){border-right:0}
+.cal .cd{height:var(--rowh,84px);border-right:3px solid #16101c;border-top:3px solid #16101c;position:relative;display:grid;place-items:center}
 .cal .cd:nth-child(7n){border-right:0}
-.cal .cd span{font-family:var(--display);font-size:50px;color:var(--ink);opacity:0;transform:scale(.3);transition:opacity .25s,transform .35s cubic-bezier(.3,1.6,.5,1)}
+.cal .cd:nth-child(-n+14){border-top:0}
+.cal .cd span{font-family:var(--display);font-size:50px;color:#16101c;opacity:0;transform:scale(.3);transition:opacity .25s,transform .35s cubic-bezier(.3,1.6,.5,1);position:relative;z-index:2}
 .cal .cd.on span{opacity:1;transform:scale(1)}
-.cal .cd.past{background:#fff6f8}
-.cal .cd.today{background:#fff1b8;box-shadow:inset 0 0 0 6px var(--accent)}
-.cal .cd.today span{color:var(--accent);font-size:60px}
-.cal .cd.today::after{content:"⭐";position:absolute;top:2px;right:8px;font-size:30px;animation:pop .6s}
-.caldate{font-family:var(--display);font-size:46px;margin:0;background:#fff;border-radius:999px;padding:6px 28px;border:3px solid #fff;box-shadow:0 3px 0 rgba(46,35,38,.12);color:var(--ink)}
+.cal .cd .cart{position:absolute;inset:4px;z-index:1;display:flex;align-items:center;justify-content:center}
+.cal .cd .cart svg{height:100%;width:100%}
+.cal .cd.today{background:#fff4c2;box-shadow:inset 0 0 0 6px #8e3ad6}
+.spk:not(.hw) .cal .cd.today{box-shadow:inset 0 0 0 6px var(--accent)}
+.cal .cd.today span{color:#8e3ad6}
+.cal .cd.today .tmark{position:absolute;right:6px;top:4px;width:56px;z-index:3;line-height:0;animation:bob 1.6s ease-in-out infinite alternate}
+.cal .cd.today .tmark svg{width:100%;height:auto}
+.cal .cd.hallow{background:#fff1df}
+.cal .cd.hallow .cart{inset:4px 4px 20px 45%}
+.cal .cd.hallow small{position:absolute;left:0;right:0;bottom:2px;text-align:center;font-family:var(--display);font-size:17px;color:#e06a00;z-index:2}
+.cal .cd.hallow.on span{color:#16101c;text-shadow:0 0 6px #fff,0 0 6px #fff}
+.cal .cd.hallow.today{animation:glowo 1s ease-in-out infinite alternate}
+@keyframes glowo{from{box-shadow:inset 0 0 0 6px #f39418}to{box-shadow:inset 0 0 0 6px #8e3ad6,0 0 26px #f39418}}
+.caldate{font-family:var(--display);font-size:40px;margin:0;color:#16101c;border:3px solid #16101c;border-radius:999px;padding:2px 24px;background:#fff8e6}
+.hwfx{position:absolute;font-size:54px;animation:fall linear infinite;top:-10%;z-index:9}
 /* days of school */
-.sdhead{display:flex;align-items:center;justify-content:center;gap:30px}
-.sdbadge{font-family:var(--display);font-size:46px;background:#2e2326;color:#fff;border-radius:999px;padding:4px 30px 6px;border:4px solid #fff;box-shadow:0 4px 0 rgba(46,35,38,.15)}
-.sdbadge b{font-weight:400;font-size:64px;color:#ffd25e}
-.tfgrid{display:grid;gap:14px 22px;padding:0 30px;justify-content:center}
-.tfgrid.f12{grid-template-columns:repeat(4,300px)}
-.tfgrid.f20{grid-template-columns:repeat(5,250px);gap:10px 18px}
-.tf{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;background:#2e2326;border:4px solid #2e2326;border-radius:10px;overflow:hidden}
-.tf i{display:block;aspect-ratio:1;background:var(--c);position:relative}
-.tf i::after{content:"";position:absolute;inset:16%;border-radius:50%;background:#fff;box-shadow:inset 0 -4px 0 rgba(0,0,0,.18);transform:scale(0);transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.sdcount{font-family:var(--display);font-size:38px;background:#16101c;color:#fff;border-radius:14px;padding:0 16px 4px;line-height:1.3}
+.sdcount b{font-weight:400;color:#f6c21a;font-size:46px}
+.tfgrid{display:grid;grid-template-columns:repeat(3,300px);gap:16px 40px;justify-content:center;align-content:start}
+.tfgrid.f20{grid-template-columns:repeat(5,236px);gap:14px 18px}
+.tfgrid .tf.solo{grid-column:2;grid-row:4}
+.tf{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:4px solid #16101c;background:#16101c}
+.tf i{display:block;aspect-ratio:1.18;background:var(--c);position:relative;outline:1.5px solid #16101c}
+.tf i::after{content:"";position:absolute;inset:12% 18%;border-radius:50%;background:var(--dot,#fff);border:2px solid rgba(0,0,0,.35);transform:scale(0);transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
 .tf i.on::after{transform:scale(1)}
-.sdin{width:150px;font-family:var(--display);font-size:46px;text-align:center;border:4px solid #fff;border-radius:20px;padding:2px 6px;color:var(--ink);background:#fff}
-.sdpm{font-size:40px;padding:0 22px;line-height:1.2}
-.pvwrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:0 30px}
-.pvcol{border:4px solid #fff;background:#fff;border-radius:22px;padding:0 0 10px;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden;min-height:470px;box-shadow:0 4px 0 rgba(46,35,38,.12)}
-.pvcol h3{margin:0;font-family:var(--display);font-weight:400;font-size:40px;color:#fff;padding:6px}
-.pvcol b{font-family:var(--display);font-weight:400;font-size:110px;line-height:1}
-.pvb{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:center;align-content:center;padding:12px}
+.dots{display:grid;grid-template-columns:repeat(4,46px);gap:12px;align-content:center;justify-content:center;grid-column:1;grid-row:4}
+.dots button{width:46px!important;height:46px!important}
+.dots button{width:40px;height:40px;border-radius:50%;border:3px solid rgba(0,0,0,.35);padding:0}
+.dots button[aria-pressed="true"]{box-shadow:0 0 0 4px #fff,0 0 0 7px #16101c}
+.sdin{width:130px;font-family:var(--display);font-size:42px;text-align:center;border:3px solid #16101c;border-radius:16px;padding:0 6px;color:#16101c;background:#fff}
+.sdpm{font-size:40px!important;padding:0 20px!important;line-height:1.2}
+.pvtop{display:flex;justify-content:space-between;align-items:flex-end;width:100%;padding:0 10px}
+.pvday{position:relative;width:250px}
+.pvday b{position:absolute;left:0;right:0;top:45%;text-align:center;font-family:var(--display);font-weight:400;font-size:30px;color:#f6c21a;line-height:1.05}
+.pvday b em{display:block;font-style:normal;font-size:52px;color:#fff}
+.pvkey{border:4px solid #16101c;width:300px;background:#fff}
+.pvkey h4{margin:0;background:#16101c;color:#fff;font-family:var(--display);font-weight:400;font-size:24px;text-align:center;padding:2px}
+.pvwrap{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;width:100%;flex:1;min-height:0}
+.pvcol{border:4px solid #16101c;background:#fff;padding:0 0 8px;display:grid;grid-template-rows:auto 1fr auto;min-height:0;cursor:pointer}
+.pvcol h3{text-align:center;margin:0;font-family:var(--display);font-weight:400;font-size:38px;color:#16101c;border-bottom:4px solid #16101c;padding:2px}
+.pvcol b{font-family:var(--display);font-weight:400;font-size:84px;line-height:1;text-align:center}
+.pvb{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;justify-content:center;align-content:center;padding:8px}
 .pvb svg{animation:pop .5s}
-[data-s="school"] .btn,[data-s="cal"] .btn{font-size:32px;padding:8px 26px}
-[data-s="school"] .sdpm{font-size:44px}
-
-/* counting speed + calendar frame (Halloween look in October) */
-.calwrap{position:relative;margin:0 26px;border-radius:30px;padding:14px 22px 20px;background:#fff6f8;border:5px solid #fff;box-shadow:0 5px 0 rgba(46,35,38,.12)}
-.calhead{display:flex;align-items:center;justify-content:center;gap:18px;margin:-4px 0 8px}
-.caltitle{margin:0;font-family:var(--display);font-weight:400;font-size:64px;line-height:1;color:#fff;-webkit-text-stroke:.12em var(--ink);paint-order:stroke fill;letter-spacing:.02em}
-.caltitle span{display:inline-block}
-.calyear{font-family:var(--display);font-size:40px;background:#2e2326;color:#fff;border-radius:14px;padding:2px 16px}
-.calwrap .cal{margin:0}
-.hwd{display:none;position:absolute;pointer-events:none;z-index:3;line-height:1}
-.calwrap.hw{background:repeating-conic-gradient(#7b2fbe 0 25%,#1a1220 0 50%) 0 0/44px 44px;border:7px solid #7ed321;box-shadow:0 0 0 5px #1a1220,0 0 30px rgba(126,211,33,.6)}
-.calwrap.hw .calhead{background:#fff;border-radius:22px;padding:4px 26px;margin:-2px auto 10px;width:max-content;border:5px solid #1a1220}
-.calwrap.hw .calyear{background:#1a1220}
-.calwrap.hw .cal{border:6px solid #1a1220}
-.calwrap.hw .hwd{display:block}
-.hwd.d1{top:-6px;left:-6px;font-size:70px}
-.hwd.d2{top:-6px;right:-6px;font-size:70px;transform:scaleX(-1)}
-.hwd.d3{top:6px;right:120px;font-size:52px;animation:flap 1.2s ease-in-out infinite alternate}
-.hwd.d7{top:30px;left:150px;font-size:40px;animation:flap 1s ease-in-out infinite alternate-reverse}
-.hwd.d4{bottom:-20px;left:-18px;font-size:86px;animation:wiggle 1.4s ease-in-out infinite alternate}
-.hwd.d5{top:42%;left:-34px;font-size:64px;animation:bob 2.4s ease-in-out infinite alternate}
-.hwd.d6{top:0;right:44px;font-size:40px;display:none;flex-direction:column;align-items:center;animation:dangle 3s ease-in-out infinite alternate}
-.calwrap.hw .hwd.d6{display:flex}
-.hwd.d6 i{display:block;width:2px;height:70px;background:#ddd}
+.artin{display:block;line-height:0}
+.artin svg{width:100%;height:auto;display:block}
 @keyframes flap{from{transform:translateY(0) rotate(-8deg)}to{transform:translateY(-14px) rotate(8deg)}}
-@keyframes dangle{from{transform:translateY(-20px)}to{transform:translateY(30px)}}
-.cal .cd.hallow::before{content:"🎃";position:absolute;font-size:56px;opacity:.9;bottom:2px;right:6px;line-height:1}
-.cal .cd.hallow small{position:absolute;left:6px;bottom:3px;font-family:var(--display);font-size:19px;color:#e06a00}
-.cal .cd.hallow{background:#fff3e2}
-.cal .cd.hallow.today{background:#ffe1b8;animation:glowo 1s ease-in-out infinite alternate}
-@keyframes glowo{from{box-shadow:inset 0 0 0 6px #f28c1c}to{box-shadow:inset 0 0 0 6px #7b2fbe,0 0 26px #f28c1c}}
-.hwfx{position:absolute;font-size:54px;animation:fall linear infinite;top:-10%}
+@keyframes dangle{from{transform:translateY(-16px)}to{transform:translateY(16px)}}
 </style>
 
 <div id="app" data-own>
@@ -747,25 +756,44 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
     </section>
 
     <section class="slide" data-s="cal" data-g="greet" style="display:contents" hidden>
-      <img class="deco tl" data-i="notebook" alt="">
-      <div class="calwrap" id="calWrap">
-        <div class="calhead"><h2 class="caltitle" id="calTitle">Calendar</h2><span class="calyear" id="calYear"></span></div>
-        <div class="cal" id="calGrid"></div>
-        <span class="hwd d1">🕸️</span><span class="hwd d2">🕸️</span><span class="hwd d3">🦇</span><span class="hwd d4">🎃</span><span class="hwd d5">👻</span><span class="hwd d6"><i></i>🕷️</span><span class="hwd d7">🦇</span>
+      <div class="spk" id="calSpk">
+        <div class="spkin">
+          <div class="spktitle"><span class="multi" id="calTitle"></span><span class="calyear" id="calYear"></span></div>
+          <div class="cal" id="calGrid"></div>
+          <div class="spkbar"><button class="btn go" type="button" id="calPlay">▶ Play</button><button class="btn spd" type="button">🐢 Slow</button><button class="btn" type="button" id="calReset">↺</button><p class="caldate" id="calDate">Press ▶ Play!</p></div>
+        </div>
+        <span class="art hwo" data-art="owl" style="left:300px;top:-26px;width:96px"></span>
+        <span class="art hwo" data-art="cauldron" style="left:400px;top:-8px;width:96px"></span>
+        <span class="art hwo" data-art="hat" style="right:330px;top:-36px;width:100px;transform:rotate(14deg)"></span>
+        <span class="art hwo" data-art="bat" style="right:40px;top:-14px;width:120px;animation:flap 1.2s ease-in-out infinite alternate"></span>
+        <span class="art hwo" data-art="pumpkin" style="left:-14px;bottom:-14px;width:110px;animation:wiggle 1.6s ease-in-out infinite alternate"></span>
+        <span class="art hwo" data-art="web" style="left:36px;top:36px;width:90px"></span>
       </div>
-      <div class="row"><button class="btn go" type="button" id="calPlay">▶ Play</button><button class="btn spd" type="button">🐢 Slow</button><button class="btn" type="button" id="calReset">↺</button><p class="caldate" id="calDate">Press ▶ Play!</p></div>
     </section>
 
     <section class="slide" data-s="school" data-g="greet" style="display:contents" hidden>
-      <img class="deco tl" data-i="notebook" alt="">
-      <div class="sdhead"><h2 class="title t-l">Days of School</h2><div class="sdbadge">Day <b id="sdBig">0</b></div></div>
-      <div class="tfgrid f12" id="tfGrid"></div>
-      <div class="pvwrap" id="pvView" hidden>
-        <button class="pvcol" type="button" data-p="h"><h3 style="background:#f28c1c">hundreds</h3><div class="pvb" id="pvH"></div><b id="pvHn" style="color:#f28c1c">0</b></button>
-        <button class="pvcol" type="button" data-p="t"><h3 style="background:#3cae4a">tens</h3><div class="pvb" id="pvT"></div><b id="pvTn" style="color:#3cae4a">0</b></button>
-        <button class="pvcol" type="button" data-p="o"><h3 style="background:#9b59d0">ones</h3><div class="pvb" id="pvO"></div><b id="pvOn" style="color:#9b59d0">0</b></button>
+      <div class="spk" id="sdSpk">
+        <div class="spkin">
+          <div class="spktitle"><span class="multi" id="sdTitle"></span><span class="sdcount">Day <b id="sdBig">0</b></span></div>
+          <div class="tfgrid" id="tfGrid"></div>
+          <div class="pvpanel" id="pvView" hidden style="width:100%;flex:1;display:flex;flex-direction:column;gap:10px;min-height:0">
+            <div class="pvtop"><div class="pvday"><span data-art="cauldron" class="artin"></span><b>Day<em id="pvDayN">0</em></b></div><div class="pvkey"><h4>base ten blocks</h4><span data-art="blocks" class="artin"></span></div></div>
+            <div class="pvwrap">
+              <div class="pvcol" data-p="h" role="button" tabindex="0"><h3 style="background:#f39418">hundreds</h3><div class="pvb" id="pvH"></div><b id="pvHn">0</b></div>
+              <div class="pvcol" data-p="t" role="button" tabindex="0"><h3 style="background:#8fd61e">tens</h3><div class="pvb" id="pvT"></div><b id="pvTn">0</b></div>
+              <div class="pvcol" data-p="o" role="button" tabindex="0"><h3 style="background:#9b4dff;color:#fff">ones</h3><div class="pvb" id="pvO"></div><b id="pvOn">0</b></div>
+            </div>
+          </div>
+          <div class="spkbar"><button class="btn sdpm" type="button" id="sdMinus" aria-label="One less">−</button><input class="sdin" id="sdIn" type="number" min="0" max="200" inputmode="numeric" aria-label="Day of school"><button class="btn sdpm" type="button" id="sdPlus" aria-label="One more">+</button><button class="btn go" type="button" id="sdShow">▶ Show</button><button class="btn spd" type="button">🐢 Slow</button><button class="btn" type="button" id="sdPV">🧮 Hundreds · Tens · Ones</button></div>
+        </div>
+        <span class="art hwo" data-art="cat" style="left:70px;top:-22px;width:150px" id="sdCat"></span>
+        <span class="art hwo" data-art="tomb" style="right:90px;top:-30px;width:120px" id="sdTomb"></span>
+        <span class="art hwo" data-art="bat" style="right:30px;top:-10px;width:110px;display:none;animation:flap 1.2s ease-in-out infinite alternate" id="sdBat"></span>
+        <span class="art hwo" data-art="web" style="left:52px;bottom:110px;width:90px;transform:scaleY(-1)"></span>
+        <span class="art hwo" data-art="spiderp" style="left:62px;bottom:40px;width:80px;animation:dangle 3s ease-in-out infinite alternate"></span>
+        <span class="art hwo" data-art="web" style="right:52px;bottom:110px;width:90px;transform:scale(-1,-1)"></span>
+        <span class="art hwo" data-art="spiderg" style="right:62px;bottom:40px;width:80px;animation:dangle 3.4s ease-in-out infinite alternate-reverse"></span>
       </div>
-      <div class="row"><button class="btn sdpm" type="button" id="sdMinus" aria-label="One less">−</button><input class="sdin" id="sdIn" type="number" min="0" max="200" inputmode="numeric" aria-label="Day of school"><button class="btn sdpm" type="button" id="sdPlus" aria-label="One more">+</button><button class="btn go" type="button" id="sdShow">▶ Show</button><button class="btn spd" type="button">🐢 Slow</button><button class="btn" type="button" id="sdPV">🧮 Hundreds · Tens · Ones</button></div>
     </section>
 
     <section class="slide" data-s="weather" data-g="greet" style="display:contents" hidden>
@@ -1434,24 +1462,35 @@ $('croc').onclick = function(){ say('Hello! Good morning, friends!'); };
 var DAYCOL = ['#f4a6b8','#9fd8f0','#f7d76b','#b6e39a','#f6b07a','#c9b4f0','#f49fc4'];
 var ZONES = [['Yesterday was',-1],['Today is',0],['Tomorrow will be',1]];
 $('dateLine').textContent = 'Today is ' + MONTHS[now.getMonth()] + ' ' + now.getDate();
-/* ---- calendar: the numbers appear one by one until today; then the date is written ---- */
-var ORD = ['','first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelfth','thirteenth','fourteenth','fifteenth','sixteenth','seventeenth','eighteenth','nineteenth','twentieth','twenty-first','twenty-second','twenty-third','twenty-fourth','twenty-fifth','twenty-sixth','twenty-seventh','twenty-eighth','twenty-ninth','thirtieth','thirty-first'];
-var WDCOL = ['#9b59d0','#f28c1c','#3cae4a','#e0a800','#2e2326','#ec4c8a','#2b8fd6'], calTimer = null;
+/* ---- classroom-board pictures (original drawings) ---- */
+var ART = {"web": "<svg viewBox=\"0 0 100 100\"><g fill=\"none\" stroke=\"#a3a3b0\" stroke-width=\"2.2\" stroke-linecap=\"round\"><path d=\"M0 0 L100 22 M0 0 L82 64 M0 0 L52 92 M0 0 L18 100\"/><path d=\"M28 6 Q24 18 23 25 Q15 26 5 26\"/><path d=\"M52 11 Q45 30 42 46 Q26 52 10 50\"/><path d=\"M76 17 Q66 42 61 66 Q38 76 14 76\"/><path d=\"M98 22 Q86 52 80 63 Q60 86 50 92 Q34 98 18 100\"/></g></svg>", "spiderp": "<svg viewBox=\"0 0 100 100\"><path d=\"M40 38 q-16 -16 -26 -3.6000000000000014\" stroke=\"#5b1f91\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M40 44 q-16 -10 -26 6.0\" stroke=\"#5b1f91\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M40 50 q-16 -4 -26 15.600000000000001\" stroke=\"#5b1f91\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M40 56 q-16 2 -26 25.200000000000003\" stroke=\"#5b1f91\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M60 38 q16 -16 26 -3.6000000000000014\" stroke=\"#5b1f91\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M60 44 q16 -10 26 6.0\" stroke=\"#5b1f91\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M60 50 q16 -4 26 15.600000000000001\" stroke=\"#5b1f91\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M60 56 q16 2 26 25.200000000000003\" stroke=\"#5b1f91\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><ellipse cx=\"50\" cy=\"52\" rx=\"20\" ry=\"18\" fill=\"#8e3ad6\"/><circle cx=\"50\" cy=\"34\" r=\"13\" fill=\"#8e3ad6\"/><circle cx=\"44\" cy=\"32\" r=\"5.5\" fill=\"#fff\"/><circle cx=\"56\" cy=\"32\" r=\"5.5\" fill=\"#fff\"/><circle cx=\"45\" cy=\"33\" r=\"2.6\" fill=\"#111\"/><circle cx=\"57\" cy=\"33\" r=\"2.6\" fill=\"#111\"/><path d=\"M45 40 q5 4 10 0\" stroke=\"#111\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"41\" cy=\"38\" r=\"2.4\" fill=\"#ff8fb2\" opacity=\".8\"/><circle cx=\"59\" cy=\"38\" r=\"2.4\" fill=\"#ff8fb2\" opacity=\".8\"/></svg>", "spiderg": "<svg viewBox=\"0 0 100 100\"><path d=\"M40 38 q-16 -16 -26 -3.6000000000000014\" stroke=\"#24242b\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M40 44 q-16 -10 -26 6.0\" stroke=\"#24242b\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M40 50 q-16 -4 -26 15.600000000000001\" stroke=\"#24242b\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M40 56 q-16 2 -26 25.200000000000003\" stroke=\"#24242b\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M60 38 q16 -16 26 -3.6000000000000014\" stroke=\"#24242b\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M60 44 q16 -10 26 6.0\" stroke=\"#24242b\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M60 50 q16 -4 26 15.600000000000001\" stroke=\"#24242b\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M60 56 q16 2 26 25.200000000000003\" stroke=\"#24242b\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><ellipse cx=\"50\" cy=\"52\" rx=\"20\" ry=\"18\" fill=\"#3b3b45\"/><circle cx=\"50\" cy=\"34\" r=\"13\" fill=\"#3b3b45\"/><circle cx=\"44\" cy=\"32\" r=\"5.5\" fill=\"#fff\"/><circle cx=\"56\" cy=\"32\" r=\"5.5\" fill=\"#fff\"/><circle cx=\"45\" cy=\"33\" r=\"2.6\" fill=\"#111\"/><circle cx=\"57\" cy=\"33\" r=\"2.6\" fill=\"#111\"/><path d=\"M45 40 q5 4 10 0\" stroke=\"#111\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"41\" cy=\"38\" r=\"2.4\" fill=\"#ff8fb2\" opacity=\".8\"/><circle cx=\"59\" cy=\"38\" r=\"2.4\" fill=\"#ff8fb2\" opacity=\".8\"/></svg>", "cat": "<svg viewBox=\"0 0 160 130\"><path d=\"M138 70 C160 60 156 30 138 30 C126 30 128 46 138 44\" fill=\"none\" stroke=\"#7d8290\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M30 22 L42 58 L22 64 Z\" fill=\"#8e93a1\" stroke=\"#333\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M118 22 L106 58 L126 64 Z\" fill=\"#8e93a1\" stroke=\"#333\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M33 31 L40 52 L29 55 Z\" fill=\"#f4a6c0\"/><path d=\"M115 31 L108 52 L119 55 Z\" fill=\"#f4a6c0\"/><ellipse cx=\"74\" cy=\"78\" rx=\"56\" ry=\"44\" fill=\"#8e93a1\" stroke=\"#333\" stroke-width=\"3\"/><ellipse cx=\"74\" cy=\"92\" rx=\"30\" ry=\"22\" fill=\"#d9dbe2\"/><circle cx=\"54\" cy=\"70\" r=\"17\" fill=\"#fff\" stroke=\"#333\" stroke-width=\"2.5\"/><circle cx=\"94\" cy=\"70\" r=\"17\" fill=\"#fff\" stroke=\"#333\" stroke-width=\"2.5\"/><circle cx=\"58\" cy=\"72\" r=\"8\" fill=\"#111\"/><circle cx=\"90\" cy=\"72\" r=\"8\" fill=\"#111\"/><circle cx=\"61\" cy=\"69\" r=\"3\" fill=\"#fff\"/><circle cx=\"93\" cy=\"69\" r=\"3\" fill=\"#fff\"/><path d=\"M69 86 l5 5 l5 -5 z\" fill=\"#f47aa0\"/><path d=\"M74 91 q-6 8 -12 3 M74 91 q6 8 12 3\" stroke=\"#333\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M40 88 l-24 -4 M40 94 l-24 4 M108 88 l24 -4 M108 94 l24 4\" stroke=\"#333\" stroke-width=\"2\" stroke-linecap=\"round\"/><ellipse cx=\"44\" cy=\"120\" rx=\"16\" ry=\"10\" fill=\"#8e93a1\" stroke=\"#333\" stroke-width=\"3\"/><ellipse cx=\"104\" cy=\"120\" rx=\"16\" ry=\"10\" fill=\"#8e93a1\" stroke=\"#333\" stroke-width=\"3\"/></svg>", "tomb": "<svg viewBox=\"0 0 120 120\"><path d=\"M16 112 V50 C16 20 104 20 104 50 V112 Z\" fill=\"#b9bcc6\" stroke=\"#6e7180\" stroke-width=\"4\"/><path d=\"M26 100 V54 C26 32 94 32 94 54 V100\" fill=\"none\" stroke=\"#d6d8df\" stroke-width=\"3\"/><text x=\"60\" y=\"72\" text-anchor=\"middle\" font-family=\"Sniglet,system-ui,sans-serif\" font-size=\"30\" fill=\"#5d606e\">RIP</text><path d=\"M6 114 l8 -14 l6 12 l8 -16 l6 14 l8 -12 l6 14 l8 -16 l6 14 l8 -12 l6 14 l8 -16 l6 14 l8 -12 l8 18 Z\" fill=\"#7ed321\" stroke=\"#4a8f12\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>", "bat": "<svg viewBox=\"0 0 140 80\"><path d=\"M70 30 C58 10 30 6 4 22 C18 26 22 36 18 46 C30 40 40 44 44 54 C52 44 62 46 70 56 C78 46 88 44 96 54 C100 44 110 40 122 46 C118 36 122 26 136 22 C110 6 82 10 70 30 Z\" fill=\"#2b2233\" stroke=\"#120d16\" stroke-width=\"2\"/><circle cx=\"70\" cy=\"38\" r=\"15\" fill=\"#2b2233\"/><path d=\"M58 26 l4 -12 l6 10 M82 26 l-4 -12 l-6 10\" fill=\"#2b2233\"/><circle cx=\"64\" cy=\"36\" r=\"5\" fill=\"#fff\"/><circle cx=\"76\" cy=\"36\" r=\"5\" fill=\"#fff\"/><circle cx=\"65\" cy=\"37\" r=\"2.4\" fill=\"#111\"/><circle cx=\"77\" cy=\"37\" r=\"2.4\" fill=\"#111\"/><path d=\"M66 45 l2 4 l2 -4 M72 45 l2 4 l2 -4\" fill=\"#fff\"/></svg>", "pumpkin": "<svg viewBox=\"0 0 120 110\"><path d=\"M58 22 C56 12 60 6 68 4\" stroke=\"#4a7a1c\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M66 18 C78 8 92 14 90 22 C82 18 74 20 66 22Z\" fill=\"#6cc22a\"/><ellipse cx=\"38\" cy=\"64\" rx=\"30\" ry=\"38\" fill=\"#f08a1c\" stroke=\"#b85b05\" stroke-width=\"3\"/><ellipse cx=\"82\" cy=\"64\" rx=\"30\" ry=\"38\" fill=\"#f08a1c\" stroke=\"#b85b05\" stroke-width=\"3\"/><ellipse cx=\"60\" cy=\"64\" rx=\"26\" ry=\"40\" fill=\"#f79a2a\" stroke=\"#b85b05\" stroke-width=\"3\"/><path d=\"M34 52 l12 -10 l6 14 Z M86 52 l-12 -10 l-6 14 Z\" fill=\"#3a2207\"/><path d=\"M58 60 l4 -6 l4 6 Z\" fill=\"#3a2207\"/><path d=\"M30 74 q30 26 60 0 l-8 2 l-4 8 l-6 -6 l-6 8 l-6 -8 l-6 6 l-4 -8 Z\" fill=\"#3a2207\"/></svg>", "ghost": "<svg viewBox=\"0 0 100 110\"><path d=\"M14 98 V48 C14 4 86 4 86 48 V98 l-12 -10 l-12 12 l-12 -12 l-12 12 l-12 -12 Z\" fill=\"#fff\" stroke=\"#333\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><ellipse cx=\"38\" cy=\"46\" rx=\"7\" ry=\"10\" fill=\"#222\"/><ellipse cx=\"62\" cy=\"46\" rx=\"7\" ry=\"10\" fill=\"#222\"/><circle cx=\"40\" cy=\"42\" r=\"2.5\" fill=\"#fff\"/><circle cx=\"64\" cy=\"42\" r=\"2.5\" fill=\"#fff\"/><ellipse cx=\"50\" cy=\"66\" rx=\"7\" ry=\"8\" fill=\"#222\"/><circle cx=\"29\" cy=\"60\" r=\"5\" fill=\"#ffc0d4\"/><circle cx=\"71\" cy=\"60\" r=\"5\" fill=\"#ffc0d4\"/></svg>", "owl": "<svg viewBox=\"0 0 120 140\"><path d=\"M60 0 L86 46 L34 46 Z\" fill=\"#2b2233\"/><rect x=\"34\" y=\"38\" width=\"52\" height=\"9\" fill=\"#9b4dff\"/><ellipse cx=\"60\" cy=\"48\" rx=\"46\" ry=\"9\" fill=\"#2b2233\"/><ellipse cx=\"60\" cy=\"96\" rx=\"40\" ry=\"42\" fill=\"#8e3ad6\" stroke=\"#4f1a86\" stroke-width=\"3\"/><ellipse cx=\"60\" cy=\"108\" rx=\"24\" ry=\"24\" fill=\"#c99af3\"/><circle cx=\"44\" cy=\"80\" r=\"16\" fill=\"#fff\" stroke=\"#4f1a86\" stroke-width=\"2.5\"/><circle cx=\"76\" cy=\"80\" r=\"16\" fill=\"#fff\" stroke=\"#4f1a86\" stroke-width=\"2.5\"/><circle cx=\"46\" cy=\"82\" r=\"8\" fill=\"#111\"/><circle cx=\"74\" cy=\"82\" r=\"8\" fill=\"#111\"/><circle cx=\"48\" cy=\"79\" r=\"2.6\" fill=\"#fff\"/><circle cx=\"76\" cy=\"79\" r=\"2.6\" fill=\"#fff\"/><path d=\"M54 92 L60 104 L66 92 Z\" fill=\"#f6a21a\"/><path d=\"M22 96 q-10 14 4 26 M98 96 q10 14 -4 26\" stroke=\"#4f1a86\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/></svg>", "hat": "<svg viewBox=\"0 0 120 100\"><path d=\"M64 4 C54 30 46 52 40 74 L88 74 C80 52 78 30 92 16 C82 12 72 8 64 4Z\" fill=\"#2b2233\"/><rect x=\"40\" y=\"62\" width=\"48\" height=\"10\" fill=\"#f39418\"/><ellipse cx=\"62\" cy=\"80\" rx=\"56\" ry=\"12\" fill=\"#2b2233\"/><rect x=\"56\" y=\"60\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"#f6c21a\" stroke-width=\"4\"/></svg>", "cauldron": "<svg viewBox=\"0 0 220 170\"><path d=\"M4 150 C10 128 30 126 44 132 C60 118 92 124 100 136 C120 124 160 122 176 134 C190 126 214 130 216 150 C200 166 20 166 4 150Z\" fill=\"#a24de0\"/><circle cx=\"34\" cy=\"146\" r=\"13\" fill=\"#fff\" stroke=\"#333\" stroke-width=\"2\"/><circle cx=\"36\" cy=\"146\" r=\"6\" fill=\"#38b24a\"/><circle cx=\"37\" cy=\"146\" r=\"3\" fill=\"#111\"/><path d=\"M168 136 l26 -10 M190 120 a6 6 0 1 1 6 10 M190 132 a6 6 0 1 0 6 -2\" stroke=\"#f3efe2\" stroke-width=\"7\" stroke-linecap=\"round\" fill=\"none\"/><ellipse cx=\"110\" cy=\"96\" rx=\"78\" ry=\"58\" fill=\"#2b2233\"/><rect x=\"34\" y=\"36\" width=\"152\" height=\"20\" rx=\"10\" fill=\"#2b2233\"/><path d=\"M40 42 C50 14 80 26 86 18 C96 6 118 16 126 10 C140 2 160 18 176 30 C186 36 182 50 168 48 L50 48 C36 48 34 44 40 42Z\" fill=\"#b25ff0\"/><circle cx=\"70\" cy=\"22\" r=\"14\" fill=\"#c98af7\" stroke=\"#8a35c9\" stroke-width=\"2\"/><circle cx=\"104\" cy=\"14\" r=\"12\" fill=\"#c98af7\" stroke=\"#8a35c9\" stroke-width=\"2\"/><circle cx=\"140\" cy=\"20\" r=\"15\" fill=\"#c98af7\" stroke=\"#8a35c9\" stroke-width=\"2\"/><path d=\"M48 30 l10 -18 l8 14 Z\" fill=\"#fff\"/><path d=\"M51 25 l5 -9 l4 7 Z\" fill=\"#f39418\"/><circle cx=\"160\" cy=\"34\" r=\"10\" fill=\"#fff\" stroke=\"#333\" stroke-width=\"2\"/><circle cx=\"160\" cy=\"34\" r=\"5\" fill=\"#9be22d\"/><circle cx=\"160\" cy=\"34\" r=\"2.4\" fill=\"#111\"/></svg>", "blocks": "<svg viewBox=\"0 0 220 90\"><g><rect x=\"10\" y=\"10\" width=\"70\" height=\"70\" fill=\"#f39418\" stroke=\"#7a4300\" stroke-width=\"2\"/><line x1=\"17\" y1=\"10\" x2=\"17\" y2=\"80\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"10\" y1=\"17\" x2=\"80\" y2=\"17\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"24\" y1=\"10\" x2=\"24\" y2=\"80\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"10\" y1=\"24\" x2=\"80\" y2=\"24\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"31\" y1=\"10\" x2=\"31\" y2=\"80\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"10\" y1=\"31\" x2=\"80\" y2=\"31\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"38\" y1=\"10\" x2=\"38\" y2=\"80\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"10\" y1=\"38\" x2=\"80\" y2=\"38\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"45\" y1=\"10\" x2=\"45\" y2=\"80\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"10\" y1=\"45\" x2=\"80\" y2=\"45\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"52\" y1=\"10\" x2=\"52\" y2=\"80\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"10\" y1=\"52\" x2=\"80\" y2=\"52\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"59\" y1=\"10\" x2=\"59\" y2=\"80\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"10\" y1=\"59\" x2=\"80\" y2=\"59\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"66\" y1=\"10\" x2=\"66\" y2=\"80\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"10\" y1=\"66\" x2=\"80\" y2=\"66\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"73\" y1=\"10\" x2=\"73\" y2=\"80\" stroke=\"#7a4300\" stroke-width=\".8\"/><line x1=\"10\" y1=\"73\" x2=\"80\" y2=\"73\" stroke=\"#7a4300\" stroke-width=\".8\"/></g><rect x=\"120\" y=\"10\" width=\"10\" height=\"70\" fill=\"#7ed321\" stroke=\"#3e6e10\" stroke-width=\"2\"/><line x1=\"120\" y1=\"17\" x2=\"130\" y2=\"17\" stroke=\"#3e6e10\" stroke-width=\"1\"/><line x1=\"120\" y1=\"24\" x2=\"130\" y2=\"24\" stroke=\"#3e6e10\" stroke-width=\"1\"/><line x1=\"120\" y1=\"31\" x2=\"130\" y2=\"31\" stroke=\"#3e6e10\" stroke-width=\"1\"/><line x1=\"120\" y1=\"38\" x2=\"130\" y2=\"38\" stroke=\"#3e6e10\" stroke-width=\"1\"/><line x1=\"120\" y1=\"45\" x2=\"130\" y2=\"45\" stroke=\"#3e6e10\" stroke-width=\"1\"/><line x1=\"120\" y1=\"52\" x2=\"130\" y2=\"52\" stroke=\"#3e6e10\" stroke-width=\"1\"/><line x1=\"120\" y1=\"59\" x2=\"130\" y2=\"59\" stroke=\"#3e6e10\" stroke-width=\"1\"/><line x1=\"120\" y1=\"66\" x2=\"130\" y2=\"66\" stroke=\"#3e6e10\" stroke-width=\"1\"/><line x1=\"120\" y1=\"73\" x2=\"130\" y2=\"73\" stroke=\"#3e6e10\" stroke-width=\"1\"/><rect x=\"170\" y=\"56\" width=\"24\" height=\"24\" fill=\"#9b4dff\" stroke=\"#4f1a86\" stroke-width=\"2\"/><path d=\"M170 56 l8 -8 h24 l-8 8 Z M194 56 l8 -8 v24 l-8 8 Z\" fill=\"#c79bea\" stroke=\"#4f1a86\" stroke-width=\"2\"/></svg>"};
+function art(k){ return ART[k] || ''; }
+document.querySelectorAll('[data-art]').forEach(function(el){ el.innerHTML = art(el.dataset.art); });
+var BOARDCOL = ['#8e3ad6','#f39418','#8fd61e','#f6c21a','#16101c','#8e3ad6','#f39418','#8fd61e','#f6c21a','#8e3ad6'];
+function multi(txt){ var i = 0; return txt.split('').map(function(ch){ if (ch === ' ') return ' '; var c = ['#8e3ad6','#f39418','#f6c21a','#8fd61e'][i++ % 4]; return '<span style="color:' + c + '">' + ch + '</span>'; }).join(''); }
+function isHw(){ return new Date().getMonth() === 9; }
+function themeBoards(){ var hw = isHw(); $('calSpk').classList.toggle('hw', hw); $('sdSpk').classList.toggle('hw', hw); }
 /* how fast numbers and circles appear: slow by default so the class can count along */
 var SPEEDS = [['🐢 Slow',1300],['🚶 Medium',850],['🐇 Fast',350]], spdI = 0;
 function countMs(){ return SPEEDS[spdI][1]; }
 function drawSpd(){ document.querySelectorAll('.spd').forEach(function(b){ b.textContent = SPEEDS[spdI][0]; }); }
 document.querySelectorAll('.spd').forEach(function(b){ b.onclick = function(){ spdI = (spdI + 1) % SPEEDS.length; drawSpd(); }; });
-var TITLECOL = ['#9b59d0','#f28c1c','#3cae4a','#e0a800','#ec4c8a','#2b8fd6'];
+
+/* ---- calendar: the numbers appear one by one until today; then the date is written ---- */
+var ORD = ['','first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelfth','thirteenth','fourteenth','fifteenth','sixteenth','seventeenth','eighteenth','nineteenth','twentieth','twenty-first','twenty-second','twenty-third','twenty-fourth','twenty-fifth','twenty-sixth','twenty-seventh','twenty-eighth','twenty-ninth','thirtieth','thirty-first'];
+var WDCOL = ['#a65ff0','#f39418','#8fd61e','#f6c21a','#16101c','#a65ff0','#f39418'], calTimer = null;
 function drawCal(){
-  clearInterval(calTimer); calTimer = null; $('fx').innerHTML = '';
-  var t = new Date(), y = t.getFullYear(), m = t.getMonth(), first = new Date(y, m, 1).getDay(), days = new Date(y, m + 1, 0).getDate();
+  clearInterval(calTimer); calTimer = null; $('fx').innerHTML = ''; themeBoards();
+  var t = new Date(), y = t.getFullYear(), m = t.getMonth(), first = new Date(y, m, 1).getDay(), days = new Date(y, m + 1, 0).getDate(), hw = m === 9;
   var weeks = Math.ceil((first + days) / 7), h = '';
-  $('calTitle').innerHTML = MONTHS[m].split('').map(function(ch, i){ return '<span style="color:' + TITLECOL[i % TITLECOL.length] + '">' + ch + '</span>'; }).join('');
-  $('calYear').textContent = y; $('calWrap').classList.toggle('hw', m === 9);
-  DAYS.forEach(function(d, i){ h += '<div class="wd" style="background:' + WDCOL[i] + '">' + d + '</div>'; });
-  for (var c = 0; c < weeks * 7; c++){ var d = c - first + 1, hw = m === 9 && d === 31; h += '<div class="cd' + (hw ? ' hallow' : '') + '"' + (d >= 1 && d <= days ? ' data-d="' + d + '"><span>' + d + '</span>' + (hw ? '<small>Halloween</small>' : '') : '>') + '</div>'; }
-  $('calGrid').innerHTML = h; $('calGrid').style.setProperty('--rowh', (weeks > 5 ? 64 : 78) + 'px');
+  $('calTitle').innerHTML = multi(MONTHS[m]); $('calYear').textContent = y;
+  DAYS.forEach(function(d, i){ h += '<div class="wd" style="background:' + WDCOL[i] + (i === 4 || i === 0 || i === 5 ? ';color:#fff' : '') + '">' + d + '</div>'; });
+  for (var c = 0; c < weeks * 7; c++){
+    var d = c - first + 1, real = d >= 1 && d <= days, hal = hw && d === 31;
+    var deco = hw && c === 0 && !real ? '<i class="cart">' + art('spiderp') + '</i>' : hal ? '<i class="cart">' + art('pumpkin') + '</i>' : '';
+    h += '<div class="cd' + (hal ? ' hallow' : '') + '"' + (real ? ' data-d="' + d + '"' : '') + '>' + deco + (real ? '<span>' + d + '</span>' : '') + (hal ? '<small>Halloween</small>' : '') + '</div>';
+  }
+  $('calGrid').innerHTML = h; $('calGrid').style.setProperty('--rowh', (weeks > 5 ? 70 : 84) + 'px');
   $('calDate').textContent = 'Press ▶ Play!'; $('calPlay').disabled = false;
 }
 function calDateParts(t){ return ['Today is ' + DAYS[t.getDay()] + ',', MONTHS[t.getMonth()], ORD[t.getDate()] + ',', String(t.getFullYear()) + '.']; }
@@ -1459,9 +1498,10 @@ $('calPlay').onclick = function(){
   drawCal(); $('calPlay').disabled = true;
   var t = new Date(), today = t.getDate(), d = 0;
   calTimer = setInterval(function(){
-    d++; var c = $('calGrid').querySelector('[data-d="' + d + '"]'); if (c){ c.classList.add('on'); if (d < today) c.classList.add('past'); }
+    d++; var c = $('calGrid').querySelector('[data-d="' + d + '"]'); if (c) c.classList.add('on');
     if (d < today){ say('num:' + d); return; }
-    clearInterval(calTimer); calTimer = null; if (c) c.classList.add('today');
+    clearInterval(calTimer); calTimer = null;
+    if (c){ c.classList.add('today'); c.insertAdjacentHTML('beforeend', '<i class="tmark">' + (isHw() ? art('ghost') : '<b style="font-size:36px;line-height:1;font-weight:400">⭐</b>') + '</i>'); }
     $('calDate').textContent = 'Today is ' + DAYS[t.getDay()] + ', ' + MONTHS[t.getMonth()] + ' ' + today + ', ' + t.getFullYear();
     var hallo = t.getMonth() === 9 && today === 31;
     say(['num:' + today].concat(calDateParts(t), hallo ? ['Happy Halloween!'] : [])); $('calPlay').disabled = false;
@@ -1472,38 +1512,43 @@ $('calReset').onclick = drawCal;
 drawCal();
 
 /* ---- days of school: ten frames that fill with circles, and hundreds / tens / ones ---- */
-var TFCOL = ['#9b59d0','#f28c1c','#3cae4a','#f2c935','#ec4c8a','#2b8fd6'];
+var DOTCOL = ['#e53b2c','#f39418','#f6e21a','#a65ff0','#ffffff','#e2731b','#8fd61e','#16101c'], dotC = '#ffffff';
 var schoolN = Math.max(0, Math.min(200, parseInt(store.get('k4f-schoolday') || '0', 10) || 0)), sdTimers = [];
+$('sdTitle').innerHTML = multi('Days of School');
+function dotsHtml(){ return '<div class="dots" id="sdDots">' + DOTCOL.map(function(c){ return '<button type="button" aria-label="Circle color" data-c="' + c + '" aria-pressed="' + (c === dotC) + '" style="background:' + c + '"></button>'; }).join('') + '</div>'; }
+function wireDots(){ var d = $('sdDots'); if (!d) return; d.querySelectorAll('button').forEach(function(b){ b.onclick = function(){ dotC = b.dataset.c; $('tfGrid').style.setProperty('--dot', dotC); d.querySelectorAll('button').forEach(function(o){ o.setAttribute('aria-pressed', String(o === b)); }); }; }); }
 function drawTF(animate){
-  sdTimers.forEach(clearTimeout); sdTimers = [];
-  var n = schoolN, frames = n > 120 ? 20 : 12, h = '';
-  for (var f = 0; f < frames; f++){ h += '<div class="tf" style="--c:' + TFCOL[f % TFCOL.length] + '">'; for (var i = 0; i < 10; i++) h += '<i></i>'; h += '</div>'; }
-  var g = $('tfGrid'); g.className = 'tfgrid ' + (frames > 12 ? 'f20' : 'f12'); g.innerHTML = h;
+  sdTimers.forEach(clearTimeout); sdTimers = []; themeBoards();
+  var n = schoolN, big = n > 100, frames = big ? 20 : 10, h = '';
+  for (var f = 0; f < frames; f++){ h += '<div class="tf' + (!big && f === 9 ? ' solo' : '') + '" style="--c:' + BOARDCOL[f % 10] + '">'; for (var i = 0; i < 10; i++) h += '<i></i>'; h += '</div>'; }
+  var g = $('tfGrid'); g.className = 'tfgrid' + (big ? ' f20' : ''); g.innerHTML = h + (big ? '' : dotsHtml()); g.style.setProperty('--dot', dotC); wireDots();
   var cells = g.querySelectorAll('i'), step = countMs();
   $('sdBig').textContent = animate ? 0 : n;
   for (var j = 0; j < n; j++) (function(c, j){ if (!animate) c.classList.add('on'); else sdTimers.push(setTimeout(function(){ c.classList.add('on'); $('sdBig').textContent = j + 1; if (j + 1 === n) say(['Today is day', 'num:' + n, 'of school!']); }, 400 + j * step)); })(cells[j], j);
   $('sdIn').value = n; drawPV();
 }
-function pvSvg(kind, col){
-  if (kind === 'h'){ var g = '<svg width="140" height="140" viewBox="0 0 100 100"><rect x="1" y="1" width="98" height="98" fill="' + col + '" stroke="#7a4300" stroke-width="2"/>'; for (var i = 1; i < 10; i++) g += '<line x1="' + i*10 + '" y1="1" x2="' + i*10 + '" y2="99" stroke="#7a4300" stroke-width="1"/><line x1="1" y1="' + i*10 + '" x2="99" y2="' + i*10 + '" stroke="#7a4300" stroke-width="1"/>'; return g + '</svg>'; }
-  if (kind === 't'){ var r = '<svg width="26" height="250" viewBox="0 0 20 190"><rect x="1" y="1" width="18" height="188" fill="' + col + '" stroke="#1d5c26" stroke-width="2"/>'; for (var k = 1; k < 10; k++) r += '<line x1="1" y1="' + (1 + k*18.8) + '" x2="19" y2="' + (1 + k*18.8) + '" stroke="#1d5c26" stroke-width="1.5"/>'; return r + '</svg>'; }
-  return '<svg width="48" height="48" viewBox="0 0 34 34"><rect x="2" y="2" width="30" height="30" rx="3" fill="' + col + '" stroke="#4a2468" stroke-width="2"/></svg>';
+function pvSvg(kind){
+  if (kind === 'h'){ var g = '<svg width="118" height="118" viewBox="0 0 100 100"><rect x="1" y="1" width="98" height="98" fill="#f39418" stroke="#7a4300" stroke-width="2"/>'; for (var i = 1; i < 10; i++) g += '<line x1="' + i*10 + '" y1="1" x2="' + i*10 + '" y2="99" stroke="#7a4300" stroke-width="1"/><line x1="1" y1="' + i*10 + '" x2="99" y2="' + i*10 + '" stroke="#7a4300" stroke-width="1"/>'; return g + '</svg>'; }
+  if (kind === 't'){ var r = '<svg width="22" height="210" viewBox="0 0 20 190"><rect x="1" y="1" width="18" height="188" fill="#8fd61e" stroke="#3e6e10" stroke-width="2"/>'; for (var k = 1; k < 10; k++) r += '<line x1="1" y1="' + (1 + k*18.8) + '" x2="19" y2="' + (1 + k*18.8) + '" stroke="#3e6e10" stroke-width="1.5"/>'; return r + '</svg>'; }
+  return '<svg width="44" height="44" viewBox="0 0 34 34"><rect x="2" y="2" width="30" height="30" rx="3" fill="#9b4dff" stroke="#4f1a86" stroke-width="2"/></svg>';
 }
 function drawPV(){
   var n = schoolN, hu = Math.floor(n / 100), te = Math.floor(n % 100 / 10), on = n % 10;
-  $('pvH').innerHTML = new Array(hu + 1).join(pvSvg('h', '#ffb15c')); $('pvT').innerHTML = new Array(te + 1).join(pvSvg('t', '#7ed36a')); $('pvO').innerHTML = new Array(on + 1).join(pvSvg('o', '#c79bea'));
-  $('pvHn').textContent = hu; $('pvTn').textContent = te; $('pvOn').textContent = on;
+  $('pvH').innerHTML = new Array(hu + 1).join(pvSvg('h')); $('pvT').innerHTML = new Array(te + 1).join(pvSvg('t')); $('pvO').innerHTML = new Array(on + 1).join(pvSvg('o'));
+  $('pvHn').textContent = hu; $('pvTn').textContent = te; $('pvOn').textContent = on; $('pvDayN').textContent = n;
 }
-function setSchool(v, speak){
-  schoolN = Math.max(0, Math.min(200, v | 0)); store.set('k4f-schoolday', String(schoolN)); drawTF(true);
-
-}
-$('sdIn').addEventListener('change', function(){ setSchool(parseInt($('sdIn').value, 10) || 0, true); });
+function setSchool(v){ schoolN = Math.max(0, Math.min(200, v | 0)); store.set('k4f-schoolday', String(schoolN)); if ($('pvView').hidden) drawTF(true); else { drawTF(false); say(['Today is day', 'num:' + schoolN, 'of school!']); } }
+$('sdIn').addEventListener('change', function(){ setSchool(parseInt($('sdIn').value, 10) || 0); });
 $('sdIn').addEventListener('keydown', function(e){ e.stopPropagation(); if (e.key === 'Enter') $('sdIn').blur(); });
-$('sdMinus').onclick = function(){ setSchool(schoolN - 1, true); };
-$('sdPlus').onclick = function(){ setSchool(schoolN + 1, true); };
-$('sdShow').onclick = function(){ drawTF(true); };
-$('sdPV').onclick = function(){ var on = $('pvView').hidden; $('pvView').hidden = !on; $('tfGrid').hidden = on; $('sdPV').textContent = on ? '🔟 Ten frames' : '🧮 Hundreds · Tens · Ones'; if (on){ drawPV(); var n = schoolN, hu = Math.floor(n / 100), te = Math.floor(n % 100 / 10), o = n % 10;
+$('sdMinus').onclick = function(){ setSchool(schoolN - 1); };
+$('sdPlus').onclick = function(){ setSchool(schoolN + 1); };
+$('sdShow').onclick = function(){ if (!$('pvView').hidden) $('sdPV').click(); drawTF(true); };
+function pvMode(on){
+  $('pvView').hidden = !on; $('tfGrid').hidden = on;
+  $('sdCat').style.display = on ? 'none' : ''; $('sdTomb').style.display = on ? 'none' : ''; $('sdBat').style.display = on ? '' : 'none';
+  $('sdPV').textContent = on ? '🔟 Ten frames' : '🧮 Hundreds · Tens · Ones';
+}
+$('sdPV').onclick = function(){ var on = $('pvView').hidden; pvMode(on); if (on){ sdTimers.forEach(clearTimeout); sdTimers = []; drawPV(); var n = schoolN, hu = Math.floor(n / 100), te = Math.floor(n % 100 / 10), o = n % 10;
   say(['num:' + hu, hu === 1 ? 'hundred,' : 'hundreds,', 'num:' + te, te === 1 ? 'ten,' : 'tens,', 'num:' + o, o === 1 ? 'one.' : 'ones.']); } };
 document.querySelectorAll('.pvcol').forEach(function(b){ b.onclick = function(){ var n = schoolN, v = b.dataset.p === 'h' ? Math.floor(n / 100) : b.dataset.p === 't' ? Math.floor(n % 100 / 10) : n % 10, w = {h:['hundred','hundreds'], t:['ten','tens'], o:['one','ones']}[b.dataset.p];
   say(['num:' + v, v === 1 ? w[0] : w[1]]); }; });
