@@ -625,6 +625,40 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
 .station.on{box-shadow:0 0 0 7px #ffd25e}
 .stimer{font-family:var(--display);font-size:40px;background:#fff;border-radius:999px;padding:4px 24px;color:var(--forest);min-width:150px;text-align:center}
 .stimer.done{background:#ffd25e;animation:pulse .8s infinite}
+
+/* calendar */
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:0;background:#fff;border-radius:22px;overflow:hidden;margin:0 30px;border:4px solid #fff;box-shadow:0 5px 0 rgba(46,35,38,.12)}
+.cal .wd{font-family:var(--display);font-size:28px;color:#fff;text-align:center;padding:6px 0}
+.cal .cd{height:var(--rowh,84px);border-right:2px solid #eedfe2;border-top:2px solid #eedfe2;position:relative;display:grid;place-items:center}
+.cal .cd:nth-child(7n){border-right:0}
+.cal .cd span{font-family:var(--display);font-size:50px;color:var(--ink);opacity:0;transform:scale(.3);transition:opacity .25s,transform .35s cubic-bezier(.3,1.6,.5,1)}
+.cal .cd.on span{opacity:1;transform:scale(1)}
+.cal .cd.past{background:#fff6f8}
+.cal .cd.today{background:#fff1b8;box-shadow:inset 0 0 0 6px var(--accent)}
+.cal .cd.today span{color:var(--accent);font-size:60px}
+.cal .cd.today::after{content:"⭐";position:absolute;top:2px;right:8px;font-size:30px;animation:pop .6s}
+.caldate{font-family:var(--display);font-size:46px;margin:0;background:#fff;border-radius:999px;padding:6px 28px;border:3px solid #fff;box-shadow:0 3px 0 rgba(46,35,38,.12);color:var(--ink)}
+/* days of school */
+.sdhead{display:flex;align-items:center;justify-content:center;gap:30px}
+.sdbadge{font-family:var(--display);font-size:46px;background:#2e2326;color:#fff;border-radius:999px;padding:4px 30px 6px;border:4px solid #fff;box-shadow:0 4px 0 rgba(46,35,38,.15)}
+.sdbadge b{font-weight:400;font-size:64px;color:#ffd25e}
+.tfgrid{display:grid;gap:14px 22px;padding:0 30px;justify-content:center}
+.tfgrid.f12{grid-template-columns:repeat(4,300px)}
+.tfgrid.f20{grid-template-columns:repeat(5,250px);gap:10px 18px}
+.tf{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;background:#2e2326;border:4px solid #2e2326;border-radius:10px;overflow:hidden}
+.tf i{display:block;aspect-ratio:1;background:var(--c);position:relative}
+.tf i::after{content:"";position:absolute;inset:16%;border-radius:50%;background:#fff;box-shadow:inset 0 -4px 0 rgba(0,0,0,.18);transform:scale(0);transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.tf i.on::after{transform:scale(1)}
+.sdin{width:150px;font-family:var(--display);font-size:46px;text-align:center;border:4px solid #fff;border-radius:20px;padding:2px 6px;color:var(--ink);background:#fff}
+.sdpm{font-size:40px;padding:0 22px;line-height:1.2}
+.pvwrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:0 30px}
+.pvcol{border:4px solid #fff;background:#fff;border-radius:22px;padding:0 0 10px;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden;min-height:470px;box-shadow:0 4px 0 rgba(46,35,38,.12)}
+.pvcol h3{margin:0;font-family:var(--display);font-weight:400;font-size:40px;color:#fff;padding:6px}
+.pvcol b{font-family:var(--display);font-weight:400;font-size:110px;line-height:1}
+.pvb{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:center;align-content:center;padding:12px}
+.pvb svg{animation:pop .5s}
+[data-s="school"] .btn,[data-s="cal"] .btn{font-size:32px;padding:8px 26px}
+[data-s="school"] .sdpm{font-size:44px}
 </style>
 
 <div id="app" data-own>
@@ -679,6 +713,25 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
       <div class="zones" id="zones"></div>
       <p class="title" style="font-size:72px" id="dateLine"></p>
       <div class="row"><button class="btn" type="button" id="dayReset">↺ Again</button></div>
+    </section>
+
+    <section class="slide" data-s="cal" data-g="greet" style="display:contents" hidden>
+      <img class="deco tl" data-i="notebook" alt="">
+      <h2 class="title t-l" id="calTitle">Calendar</h2>
+      <div class="cal" id="calGrid"></div>
+      <div class="row"><button class="btn go" type="button" id="calPlay">▶ Play</button><button class="btn" type="button" id="calReset">↺</button><p class="caldate" id="calDate">Press ▶ Play!</p></div>
+    </section>
+
+    <section class="slide" data-s="school" data-g="greet" style="display:contents" hidden>
+      <img class="deco tl" data-i="notebook" alt="">
+      <div class="sdhead"><h2 class="title t-l">Days of School</h2><div class="sdbadge">Day <b id="sdBig">0</b></div></div>
+      <div class="tfgrid f12" id="tfGrid"></div>
+      <div class="pvwrap" id="pvView" hidden>
+        <button class="pvcol" type="button" data-p="h"><h3 style="background:#f28c1c">hundreds</h3><div class="pvb" id="pvH"></div><b id="pvHn" style="color:#f28c1c">0</b></button>
+        <button class="pvcol" type="button" data-p="t"><h3 style="background:#3cae4a">tens</h3><div class="pvb" id="pvT"></div><b id="pvTn" style="color:#3cae4a">0</b></button>
+        <button class="pvcol" type="button" data-p="o"><h3 style="background:#9b59d0">ones</h3><div class="pvb" id="pvO"></div><b id="pvOn" style="color:#9b59d0">0</b></button>
+      </div>
+      <div class="row"><button class="btn sdpm" type="button" id="sdMinus" aria-label="One less">−</button><input class="sdin" id="sdIn" type="number" min="0" max="200" inputmode="numeric" aria-label="Day of school"><button class="btn sdpm" type="button" id="sdPlus" aria-label="One more">+</button><button class="btn go" type="button" id="sdShow">▶ Show</button><button class="btn" type="button" id="sdPV">🧮 Hundreds · Tens · Ones</button></div>
     </section>
 
     <section class="slide" data-s="weather" data-g="greet" style="display:contents" hidden>
@@ -1099,6 +1152,7 @@ var SOUNDWORD = {E:'egg', I:'iguana', X:'fox'};   /* a word that starts with (or
 var LETTERKEY = /^(name|sound|for|big|little):([A-Z])$/;
 function sysText(k){
   if (k.indexOf('snd:') === 0) return SOUND[k.slice(4)];
+  if (/^num:\d+$/.test(k)) return k.slice(4);
   var m = LETTERKEY.exec(k); if (!m) return k;
   var L = m[2], n = L.toLowerCase(), w = (ABC[L] && ABC[L][0][0]) || '', sw = SOUNDWORD[L] || w;
   return m[1] === 'name' ? n : m[1] === 'sound' ? n + ' says ' + SOUND[L] + ', ' + SOUND[L] + ', ' + sw : m[1] === 'for' ? n + ' is for ' + w : (m[1] === 'big' ? 'Big ' : 'Little ') + n;
@@ -1130,7 +1184,7 @@ function liveGen(k){
   var p = LIVE.q.then(function(){
     var t = LIVE.tts, snd = k.indexOf('snd:') === 0;
     return snd ? t.generate_from_ids(t.tokenizer(SNDIPA[k.slice(4)], {truncation:true}).input_ids, {voice:VOICE_ID, speed:VOICE_SPEED})
-               : t.generate(k, {voice:VOICE_ID, speed:VOICE_SPEED});
+               : t.generate(sysText(k), {voice:VOICE_ID, speed:VOICE_SPEED});
   }).then(function(raw){
     var c = audioCtx(), b = c.createBuffer(1, raw.audio.length, raw.sampling_rate);
     b.getChannelData(0).set(raw.audio); return b;
@@ -1254,7 +1308,7 @@ document.querySelectorAll('[data-song]').forEach(renderSong);
 /* ---------- sections + slides ---------- */
 var SECTIONS = {
   home:{icon:'🏠', label:'Home', slides:[['home','Home','🏠']]},
-  greet:{icon:'🏫', label:'Greeting', slides:[['hello','Hello','croc'],['feel','Feelings','fs_p5'],['days','Days','notebook'],['weather','Weather','sun'],['numbers','Numbers','ruler'],['abc','ABC','pencil'],['plant','Plant','🌸'],['needs','Plants need','🌱'],['rules','Rules','star'],['move','Move','music'],['day','Our day','clock']]},
+  greet:{icon:'🏫', label:'Greeting', slides:[['hello','Hello','croc'],['feel','Feelings','fs_p5'],['days','Days','notebook'],['cal','Calendar','📅'],['school','School days','🔟'],['weather','Weather','sun'],['numbers','Numbers','ruler'],['abc','ABC','pencil'],['plant','Plant','🌸'],['needs','Plants need','🌱'],['rules','Rules','star'],['move','Move','music'],['day','Our day','clock']]},
   proj:{icon:'🌿', label:'Plants', slides:[['p-cover','Plants','🌿'],['p-isplant','Is it a plant?','🤔'],['p-my','MY','📝'],['p-live','Where?','🏜️'],['p-who','Who am I?','🔎'],['p-stations','Stations','st1']]},
   adv:{icon:'⭐', label:'Adventure', slides:[['a-cover','Adventure','⭐'],['a-abc','A B C','🔤'],['a-trace','Trace','✏️'],['a-what','What is…?','🌺'],['a-size','Big/small','🐘'],['a-count','Count','🍎'],['a-tracen','Trace 0–9','🔢'],['a-point','Find it','👉'],['a-need','Plant needs','💧'],['a-parts','Plant parts','🍅'],['a-cycle','Cycle','🌱']]}
 };
@@ -1282,6 +1336,7 @@ function show(name){
   if (name !== 'weather') $('fx').innerHTML = '';
   stopSong();
   if (name === 'abc') pickL(curL);
+  if (name === 'cal') drawCal();
   if (name === 'p-sheet') mountWrite($('swTrace'), ['m','y'], '#7cbf5a');
   if (name === 'a-trace') pickTrace(atrCur);
   if (name === 'a-tracen') pickNum(aNum);
@@ -1343,6 +1398,71 @@ $('croc').onclick = function(){ say('Hello! Good morning, friends!'); };
 var DAYCOL = ['#f4a6b8','#9fd8f0','#f7d76b','#b6e39a','#f6b07a','#c9b4f0','#f49fc4'];
 var ZONES = [['Yesterday was',-1],['Today is',0],['Tomorrow will be',1]];
 $('dateLine').textContent = 'Today is ' + MONTHS[now.getMonth()] + ' ' + now.getDate();
+/* ---- calendar: the numbers appear one by one until today; then the date is written ---- */
+var ORD = ['','first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelfth','thirteenth','fourteenth','fifteenth','sixteenth','seventeenth','eighteenth','nineteenth','twentieth','twenty-first','twenty-second','twenty-third','twenty-fourth','twenty-fifth','twenty-sixth','twenty-seventh','twenty-eighth','twenty-ninth','thirtieth','thirty-first'];
+var WDCOL = ['#9b59d0','#f28c1c','#3cae4a','#e0a800','#2e2326','#ec4c8a','#2b8fd6'], calTimer = null;
+function drawCal(){
+  clearInterval(calTimer); calTimer = null;
+  var t = new Date(), y = t.getFullYear(), m = t.getMonth(), first = new Date(y, m, 1).getDay(), days = new Date(y, m + 1, 0).getDate();
+  var weeks = Math.ceil((first + days) / 7), h = '';
+  $('calTitle').textContent = MONTHS[m] + ' ' + y;
+  DAYS.forEach(function(d, i){ h += '<div class="wd" style="background:' + WDCOL[i] + '">' + d + '</div>'; });
+  for (var c = 0; c < weeks * 7; c++){ var d = c - first + 1; h += '<div class="cd"' + (d >= 1 && d <= days ? ' data-d="' + d + '"><span>' + d + '</span>' : '>') + '</div>'; }
+  $('calGrid').innerHTML = h; $('calGrid').style.setProperty('--rowh', (weeks > 5 ? 74 : 88) + 'px');
+  $('calDate').textContent = 'Press ▶ Play!'; $('calPlay').disabled = false;
+}
+function calDateParts(t){ return ['Today is ' + DAYS[t.getDay()] + ',', MONTHS[t.getMonth()], ORD[t.getDate()] + ',', String(t.getFullYear()) + '.']; }
+$('calPlay').onclick = function(){
+  drawCal(); $('calPlay').disabled = true;
+  var t = new Date(), today = t.getDate(), d = 0;
+  calTimer = setInterval(function(){
+    d++; var c = $('calGrid').querySelector('[data-d="' + d + '"]'); if (c){ c.classList.add('on'); if (d < today) c.classList.add('past'); }
+    if (d < today){ say('num:' + d); return; }
+    clearInterval(calTimer); calTimer = null; if (c) c.classList.add('today');
+    $('calDate').textContent = 'Today is ' + DAYS[t.getDay()] + ', ' + MONTHS[t.getMonth()] + ' ' + today + ', ' + t.getFullYear();
+    say(['num:' + today].concat(calDateParts(t))); $('calPlay').disabled = false;
+  }, today > 20 ? 560 : 700);
+};
+$('calReset').onclick = drawCal;
+drawCal();
+
+/* ---- days of school: ten frames that fill with circles, and hundreds / tens / ones ---- */
+var TFCOL = ['#9b59d0','#f28c1c','#3cae4a','#f2c935','#ec4c8a','#2b8fd6'];
+var schoolN = Math.max(0, Math.min(200, parseInt(store.get('k4f-schoolday') || '0', 10) || 0)), sdTimers = [];
+function drawTF(animate){
+  sdTimers.forEach(clearTimeout); sdTimers = [];
+  var n = schoolN, frames = n > 120 ? 20 : 12, h = '';
+  for (var f = 0; f < frames; f++){ h += '<div class="tf" style="--c:' + TFCOL[f % TFCOL.length] + '">'; for (var i = 0; i < 10; i++) h += '<i></i>'; h += '</div>'; }
+  var g = $('tfGrid'); g.className = 'tfgrid ' + (frames > 12 ? 'f20' : 'f12'); g.innerHTML = h;
+  var cells = g.querySelectorAll('i'), step = Math.max(16, Math.min(110, 3200 / Math.max(n, 1)));
+  for (var j = 0; j < n; j++) (function(c, j){ if (!animate) c.classList.add('on'); else sdTimers.push(setTimeout(function(){ c.classList.add('on'); }, 200 + j * step)); })(cells[j], j);
+  $('sdBig').textContent = n; $('sdIn').value = n; drawPV();
+}
+function pvSvg(kind, col){
+  if (kind === 'h'){ var g = '<svg width="140" height="140" viewBox="0 0 100 100"><rect x="1" y="1" width="98" height="98" fill="' + col + '" stroke="#7a4300" stroke-width="2"/>'; for (var i = 1; i < 10; i++) g += '<line x1="' + i*10 + '" y1="1" x2="' + i*10 + '" y2="99" stroke="#7a4300" stroke-width="1"/><line x1="1" y1="' + i*10 + '" x2="99" y2="' + i*10 + '" stroke="#7a4300" stroke-width="1"/>'; return g + '</svg>'; }
+  if (kind === 't'){ var r = '<svg width="26" height="250" viewBox="0 0 20 190"><rect x="1" y="1" width="18" height="188" fill="' + col + '" stroke="#1d5c26" stroke-width="2"/>'; for (var k = 1; k < 10; k++) r += '<line x1="1" y1="' + (1 + k*18.8) + '" x2="19" y2="' + (1 + k*18.8) + '" stroke="#1d5c26" stroke-width="1.5"/>'; return r + '</svg>'; }
+  return '<svg width="48" height="48" viewBox="0 0 34 34"><rect x="2" y="2" width="30" height="30" rx="3" fill="' + col + '" stroke="#4a2468" stroke-width="2"/></svg>';
+}
+function drawPV(){
+  var n = schoolN, hu = Math.floor(n / 100), te = Math.floor(n % 100 / 10), on = n % 10;
+  $('pvH').innerHTML = new Array(hu + 1).join(pvSvg('h', '#ffb15c')); $('pvT').innerHTML = new Array(te + 1).join(pvSvg('t', '#7ed36a')); $('pvO').innerHTML = new Array(on + 1).join(pvSvg('o', '#c79bea'));
+  $('pvHn').textContent = hu; $('pvTn').textContent = te; $('pvOn').textContent = on;
+}
+function setSchool(v, speak){
+  schoolN = Math.max(0, Math.min(200, v | 0)); store.set('k4f-schoolday', String(schoolN)); drawTF(true);
+  if (speak) say(['Today is day', 'num:' + schoolN, 'of school!']);
+}
+$('sdIn').addEventListener('change', function(){ setSchool(parseInt($('sdIn').value, 10) || 0, true); });
+$('sdIn').addEventListener('keydown', function(e){ e.stopPropagation(); if (e.key === 'Enter') $('sdIn').blur(); });
+$('sdMinus').onclick = function(){ setSchool(schoolN - 1, true); };
+$('sdPlus').onclick = function(){ setSchool(schoolN + 1, true); };
+$('sdShow').onclick = function(){ drawTF(true); say(['Today is day', 'num:' + schoolN, 'of school!']); };
+$('sdPV').onclick = function(){ var on = $('pvView').hidden; $('pvView').hidden = !on; $('tfGrid').hidden = on; $('sdPV').textContent = on ? '🔟 Ten frames' : '🧮 Hundreds · Tens · Ones'; if (on){ drawPV(); var n = schoolN, hu = Math.floor(n / 100), te = Math.floor(n % 100 / 10), o = n % 10;
+  say(['num:' + hu, hu === 1 ? 'hundred,' : 'hundreds,', 'num:' + te, te === 1 ? 'ten,' : 'tens,', 'num:' + o, o === 1 ? 'one.' : 'ones.']); } };
+document.querySelectorAll('.pvcol').forEach(function(b){ b.onclick = function(){ var n = schoolN, v = b.dataset.p === 'h' ? Math.floor(n / 100) : b.dataset.p === 't' ? Math.floor(n % 100 / 10) : n % 10, w = {h:['hundred','hundreds'], t:['ten','tens'], o:['one','ones']}[b.dataset.p];
+  say(['num:' + v, v === 1 ? w[0] : w[1]]); }; });
+drawTF(false);
+
 var pickedDay = null;
 $('chips').innerHTML = DAYS.map(function(d, i){ return '<button class="chip" type="button" data-d="' + i + '" style="background:' + DAYCOL[i] + '">' + d + '</button>'; }).join('');
 function clearDayPick(){ pickedDay = null; $('chips').querySelectorAll('.chip').forEach(function(c){ c.classList.remove('sel'); }); }
