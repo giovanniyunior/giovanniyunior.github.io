@@ -785,6 +785,27 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
 .wsov img{flex:1;min-height:0;max-width:100%;object-fit:contain;box-shadow:0 6px 24px rgba(0,0,0,.18);border-radius:8px;background:#fff}
 .wsbar{display:flex;gap:14px;align-items:center}
 .wsbar b{font-family:var(--display);font-weight:400;font-size:30px;color:var(--forest)}
+
+/* dice */
+.dkstage{display:grid;grid-template-columns:520px 1fr;align-items:center;gap:30px;width:100%;flex:1;min-height:0;padding:0 40px}
+.dkscene{width:300px;height:300px;perspective:1100px;border:0;background:none;padding:0;justify-self:center;cursor:pointer}
+.dkcube{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform 1.5s cubic-bezier(.2,.8,.25,1);transform:rotateX(-20deg) rotateY(-25deg)}
+.dkface{position:absolute;inset:0;background:#fff;border:6px solid #16101c;border-radius:42px;display:grid;place-items:center;box-shadow:inset 0 -14px 0 rgba(0,0,0,.08);backface-visibility:hidden}
+.dkface.f1{transform:translateZ(150px)}.dkface.f2{transform:rotateY(90deg) translateZ(150px)}.dkface.f3{transform:rotateY(180deg) translateZ(150px)}
+.dkface.f4{transform:rotateY(-90deg) translateZ(150px)}.dkface.f5{transform:rotateX(90deg) translateZ(150px)}.dkface.f6{transform:rotateX(-90deg) translateZ(150px)}
+.pips{position:absolute;inset:34px;display:grid;grid-template:repeat(3,1fr)/repeat(3,1fr)}
+.pips i{width:54px;height:54px;border-radius:50%;place-self:center;background:var(--c)}
+.dkface b{font-family:var(--body);font-weight:700;font-size:150px;line-height:1;color:var(--c)}
+.dkres{display:grid;justify-items:center;gap:8px;text-align:center}
+.dkres .big{font-family:var(--display);font-size:200px;line-height:1;animation:pop .6s}
+.dkres .lbl{font-family:var(--display);font-size:60px;color:#16101c;line-height:1}
+.dkres .pic{height:200px;display:grid;place-items:center;font-size:170px;animation:pop .6s}
+.dkres .pic img{max-height:200px}
+.dkres .dots{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;max-width:420px}
+.dkres .dots i{width:44px;height:44px;border-radius:50%;background:var(--c)}
+.dkroll{font-size:38px!important;padding:10px 40px!important}
+.dkhist{display:flex;gap:8px}
+.dkhist span{width:58px;height:58px;border-radius:14px;background:#fff;border:3px solid #16101c;display:grid;place-items:center;font-family:var(--display);font-size:34px;animation:pop .4s}
 </style>
 
 <div id="app" data-own>
@@ -1155,6 +1176,16 @@ tree: Quercus robur - alone tree.jpg — Bartosz Cuber (CC BY-SA 3.0)">📷 Phot
       <div class="wsov" id="baWs" hidden><div class="wsbar"><b>Before and After (1–10) · worksheet</b><button class="btn" type="button" id="baPrint">🖨 Print</button><button class="btn go" type="button" id="baClose">✕ Close</button></div><img data-i="ws_ba" alt="Before and After worksheet"></div>
     </section>
 
+    <section class="slide" data-s="p-dice" data-g="proj" style="display:contents" hidden>
+      <p class="ptitle" style="font-size:58px">Roll the dice! 🎲</p>
+      <div class="seqtabs" id="dkModes"><button type="button" data-m="num" aria-pressed="true">🎲 Numbers 1 – 6</button><button type="button" data-m="abc" aria-pressed="false">🔤 Letters A – D</button></div>
+      <div class="dkstage">
+        <button class="dkscene" type="button" id="dkScene" aria-label="Roll the dice"><div class="dkcube" id="dkCube"></div></button>
+        <div class="dkres" id="dkRes"><p class="pmhint" style="color:var(--forest)">Tap the dice! 🎲</p></div>
+      </div>
+      <div class="row"><button class="btn green dkroll" type="button" id="dkRoll">🎲 Roll!</button><div class="dkhist" id="dkHist"></div></div>
+    </section>
+
     <section class="slide" data-s="p-stations" data-g="proj" style="display:contents" hidden>
       <p class="ptitle" style="font-size:58px">Stations 🔄</p>
       <div class="stations" id="stations"></div>
@@ -1496,7 +1527,7 @@ document.querySelectorAll('[data-song]').forEach(renderSong);
 var SECTIONS = {
   home:{icon:'🏠', label:'Home', slides:[['home','Home','🏠']]},
   greet:{icon:'🏫', label:'Greeting', slides:[['hello','Hello','croc'],['feel','Feelings','fs_p5'],['days','Days','notebook'],['cal','Calendar','📅'],['school','School days','🔟'],['weather','Weather','sun'],['numbers','Numbers','ruler'],['abc','ABC','pencil'],['plant','Plant','🌸'],['needs','Plants need','🌱'],['rules','Rules','star'],['move','Move','music'],['pump','Pumpkin game','🎃'],['day','Our day','clock']]},
-  proj:{icon:'🌿', label:'Plants', slides:[['p-cover','Plants','🌿'],['p-isplant','Is it a plant?','🤔'],['p-my','MY','📝'],['p-live','Where?','🏜️'],['p-who','Who am I?','🔎'],['p-seq','First · Next','sq_sand'],['p-ba','Before & After','🐷'],['p-stations','Stations','st1']]},
+  proj:{icon:'🌿', label:'Plants', slides:[['p-cover','Plants','🌿'],['p-isplant','Is it a plant?','🤔'],['p-my','MY','📝'],['p-live','Where?','🏜️'],['p-who','Who am I?','🔎'],['p-seq','First · Next','sq_sand'],['p-ba','Before & After','🐷'],['p-dice','Dice','🎲'],['p-stations','Stations','st1']]},
   adv:{icon:'⭐', label:'Adventure', slides:[['a-cover','Adventure','⭐'],['a-abc','A B C','🔤'],['a-trace','Trace','✏️'],['a-what','What is…?','🌺'],['a-size','Big/small','🐘'],['a-count','Count','🍎'],['a-tracen','Trace 0–9','🔢'],['a-point','Find it','👉'],['a-need','Plant needs','💧'],['a-parts','Plant parts','🍅'],['a-cycle','Cycle','🌱']]}
 };
 var sect = 'home', cur = 'home';
@@ -2532,6 +2563,47 @@ $('baSheet').onclick = function(){ $('baWs').hidden = false; };
 $('baClose').onclick = function(){ $('baWs').hidden = true; };
 $('baPrint').onclick = function(){ try{ var w = window.open('', '_blank'); w.document.write('<title>Before and After</title><style>@page{margin:10mm}body{margin:0}img{width:100%}</style><img src="' + IMG.ws_ba + '" onload="setTimeout(function(){print()},300)">'); w.document.close(); }catch(e){} };
 baNew(true);
+/* ---- dice: numbers 1-6 or letters A-D ---- */
+var PIPS = {1:[5],2:[1,9],3:[1,5,9],4:[1,3,7,9],5:[1,3,5,7,9],6:[1,3,4,6,7,9]};
+var DKCOL = ['#e9577f','#f28c1c','#2b8fd6','#2f9e44','#8e3ad6','#e0a800'];
+var DKROT = {1:[0,0],2:[0,-90],3:[0,180],4:[0,90],5:[-90,0],6:[90,0]};
+var dkMode = 'num', dkBusy = false, dkTurn = 0, dkHist = [];
+function dkFaces(){
+  var h = '';
+  for (var f = 1; f <= 6; f++){
+    var c = DKCOL[f - 1], inner;
+    if (dkMode === 'num'){ inner = '<span class="pips">' + [1,2,3,4,5,6,7,8,9].map(function(k){ return PIPS[f].indexOf(k) >= 0 ? '<i style="--c:' + c + ';grid-area:' + (Math.ceil(k / 3)) + '/' + ((k - 1) % 3 + 1) + '"></i>' : ''; }).join('') + '</span>'; }
+    else { var L = 'ABCDAB'.charAt(f - 1); inner = '<b style="--c:' + DKCOL['ABCD'.indexOf(L)] + '">' + L + L.toLowerCase() + '</b>'; }
+    h += '<div class="dkface f' + f + '">' + inner + '</div>';
+  }
+  $('dkCube').innerHTML = h;
+}
+function dkRoll(){
+  if (dkBusy) return; dkBusy = true; dkTurn++;
+  var face = 1 + Math.floor(Math.random() * 6), r = DKROT[face];
+  var rx = r[0] + 360 * (2 + dkTurn % 2) , ry = r[1] + 360 * (2 + dkTurn % 3);
+  $('dkCube').style.transform = 'rotateX(' + (rx - 20) + 'deg) rotateY(' + (ry - 25) + 'deg)';
+  $('dkRes').innerHTML = '<p class="pmhint" style="color:var(--forest)">🎲 …</p>';
+  setTimeout(function(){
+    dkBusy = false;
+    var out, key, hist;
+    if (dkMode === 'num'){
+      var dots = ''; for (var i = 0; i < face; i++) dots += '<i style="--c:' + DKCOL[face - 1] + '"></i>';
+      out = '<div class="big" style="color:' + DKCOL[face - 1] + '">' + face + '</div><p class="lbl">' + WORDS[face] + '</p><div class="dots">' + dots + '</div>';
+      key = 'num:' + face; hist = face;
+    } else {
+      var L = 'ABCDAB'.charAt(face - 1), w = ABC[L][0];
+      out = '<div class="big" style="color:' + DKCOL['ABCD'.indexOf(L)] + ';font-family:var(--body);font-weight:700">' + L + L.toLowerCase() + '</div><span class="pic">' + pic(w[1]) + '</span><p class="lbl"><u style="text-decoration:none;color:#f39418">' + w[0].charAt(0) + '</u>' + w[0].slice(1) + '</p>';
+      key = 'for:' + L; hist = L;
+    }
+    $('dkRes').innerHTML = out; say(key);
+    dkHist.unshift(hist); dkHist = dkHist.slice(0, 8);
+    $('dkHist').innerHTML = dkHist.map(function(x){ return '<span>' + x + '</span>'; }).join('');
+  }, 1550);
+}
+$('dkModes').querySelectorAll('button').forEach(function(b){ b.onclick = function(){ dkMode = b.dataset.m; $('dkModes').querySelectorAll('button').forEach(function(o){ o.setAttribute('aria-pressed', String(o === b)); }); dkFaces(); dkHist = []; $('dkHist').innerHTML = ''; $('dkRes').innerHTML = '<p class="pmhint" style="color:var(--forest)">Tap the dice! 🎲</p>'; }; });
+$('dkScene').onclick = dkRoll; $('dkRoll').onclick = dkRoll;
+dkFaces();
 /* ---- pumpkin surprise: one thing comes out each time ---- */
 function splat(c){ return '<svg viewBox="0 0 200 200"><path d="M100 18 C120 18 126 44 146 40 C170 34 186 58 172 78 C160 96 188 108 178 132 C168 156 140 146 130 166 C120 186 84 190 74 168 C64 148 36 160 24 138 C12 116 34 100 26 82 C16 58 40 36 62 44 C80 50 80 18 100 18Z" fill="' + c + '" stroke="' + (c === '#ffffff' ? '#bbb' : 'rgba(0,0,0,.25)') + '" stroke-width="5"/><ellipse cx="78" cy="78" rx="18" ry="11" fill="#fff" opacity=".35"/></svg>'; }
 function shapeSvg(k, c){
