@@ -806,6 +806,65 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
 .dkroll{font-size:38px!important;padding:10px 40px!important}
 .dkhist{display:flex;gap:8px}
 .dkhist span{width:58px;height:58px;border-radius:14px;background:#fff;border:3px solid #16101c;display:grid;place-items:center;font-family:var(--display);font-size:34px;animation:pop .4s}
+
+/* ===== Before & After: calm classroom desk-strip look ===== */
+.slide > .dsk{position:absolute!important;z-index:6!important}
+.dsk{position:absolute;inset:2px 0 0 0;background:#a9b8c4;border-radius:26px;padding:22px;box-shadow:0 6px 0 rgba(0,0,0,.15)}
+.dskin{position:relative;height:100%;background:#fdf8ee;border-radius:14px;display:flex;flex-direction:column;align-items:center;gap:10px;padding:14px 30px}
+.dsktitle{font-family:var(--body);font-weight:700;font-size:58px;color:#56697a;line-height:1.05}
+.dsktitle span{color:#c4613f}
+.dsktitle small{font-size:38px;color:#fff;background:#6c8193;border-radius:14px;padding:0 14px;vertical-align:middle}
+[data-s="p-ba"] .bastage{margin-top:-4px}
+[data-s="p-ba"] .bapig{width:230px;margin-bottom:-52px}
+[data-s="p-ba"] .bac{border:7px solid #3a3a3a;background:#fff}
+[data-s="p-ba"] .bac b{font-family:var(--body);font-weight:700;color:#3a3a3a}
+[data-s="p-ba"] .bac.blank b{color:#cfd6dc}
+[data-s="p-ba"] .bac small{font-family:var(--body);font-weight:700;color:#56697a;background:#e7edf1;font-size:28px}
+[data-s="p-ba"] .bac.cur{box-shadow:0 0 0 8px #d9b343}
+[data-s="p-ba"] .bac.ok{border-color:#6aa055;background:#eef6e9}
+[data-s="p-ba"] .bac.ok b{color:#4f8a3c}
+/* crayon number tiles */
+[data-s="p-ba"] .batiles{gap:6px}
+[data-s="p-ba"] .batile{width:118px;height:70px;border:0;border-radius:12px 0 0 12px;font-family:var(--body);font-weight:700;font-size:40px;box-shadow:none;clip-path:polygon(0 0,80% 0,84% 18%,100% 42%,100% 58%,84% 82%,80% 100%,0 100%);padding-right:22px;background-image:linear-gradient(90deg,transparent 0 10%,rgba(0,0,0,.14) 10% 13%,transparent 13% 64%,rgba(0,0,0,.14) 64% 67%,transparent 67%)!important;background-color:var(--bc)!important}
+[data-s="p-ba"] .batile.sel{filter:brightness(1.12);transform:translateY(-6px)}
+.dskbar{display:flex;gap:12px;align-items:center;margin-top:auto}
+.dsksay{margin:0;min-width:560px;font-family:var(--body);font-weight:700;font-size:32px;color:#3a3a3a;background:#fff;border:3px solid #cfd8df;border-radius:999px;padding:6px 22px;text-align:center}
+.dbtn{font-family:var(--body);font-weight:700;font-size:26px;border:3px solid #6c8193;background:#fff;color:#3f5363;border-radius:16px;padding:6px 18px;box-shadow:0 3px 0 #6c8193}
+.dbtn:active{transform:translateY(2px);box-shadow:0 1px 0 #6c8193}
+.dbtn.dk,.dbtn[aria-pressed="true"]{background:#6c8193;color:#fff}
+.dskscore{font-family:var(--body);font-weight:700;font-size:30px;color:#c4613f}
+/* big number line */
+.dsk > .nlov{position:absolute;inset:22px;z-index:20;background:#fdf8ee;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;padding:20px}
+.nlbar{display:flex;gap:12px;align-items:center;position:absolute;top:18px}
+.nlbar b{font-family:var(--body);font-size:34px;color:#56697a;margin-right:10px}
+.nlwrap{display:flex;align-items:center;gap:8px;width:100%}
+.nlhand{display:grid;justify-items:center;width:84px;flex:0 0 auto;position:relative}
+.nlhand .nlh{width:80px;display:block;line-height:0}
+.nlhand.r .nlh{transform:scaleX(-1)}
+.nlhand b{position:absolute;bottom:22px;font-family:var(--body);font-size:22px;color:#fff}
+.nlpan{width:58px;height:58px;border-radius:50%;border:3px solid #6c8193;background:#fff;color:#6c8193;font-size:24px;flex:0 0 auto}
+.nlpan[disabled]{opacity:.25}
+.nlline{flex:1;display:flex;position:relative;padding:0 18px}
+.nlline::before{content:"";position:absolute;left:10px;right:10px;top:var(--ty,40px);height:6px;background:#2f2f2f;border-radius:3px;transform:translateY(-50%)}
+.nlline .dot{position:absolute;top:var(--ty,40px);width:22px;height:22px;border-radius:50%;background:#2f2f2f;transform:translateY(-50%)}
+.nlline .dot.l{left:2px}.nlline .dot.r{right:2px}
+.nlline.cut-l::before{left:-20px}.nlline.cut-r::before{right:-20px}
+.nlc{flex:1 1 0;min-width:0;border:0;background:none;display:grid;justify-items:center;padding:0;position:relative;cursor:pointer}
+.nlc i{display:block;width:6px;height:var(--th,60px);background:#2f2f2f;border-radius:3px;margin-top:calc(var(--ty,40px) - var(--th,60px) / 2)}
+.nlc b{font-family:var(--body);font-weight:700;font-size:var(--nf,48px);color:#2f2f2f;line-height:1;margin-top:10px;width:1.4em;height:1.4em;display:grid;place-items:center;border-radius:50%;transition:background .2s,transform .2s}
+.nlc.sel b{background:var(--sc,#c4613f);color:#fff;transform:scale(1.15)}
+.nlc.bef b,.nlc.aft b{outline:5px dashed #d9b343;outline-offset:2px}
+.nlc em{position:absolute;bottom:-46px;font-style:normal;font-family:var(--body);font-weight:700;font-size:28px;color:#b0862a;display:none}
+.nlc.bef em,.nlc.aft em{display:block}
+.nlsay{margin:40px 0 0;font-family:var(--body);font-weight:700;font-size:40px;color:#3a3a3a;min-height:50px}
+
+[data-s="p-ba"] .bac{width:240px;height:240px}
+[data-s="p-ba"] .bac b{font-size:150px}
+[data-s="p-ba"] .bac.mid{width:262px;height:262px}
+[data-s="p-ba"] .bac.mid b{font-size:170px}
+[data-s="p-ba"] .bapig{width:270px;margin-bottom:-60px}
+[data-s="p-ba"] .batile{width:132px;height:84px;font-size:46px}
+[data-s="p-ba"] .batiles{margin-top:10px}
 </style>
 
 <div id="app" data-own>
@@ -1165,15 +1224,30 @@ tree: Quercus robur - alone tree.jpg — Bartosz Cuber (CC BY-SA 3.0)">📷 Phot
     </section>
 
     <section class="slide" data-s="p-ba" data-g="proj" style="display:contents" hidden>
-      <p class="ptitle" style="font-size:56px">Before &amp; After <span style="color:#f6c21a">1 – 10</span></p>
-      <div class="baline" id="baLine"></div>
-      <div class="bastage">
-        <div class="bapig"><span data-art="pig" class="artin"></span></div>
-        <div class="bacircles"><div class="bac blank" id="baB" data-drop="ba" data-w="b"><small>before</small><b>?</b></div><div class="bac mid" id="baM"><b>5</b></div><div class="bac blank" id="baA" data-drop="ba" data-w="a"><small>after</small><b>?</b></div></div>
+      <div class="dsk" id="baDsk">
+        <div class="dskin">
+          <div class="dsktitle">Before <span>&amp;</span> After <small>1 – 10</small></div>
+          <div class="bastage">
+            <div class="bapig"><span data-art="pig" class="artin"></span></div>
+            <div class="bacircles"><div class="bac blank" id="baB" data-drop="ba" data-w="b"><small>before</small><b>?</b></div><div class="bac mid" id="baM"><b>5</b></div><div class="bac blank" id="baA" data-drop="ba" data-w="a"><small>after</small><b>?</b></div></div>
+          </div>
+          <div class="batiles" id="baTiles"></div>
+          <div class="dskbar"><p class="dsksay" id="baSay">What comes before?</p><button class="dbtn" type="button" id="baNext">➡ Next</button><button class="dbtn" type="button" id="baHelp">📏 Number line</button><button class="dbtn" type="button" id="baSheet">📄 Our worksheet</button><span class="dskscore" id="baScore"></span></div>
+          <div class="baline" id="baLine" hidden></div>
+        </div>
+        <div class="nlov" id="nlOv" hidden>
+          <div class="nlbar"><b>Number line</b><button class="dbtn" type="button" id="nlOut">🔍 −</button><button class="dbtn" type="button" id="nlIn">🔍 +</button><button class="dbtn" type="button" id="nlBA" aria-pressed="false">👀 Before &amp; After</button><button class="dbtn" type="button" id="nlClear">↺ Clear</button><button class="dbtn dk" type="button" id="nlClose">✕ Close</button></div>
+          <div class="nlwrap">
+            <div class="nlhand"><span class="nlh"><svg viewBox="0 0 120 150" aria-hidden="true"><path d="M30 140 C18 116 10 96 12 80 C14 70 24 70 28 80 L36 98 L34 34 C34 24 46 24 47 34 L50 76 L52 18 C52 8 65 8 66 18 L67 74 L72 24 C73 14 86 15 85 26 L83 80 L92 44 C95 35 107 38 105 48 L96 104 C92 126 84 140 76 146 Z" fill="#b3c1cc"/></svg></span><b>Left</b></div>
+            <button class="nlpan" type="button" id="nlPrev" aria-label="Move left">◀</button>
+            <div class="nlline" id="nlLine"></div>
+            <button class="nlpan" type="button" id="nlNext" aria-label="Move right">▶</button>
+            <div class="nlhand r"><span class="nlh"><svg viewBox="0 0 120 150" aria-hidden="true"><path d="M30 140 C18 116 10 96 12 80 C14 70 24 70 28 80 L36 98 L34 34 C34 24 46 24 47 34 L50 76 L52 18 C52 8 65 8 66 18 L67 74 L72 24 C73 14 86 15 85 26 L83 80 L92 44 C95 35 107 38 105 48 L96 104 C92 126 84 140 76 146 Z" fill="#b3c1cc"/></svg></span><b>Right</b></div>
+          </div>
+          <p class="nlsay" id="nlSay">Tap a number!</p>
+        </div>
+        <div class="wsov" id="baWs" hidden><div class="wsbar"><b>Before and After (1–10) · worksheet</b><button class="btn" type="button" id="baPrint">🖨 Print</button><button class="btn go" type="button" id="baClose">✕ Close</button></div><img data-i="ws_ba" alt="Before and After worksheet"></div>
       </div>
-      <div class="batiles" id="baTiles"></div>
-      <div class="row"><p class="say" id="baSay" style="margin:0;min-width:620px">What comes before?</p><button class="btn green" type="button" id="baNext">➡ Next</button><button class="btn" type="button" id="baHelp">👀 Number line</button><button class="btn go" type="button" id="baSheet">📄 Our worksheet</button><span class="gstat" id="baScore" style="color:var(--forest)"></span></div>
-      <div class="wsov" id="baWs" hidden><div class="wsbar"><b>Before and After (1–10) · worksheet</b><button class="btn" type="button" id="baPrint">🖨 Print</button><button class="btn go" type="button" id="baClose">✕ Close</button></div><img data-i="ws_ba" alt="Before and After worksheet"></div>
     </section>
 
     <section class="slide" data-s="p-dice" data-g="proj" style="display:contents" hidden>
@@ -2527,7 +2601,8 @@ drawSeq();
 var BACOL = [null,'#ec4c8a','#f28c1c','#2b8fd6','#e2513b','#1fa79c','#d6458f','#2aa36b','#c74fd0','#ef8a12','#e0a800'];
 var baN = 5, baStep = 'b', baPick = null, baScore = 0, baDeck = [];
 $('baLine').innerHTML = [1,2,3,4,5,6,7,8,9,10].map(function(n){ return '<span data-n="' + n + '" style="background:' + BACOL[n] + '">' + n + '</span>'; }).join('');
-$('baTiles').innerHTML = [1,2,3,4,5,6,7,8,9,10].map(function(n){ return '<div class="batile" data-n="' + n + '" role="button" tabindex="0" aria-label="' + n + '" style="background:' + BACOL[n] + '">' + n + '</div>'; }).join('');
+var DESKCOL = [null,'#c4613f','#d98a4a','#d9b343','#6aa055','#5c9e9a','#4f7598','#9c6cc4','#e8a3b5','#8a6a50','#555c63'];
+$('baTiles').innerHTML = [1,2,3,4,5,6,7,8,9,10].map(function(n){ return '<div class="batile" data-n="' + n + '" role="button" tabindex="0" aria-label="' + n + '" style="--bc:' + DESKCOL[n] + '">' + n + '</div>'; }).join('');
 function baNew(silent){
   if (!baDeck.length) baDeck = shuffle([2,3,4,5,6,7,8,9]);
   baN = baDeck.pop(); baStep = 'b'; baPick = null;
@@ -2558,7 +2633,33 @@ $('baTiles').querySelectorAll('.batile').forEach(function(el){
 ['baB','baA'].forEach(function(id){ $(id).onclick = function(){ if (baStep === 'done' || $(id).classList.contains('ok')) return; baStep = $(id).dataset.w; baCur(); say('What comes ' + (baStep === 'a' ? 'after ' : 'before ') + WORDS[baN] + '?'); $('baSay').textContent = 'What comes ' + (baStep === 'a' ? 'after' : 'before') + ' ' + baN + '?'; }; });
 $('baM').onclick = function(){ say('num:' + baN); };
 $('baNext').onclick = function(){ baNew(); };
-$('baHelp').onclick = function(){ $('baLine').classList.toggle('on'); };
+$('baHelp').onclick = function(){ $('nlOv').hidden = false; drawNL(); say('Number line'); };
+/* big number line 0-20: zoom in/out, tap a number to mark it */
+var NLZ = [21, 11, 7], nlZ = 0, nlStart = 0, nlSel = null, nlBA = false;
+function drawNL(){
+  var C = NLZ[nlZ]; nlStart = Math.max(0, Math.min(21 - C, nlStart));
+  var nf = C === 21 ? 36 : C === 11 ? 66 : 100, th = C === 21 ? 56 : 84, h = '';
+  if (nlStart === 0) h += '<span class="dot l"></span>';
+  if (nlStart + C === 21) h += '<span class="dot r"></span>';
+  for (var n = nlStart; n < nlStart + C; n++){
+    var cls = n === nlSel ? ' sel' : nlBA && nlSel != null && n === nlSel - 1 ? ' bef' : nlBA && nlSel != null && n === nlSel + 1 ? ' aft' : '';
+    h += '<button type="button" class="nlc' + cls + '" data-n="' + n + '"><i></i><b style="--sc:' + (DESKCOL[n % 10 || 10]) + '">' + n + '</b><em>' + (cls === ' bef' ? 'before' : cls === ' aft' ? 'after' : '') + '</em></button>';
+  }
+  var L = $('nlLine'); L.innerHTML = h; L.style.setProperty('--nf', nf + 'px'); L.style.setProperty('--th', th + 'px'); L.style.setProperty('--ty', (th / 2 + 4) + 'px');
+  L.classList.toggle('cut-l', nlStart > 0); L.classList.toggle('cut-r', nlStart + C < 21);
+  $('nlPrev').disabled = nlStart === 0; $('nlNext').disabled = nlStart + C >= 21;
+  $('nlOut').disabled = nlZ === 0; $('nlIn').disabled = nlZ === NLZ.length - 1;
+  L.querySelectorAll('.nlc').forEach(function(b){ b.onclick = function(){ nlSel = +b.dataset.n; drawNL(); say('num:' + nlSel);
+    $('nlSay').textContent = nlBA ? (nlSel > 0 ? (nlSel - 1) + ' comes before ' + nlSel : '') + (nlSel > 0 && nlSel < 20 ? ' · ' : '') + (nlSel < 20 ? (nlSel + 1) + ' comes after ' + nlSel : '') : 'Number ' + nlSel + '. What comes before? What comes after?'; }; });
+}
+function nlCenter(){ var C = NLZ[nlZ], c = nlSel != null ? nlSel : 10; nlStart = c - Math.floor(C / 2); }
+$('nlIn').onclick = function(){ if (nlZ < NLZ.length - 1){ nlZ++; nlCenter(); drawNL(); } };
+$('nlOut').onclick = function(){ if (nlZ > 0){ nlZ--; nlCenter(); drawNL(); } };
+$('nlPrev').onclick = function(){ nlStart -= Math.max(1, NLZ[nlZ] - 2); drawNL(); };
+$('nlNext').onclick = function(){ nlStart += Math.max(1, NLZ[nlZ] - 2); drawNL(); };
+$('nlBA').onclick = function(){ nlBA = !nlBA; $('nlBA').setAttribute('aria-pressed', String(nlBA)); drawNL(); };
+$('nlClear').onclick = function(){ nlSel = null; $('nlSay').textContent = 'Tap a number!'; drawNL(); };
+$('nlClose').onclick = function(){ $('nlOv').hidden = true; };
 $('baSheet').onclick = function(){ $('baWs').hidden = false; };
 $('baClose').onclick = function(){ $('baWs').hidden = true; };
 $('baPrint').onclick = function(){ try{ var w = window.open('', '_blank'); w.document.write('<title>Before and After</title><style>@page{margin:10mm}body{margin:0}img{width:100%}</style><img src="' + IMG.ws_ba + '" onload="setTimeout(function(){print()},300)">'); w.document.close(); }catch(e){} };
