@@ -991,6 +991,64 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
 .bggrid button.wrong{animation:shake .4s;opacity:.55}
 .bgbig img{flex:1;min-height:0;object-fit:contain;border-radius:16px}
 .bgbig .wsbar b{font-size:44px}
+
+/* how earthworms help */
+.hwrap{display:flex;gap:22px;align-items:center;width:100%;flex:1;min-height:0;padding:0 20px}
+.hbox{flex:1;height:100%;max-height:560px;border-radius:26px;overflow:hidden;border:6px solid #fff;box-shadow:0 6px 0 rgba(0,0,0,.14)}
+.hsvg{width:100%;height:100%;display:block}
+.hsvg *{transition:opacity 1s,transform 1.2s}
+.hrich{opacity:0}
+.hclumps{transform-box:fill-box;transform-origin:center}
+.hcrumbs,.hsparks,.hwater,.hair{opacity:0}
+.htun{stroke-dasharray:1000;stroke-dashoffset:1000}
+.hworm{stroke-dasharray:110 2000;stroke-dashoffset:110;opacity:0}
+.hleaf{transform-box:fill-box;transform-origin:center}
+.hplant{transform-box:fill-box;transform-origin:50% 100%;transform:scale(.55)}
+.hflower{opacity:0}
+.hroots path{stroke-dasharray:140;stroke-dashoffset:140;transition:stroke-dashoffset 2s}
+.hbox.s1 .hclumps{opacity:0;transform:scale(.3)}
+.hbox.s1 .hcrumbs{opacity:1}
+.hbox.s2 .htun{stroke-dashoffset:0;transition:stroke-dashoffset 4s linear}
+.hbox.s2 .hworm{opacity:1;animation:wcrawl 4s linear forwards}
+.hbox.s2 .hworm.w2{animation-delay:.8s}
+@keyframes wcrawl{from{stroke-dashoffset:110}to{stroke-dashoffset:-880}}
+.hbox.s3 .hwater{opacity:1;animation:hdrop 1.8s ease-in infinite}
+.hbox.s3 .hair{opacity:1;animation:hbub 2s ease-in-out infinite alternate}
+@keyframes hdrop{from{transform:translateY(-20px)}to{transform:translateY(200px)}}
+@keyframes hbub{from{transform:translateX(-14px)}to{transform:translateX(14px)}}
+.hbox.s4 .hleaf{transform:translate(-20px,60px) scale(.15);opacity:0;transition:transform 3s,opacity 3s}
+.hbox.s5 .hrich{opacity:.5}
+.hbox.s5 .hsparks{opacity:1;animation:twinkle 1.4s ease-in-out infinite}
+.hbox.s6 .hplant{transform:scale(1.15)}
+.hbox.s6 .hflower{opacity:1}
+.hbox.s6 .hroots path{stroke-dashoffset:0}
+.hbox:not(.s3) .hwater,.hbox:not(.s3) .hair{animation:none}
+.hsteps{list-style:none;margin:0;padding:0;display:grid;gap:10px;width:520px;counter-reset:hs}
+.hsteps li{counter-increment:hs;display:flex;gap:12px;align-items:center;font-family:var(--body);font-weight:700;font-size:28px;line-height:1.15;color:#203a2f;background:#fff;border-radius:18px;padding:10px 16px;opacity:.45;cursor:pointer;transition:all .3s}
+.hsteps li::before{content:counter(hs);flex:0 0 auto;width:44px;height:44px;border-radius:50%;background:#2f9e44;color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:400}
+.hsteps li.done{opacity:.85}
+.hsteps li.on{opacity:1;box-shadow:0 0 0 5px #2f9e44;transform:scale(1.03)}
+/* earthworm menu */
+.mnboard{width:1300px;max-width:100%;flex:1;min-height:0;background:#3b2a1d;border:10px solid #c79a62;border-radius:28px;padding:16px 24px;display:flex;flex-direction:column;gap:12px;box-shadow:0 8px 0 rgba(0,0,0,.18)}
+.mnhead{display:flex;align-items:center;gap:18px;justify-content:center}
+.mnhead b{font-family:var(--display);font-weight:400;font-size:62px;color:#ffe9b0}
+.mnhead small{font-family:var(--body);font-size:28px;color:#e8d6b8}
+.mnworm{width:140px;line-height:0}.mnworm svg{width:100%;height:auto}
+.mnitems{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;min-height:120px}
+.mnitems button{width:150px;border:4px solid #fff;background:#fff8e6;border-radius:20px;padding:6px;display:grid;justify-items:center;gap:2px;animation:pop .4s}
+.mnitems .em{font-size:64px;line-height:1.1;height:76px;display:grid;place-items:center}
+.mnitems .em img{height:70px}
+.mnitems b{font-family:var(--body);font-weight:700;font-size:20px;color:#3b2a1d}
+.mnbins{display:grid;grid-template-columns:1fr 1fr;gap:18px;flex:1;min-height:0}
+.mnbin{border-radius:20px;padding:10px;display:flex;flex-direction:column;gap:8px;align-items:center}
+.mnbin.yum{background:#e8f6dd;border:5px dashed #6aa055}
+.mnbin.yuck{background:#fde8e8;border:5px dashed #d96a6a}
+.mnbin > b{font-family:var(--display);font-weight:400;font-size:38px;color:#203a2f}
+.mnbin > div{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.mnbin span{display:grid;justify-items:center;background:#fff;border-radius:14px;padding:4px 8px;animation:pop .4s}
+.mnbin span i{font-style:normal;font-size:46px;line-height:1.1}
+.mnbin span i img{height:48px}
+.mnbin span small{font-family:var(--body);font-weight:700;font-size:16px}
 </style>
 
 <div id="app" data-own>
@@ -1392,7 +1450,7 @@ tree: Quercus robur - alone tree.jpg — Bartosz Cuber (CC BY-SA 3.0)">📷 Phot
     </section>
 
     <section class="slide" data-s="p-worm" data-g="proj" style="display:contents" hidden>
-      <div class="seqtabs" id="wmTabs"><button type="button" data-v="mys" aria-pressed="true">🔍 Mystery</button><button type="button" data-v="vid" aria-pressed="false">🎬 Video</button><button type="button" data-v="craft" aria-pressed="false">✂️ Craft</button><button type="button" data-v="e" aria-pressed="false">🔤 Letter E</button></div>
+      <div class="seqtabs" id="wmTabs"><button type="button" data-v="mys" aria-pressed="true">🔍 Mystery</button><button type="button" data-v="vid" aria-pressed="false">🎬 Video</button><button type="button" data-v="help" aria-pressed="false">🌱 How they help</button><button type="button" data-v="menu" aria-pressed="false">🍽️ Worm menu</button><button type="button" data-v="craft" aria-pressed="false">✂️ Craft</button><button type="button" data-v="e" aria-pressed="false">🔤 Letter E</button></div>
       <div class="wmview" id="wmMys">
         <p class="ptitle" style="font-size:48px">Who lives under the soil, near the plants? 🤔</p>
         <div class="wbox" id="wBox"><svg class="wscene" viewBox="0 0 1200 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -1417,6 +1475,41 @@ tree: Quercus robur - alone tree.jpg — Bartosz Cuber (CC BY-SA 3.0)">📷 Phot
       <div class="wmview" id="wmVid" hidden>
         <p class="ptitle" style="font-size:48px">Earthworms! 🪱</p>
         <div class="wvid" id="wVid"><button type="button" class="wplay" id="wPlay"><span><svg viewBox="0 0 240 120"><path d="M30 70 C50 30 80 30 95 60 C110 90 140 92 155 62 C170 32 200 34 214 62" fill="none" stroke="#7a3b55" stroke-width="34" stroke-linecap="round"/><path d="M30 70 C50 30 80 30 95 60 C110 90 140 92 155 62 C170 32 200 34 214 62" fill="none" stroke="#f3a7c0" stroke-width="27" stroke-linecap="round"/><g stroke="#c96e92" stroke-width="3" stroke-linecap="round"><path d="M48 50 l12 12 M64 42 l6 16 M118 74 l-4 16 M134 74 l2 16 M176 42 l-6 16 M192 46 l-10 12"/></g><rect x="88" y="54" width="22" height="18" rx="9" fill="#e98bb0" transform="rotate(40 99 63)"/><circle cx="214" cy="52" r="9" fill="#fff" stroke="#3a1d2a" stroke-width="2.5"/><circle cx="216" cy="53" r="4.5" fill="#111"/><circle cx="200" cy="52" r="8" fill="#fff" stroke="#3a1d2a" stroke-width="2.5"/><circle cx="202" cy="53" r="4" fill="#111"/><path d="M204 70 q8 6 16 0" stroke="#3a1d2a" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="196" cy="68" r="4" fill="#ff7aa8" opacity=".6"/></svg></span><b>▶ Play the video</b></button></div>
+      </div>
+      <div class="wmview" id="wmHelp" hidden>
+        <p class="ptitle" style="font-size:44px">How do earthworms help plants? 🪱🌱</p>
+        <div class="hwrap"><div class="hbox" id="hBox"><svg class="hsvg" viewBox="0 0 1000 560" aria-hidden="true">
+  <defs><linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe6ff"/><stop offset="1" stop-color="#eaf8ff"/></linearGradient></defs>
+  <rect width="1000" height="200" fill="url(#hsky)"/>
+  <rect y="190" width="1000" height="370" class="hsoil" fill="#8a6a50"/>
+  <rect y="190" width="1000" height="370" class="hrich" fill="#4a2f17"/>
+  <g class="hclumps" fill="#a89a8c" stroke="#7d6f62" stroke-width="3"><path d="M90 420 l40 -20 l38 12 l6 34 l-46 14 l-40 -12Z"/><path d="M300 480 l50 -18 l40 16 l-4 32 l-56 10Z"/><path d="M760 420 l44 -16 l36 18 l-8 30 l-50 8 l-26 -14Z"/><path d="M470 250 l34 -10 l28 14 l-6 24 l-40 6Z"/><path d="M860 500 l36 -12 l30 16 l-8 26 l-44 4Z"/></g>
+  <g class="hcrumbs" fill="#6b4a2c"><circle cx="110" cy="430" r="5"/><circle cx="140" cy="440" r="4"/><circle cx="330" cy="490" r="5"/><circle cx="360" cy="500" r="4"/><circle cx="790" cy="430" r="5"/><circle cx="810" cy="444" r="4"/><circle cx="490" cy="262" r="4"/><circle cx="880" cy="510" r="5"/></g>
+  <g class="hsparks" fill="#ffe17a"><path d="M200 470 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4Z"/><path d="M640 290 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4Z"/><path d="M880 420 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4Z"/><path d="M420 520 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4Z"/></g>
+  <path class="htun" d="M120 300 C220 260 300 380 420 340 C520 305 560 420 680 400 C780 384 820 300 900 330" fill="none" stroke="#2c1a0b" stroke-width="34" stroke-linecap="round" pathLength="1000"/>
+  <path class="htun t2" d="M560 240 C600 300 540 360 600 430 C640 480 720 470 760 500" fill="none" stroke="#2c1a0b" stroke-width="30" stroke-linecap="round" pathLength="1000"/>
+  <path class="hworm" d="M120 300 C220 260 300 380 420 340 C520 305 560 420 680 400 C780 384 820 300 900 330" fill="none" stroke="#f3a7c0" stroke-width="22" stroke-linecap="round" pathLength="1000"/>
+  <path class="hworm w2" d="M560 240 C600 300 540 360 600 430 C640 480 720 470 760 500" fill="none" stroke="#f3a7c0" stroke-width="20" stroke-linecap="round" pathLength="1000"/>
+  <g class="hwater" fill="#4aa8ff"><path d="M300 150 q10 18 0 26 q-10 -8 0 -26Z"/><path d="M560 120 q10 18 0 26 q-10 -8 0 -26Z"/><path d="M840 150 q10 18 0 26 q-10 -8 0 -26Z"/><path d="M430 100 q10 18 0 26 q-10 -8 0 -26Z"/></g>
+  <g class="hair" fill="none" stroke="#fff" stroke-width="3"><circle cx="200" cy="300" r="7"/><circle cx="440" cy="342" r="6"/><circle cx="660" cy="400" r="7"/><circle cx="590" cy="380" r="5"/><circle cx="850" cy="320" r="6"/></g>
+  <g class="hleaf"><path d="M660 196 C680 160 740 160 770 186 C740 206 690 210 660 196Z" fill="#a4652b" stroke="#6b3c12" stroke-width="3"/><path d="M660 196 L770 186" stroke="#6b3c12" stroke-width="2"/></g>
+  <rect y="186" width="1000" height="12" fill="#5fb03c"/>
+  <g class="hplant">
+    <g class="hroots" stroke="#e8d6b8" stroke-width="5" fill="none" stroke-linecap="round"><path d="M300 196 q-10 50 -40 80 M300 196 q12 60 44 90 M300 196 v100"/></g>
+    <path d="M300 196 V120" stroke="#3e8e2a" stroke-width="9"/>
+    <path d="M300 160 q-44 -22 -54 12 q34 10 54 -12Z M300 146 q44 -26 56 8 q-34 12 -56 -8Z" fill="#6cc24a"/>
+    <g class="hflower"><g fill="#f27bb5"><circle cx="300" cy="96" r="18"/><circle cx="280" cy="110" r="16"/><circle cx="320" cy="110" r="16"/><circle cx="288" cy="82" r="15"/><circle cx="312" cy="82" r="15"/></g><circle cx="300" cy="98" r="10" fill="#ffd84d"/></g>
+  </g>
+</svg></div>
+          <ol class="hsteps" id="hSteps"><li data-s="1">Earthworms make the soil soft.</li><li data-s="2">They make little tunnels in the soil.</li><li data-s="3">Air and water can move through the soil.</li><li data-s="4">They help dead leaves break down.</li><li data-s="5">They make the soil healthy.</li><li data-s="6">Healthy soil helps plants grow! 🌱</li></ol></div>
+        <div class="row"><button class="btn green" type="button" id="hPlay">▶ Play</button><button class="btn" type="button" id="hPrev">◀</button><button class="btn" type="button" id="hNext">▶▶ Next</button><button class="btn" type="button" id="hReset">↺</button></div>
+      </div>
+      <div class="wmview" id="wmMenu" hidden>
+        <div class="mnboard"><div class="mnhead"><span class="mnworm"><svg viewBox="0 0 240 120"><path d="M30 70 C50 30 80 30 95 60 C110 90 140 92 155 62 C170 32 200 34 214 62" fill="none" stroke="#7a3b55" stroke-width="34" stroke-linecap="round"/><path d="M30 70 C50 30 80 30 95 60 C110 90 140 92 155 62 C170 32 200 34 214 62" fill="none" stroke="#f3a7c0" stroke-width="27" stroke-linecap="round"/><g stroke="#c96e92" stroke-width="3" stroke-linecap="round"><path d="M48 50 l12 12 M64 42 l6 16 M118 74 l-4 16 M134 74 l2 16 M176 42 l-6 16 M192 46 l-10 12"/></g><rect x="88" y="54" width="22" height="18" rx="9" fill="#e98bb0" transform="rotate(40 99 63)"/><circle cx="214" cy="52" r="9" fill="#fff" stroke="#3a1d2a" stroke-width="2.5"/><circle cx="216" cy="53" r="4.5" fill="#111"/><circle cx="200" cy="52" r="8" fill="#fff" stroke="#3a1d2a" stroke-width="2.5"/><circle cx="202" cy="53" r="4" fill="#111"/><path d="M204 70 q8 6 16 0" stroke="#3a1d2a" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="196" cy="68" r="4" fill="#ff7aa8" opacity=".6"/></svg></span><b>Earthworm Menu</b><small>What do earthworms eat?</small></div>
+          <div class="mnitems" id="mnItems"></div>
+          <div class="mnbins"><div class="mnbin yum"><b>😋 Yummy!</b><div id="mnYum"></div></div><div class="mnbin yuck"><b>🚫 No, thank you!</b><div id="mnNo"></div></div></div>
+        </div>
+        <div class="row"><p class="seesent" id="mnSay" style="margin:0;font-size:34px">Tap the food! Do earthworms eat it?</p><button class="btn" type="button" id="mnReset">↺</button></div>
       </div>
       <div class="wmview" id="wmCraft" hidden>
         <p class="ptitle" style="font-size:48px">E is for Earthworm ✂️</p>
@@ -2936,7 +3029,7 @@ $('crClose').onclick = function(){ $('crBig').hidden = true; };
 crShow(0);
 /* ---- earthworm: mystery, video, craft, letter E ---- */
 var WORM_VID = 'l-zc_1vjLnI';
-function wmShow(v){ ['mys','vid','craft','e'].forEach(function(k){ $({mys:'wmMys',vid:'wmVid',craft:'wmCraft',e:'wmE'}[k]).hidden = k !== v; }); $('wmTabs').querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.v === v)); });
+function wmShow(v){ ['mys','vid','help','menu','craft','e'].forEach(function(k){ $({mys:'wmMys',vid:'wmVid',help:'wmHelp',menu:'wmMenu',craft:'wmCraft',e:'wmE'}[k]).hidden = k !== v; }); if (v !== 'help' && typeof hStop === 'function'){ hStop(); } $('wmTabs').querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.v === v)); });
   if (v !== 'craft' && typeof ecReset === 'function') ecReset(); if (v !== 'vid') wmStopVid(); if (v === 'e') mountWrite($('wEw'), ['E','e'], '#2f9e44'); }
 $('wmTabs').querySelectorAll('button').forEach(function(b){ b.onclick = function(){ wmShow(b.dataset.v); if (b.dataset.v === 'craft') ecPlay(); }; });
 $('wLook').onclick = function(){ $('wBox').classList.add('open'); $('wWatch').hidden = false; $('wLook').hidden = true; say(['Look under the soil!', 'Earthworms! Earthworms live under the soil, near the plants.']); };
@@ -3029,6 +3122,32 @@ $('bgGrid').querySelectorAll('button').forEach(function(b){ b.onclick = function
   else { b.classList.remove('wrong'); void b.offsetWidth; b.classList.add('wrong'); setTimeout(function(){ b.classList.remove('wrong'); }, 600); say('No, that is the ' + bug[0] + '. Try again!'); } }; });
 $('bgFind').onclick = function(){ bgWant = Math.floor(Math.random() * BUGS.length); var n = BUGS[bgWant][0]; $('bgSay').textContent = '🔎 Find the ' + n + '!'; say('Find the ' + n + '!'); };
 $('bgClose').onclick = function(){ $('bgBig').hidden = true; };
+/* ---- how earthworms help plants ---- */
+var HSAY = ['Earthworms make the soil soft.','They make little tunnels in the soil.','Air and water can move through the soil.','They help dead leaves break down.','They make the soil healthy.','Healthy soil helps plants grow!'];
+var hStep = 0, hTimer = null;
+function hGo(n){ hStep = Math.max(0, Math.min(6, n)); var box = $('hBox');
+  for (var i = 1; i <= 6; i++) box.classList.toggle('s' + i, i <= hStep);
+  $('hSteps').querySelectorAll('li').forEach(function(li){ var k = +li.dataset.s; li.classList.toggle('on', k === hStep); li.classList.toggle('done', k < hStep); });
+  if (hStep) say(HSAY[hStep - 1]); }
+function hStop(){ clearInterval(hTimer); hTimer = null; $('hPlay').textContent = '▶ Play'; }
+$('hPlay').onclick = function(){ if (hTimer){ hStop(); return; } if (hStep >= 6) hGo(0); hGo(hStep + 1); $('hPlay').textContent = '⏸ Pause';
+  hTimer = setInterval(function(){ if (hStep >= 6){ hStop(); return; } hGo(hStep + 1); }, 5200); };
+$('hNext').onclick = function(){ hStop(); hGo(hStep + 1); };
+$('hPrev').onclick = function(){ hStop(); hGo(hStep - 1); };
+$('hReset').onclick = function(){ hStop(); hGo(0); };
+$('hSteps').querySelectorAll('li').forEach(function(li){ li.onclick = function(){ hStop(); hGo(+li.dataset.s); }; });
+/* ---- earthworm menu ---- */
+var MENU = [['dead leaves','🍂',1],['banana peel','🍌',1],['apple core','🍎',1],['carrot peels','🥕',1],['soil','img:a_soil',1],['paper','📰',1],['egg shells','🥚',1],['lettuce','🥬',1],
+  ['candy','🍬',0],['meat','🍖',0],['cheese','🧀',0],['plastic','🥤',0],['pizza','🍕',0]];
+function mnIcon(e){ return e.indexOf('img:') === 0 ? '<img src="' + IMG[e.slice(4)] + '" alt="">' : e; }
+function mnDraw(){ $('mnYum').innerHTML = ''; $('mnNo').innerHTML = ''; $('mnSay').textContent = 'Tap the food! Do earthworms eat it?';
+  $('mnItems').innerHTML = shuffle(MENU.slice()).map(function(m){ return '<button type="button" data-n="' + m[0] + '"><span class="em">' + mnIcon(m[1]) + '</span><b>' + m[0] + '</b></button>'; }).join('');
+  $('mnItems').querySelectorAll('button').forEach(function(b){ b.onclick = function(){ var m = MENU.filter(function(x){ return x[0] === b.dataset.n; })[0];
+    $(m[2] ? 'mnYum' : 'mnNo').insertAdjacentHTML('beforeend', '<span><i>' + mnIcon(m[1]) + '</i><small>' + m[0] + '</small></span>'); b.remove();
+    var line = m[2] ? 'Yummy! Earthworms eat ' + m[0] + '!' : 'No ' + m[0] + ' for earthworms!'; $('mnSay').textContent = (m[2] ? '😋 ' : '🚫 ') + line; say(line);
+    if (!$('mnItems').children.length) setTimeout(function(){ $('mnSay').textContent = '⭐ Earthworms eat plants and scraps, not candy or meat!'; say('Great job! Earthworms eat old plants and food scraps.'); }, 2600); }; }); }
+$('mnReset').onclick = mnDraw;
+mnDraw();
 /* ---- pumpkin surprise: one thing comes out each time ---- */
 function splat(c){ return '<svg viewBox="0 0 200 200"><path d="M100 18 C120 18 126 44 146 40 C170 34 186 58 172 78 C160 96 188 108 178 132 C168 156 140 146 130 166 C120 186 84 190 74 168 C64 148 36 160 24 138 C12 116 34 100 26 82 C16 58 40 36 62 44 C80 50 80 18 100 18Z" fill="' + c + '" stroke="' + (c === '#ffffff' ? '#bbb' : 'rgba(0,0,0,.25)') + '" stroke-width="5"/><ellipse cx="78" cy="78" rx="18" ry="11" fill="#fff" opacity=".35"/></svg>'; }
 function shapeSvg(k, c){
