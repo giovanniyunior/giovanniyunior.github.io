@@ -1,110 +1,110 @@
 {
- "earthworm_0.jpg": {
-  "title": "File:Worm way (8051009641) (2).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10175246@N08\">psyberartist</a>",
+ "worm_0.jpg": {
+  "title": "File:Lumbricus terrestris (26559560801).jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/25401497@N02\">Donald Hobern</a> from Copenhagen, Denmark",
   "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Worm_way_(8051009641)_(2).jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Lumbricus_terrestris_(26559560801).jpg"
  },
- "earthworm_1.jpg": {
-  "title": "File:Wriggle scribbles (8051025412) (2).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10175246@N08\">psyberartist</a>",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Wriggle_scribbles_(8051025412)_(2).jpg"
+ "worm_1.jpg": {
+  "title": "File:Lumbricus herculeus (left) and Lumbricus terrestris (right).png",
+  "artist": "James S.W., Porco D., Deca\u00ebns T., Richard B., Rougerie R., Ers\u00e9us C.",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lumbricus_herculeus_(left)_and_Lumbricus_terrestris_(right).png"
  },
- "earthworm_2.jpg": {
-  "title": "File:Cliff notes (or, \"What the worms wrote long ago\") (8051064045) (2).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10175246@N08\">psyberartist</a>",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Cliff_notes_(or,_%22What_the_worms_wrote_long_ago%22)_(8051064045)_(2).jpg"
+ "worm_2.jpg": {
+  "title": "File:\u0429\u0435\u0442\u0438\u043d\u043a\u0438 \u0434\u043e\u0436\u0434\u0435\u0432\u043e\u0433\u043e \u0447\u0435\u0440\u0432\u044f (Lumbricus terrestris).jpg",
+  "artist": "\u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0438\u044f \u0415\u043b\u043e\u0432\u0438\u0446\u043a\u0430\u044f",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:%D0%A9%D0%B5%D1%82%D0%B8%D0%BD%D0%BA%D0%B8_%D0%B4%D0%BE%D0%B6%D0%B4%D0%B5%D0%B2%D0%BE%D0%B3%D0%BE_%D1%87%D0%B5%D1%80%D0%B2%D1%8F_(Lumbricus_terrestris).jpg"
  },
- "earthworm_3.jpg": {
+ "worm_3.jpg": {
+  "title": "File:Regenwurm - Lumbricus terrestris 1.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Wilhelm_Zimmerling_PAR\" title=\"User:Wilhelm Zimmerling PAR\">Wilhelm Zimmerling PAR</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Regenwurm_-_Lumbricus_terrestris_1.jpg"
+ },
+ "worm_4.jpg": {
+  "title": "File:Lumbricus terrestris (YPM IZ 097989) 015.jpeg",
+  "artist": "<div class=\"fn value\">\nDaniel J. Drew</div>",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lumbricus_terrestris_(YPM_IZ_097989)_015.jpeg"
+ },
+ "worm_5.jpg": {
+  "title": "File:Lumbricus terrestris (YPM IZ 096608) 029.jpeg",
+  "artist": "<div class=\"fn value\">\nZi X. Ou</div>",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lumbricus_terrestris_(YPM_IZ_096608)_029.jpeg"
+ },
+ "worm2_0.jpg": {
+  "title": "File:Earthworm on ground.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Johnnybam\" title=\"User:Johnnybam\">Johnnybam</a>",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Earthworm_on_ground.jpg"
+ },
+ "worm2_1.jpg": {
+  "title": "File:A pink earthworm on ground.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Johnnybam\" title=\"User:Johnnybam\">Johnnybam</a>",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:A_pink_earthworm_on_ground.jpg"
+ },
+ "worm2_2.jpg": {
+  "title": "File:\u300e\u753b\u672c\u866b\u64b0\u300f\u300c\u8693\u300d\u300c\u3053\u3046\u308d\u304d\u300d-Earthworm (Mimizu); Cricket (K\u014drogi), from the Picture Book of Crawling Creatures (Ehon mushi erami) MET DP135561.jpg",
+  "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Utamaro\" class=\"extiw\" title=\"w:en:Utamaro\"><span title=\"175?-1806 Japanese artist\">Kitagawa Utamaro</span></a></bdi>",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%80%8E%E7%94%BB%E6%9C%AC%E8%99%AB%E6%92%B0%E3%80%8F%E3%80%8C%E8%9A%93%E3%80%8D%E3%80%8C%E3%81%93%E3%81%86%E3%82%8D%E3%81%8D%E3%80%8D-Earthworm_(Mimizu);_Cricket_(K%C5%8Drogi),_from_the_Picture_Book_of_Crawling_Creatures_(Ehon_mushi_erami)_MET_DP135561.jpg"
+ },
+ "worm2_3.jpg": {
+  "title": "File:Healthy Soils Tunnel Shows Kids Life in the Soil. (17050274990).jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/68847506@N08\">USDA NRCS South Dakota</a>",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Healthy_Soils_Tunnel_Shows_Kids_Life_in_the_Soil._(17050274990).jpg"
+ },
+ "worm2_4.jpg": {
+  "title": "File:Faulkton Students Learn about Soil! (18161266862).jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/68847506@N08\">USDA NRCS South Dakota</a>",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Faulkton_Students_Learn_about_Soil!_(18161266862).jpg"
+ },
+ "worm2_5.jpg": {
   "title": "File:Circles (8051074914) (2).jpg",
   "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10175246@N08\">psyberartist</a>",
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Circles_(8051074914)_(2).jpg"
  },
- "earthworm_4.jpg": {
-  "title": "File:Annual report of the Commissioners of Fisheries, Game and Forests of the State of New York (1897) (14752282861).jpg",
-  "artist": "New York (State). Commissioners of Fisheries, Game and Forests",
-  "license": "No restrictions",
-  "page": "https://commons.wikimedia.org/wiki/File:Annual_report_of_the_Commissioners_of_Fisheries,_Game_and_Forests_of_the_State_of_New_York_(1897)_(14752282861).jpg"
+ "worm3_0.jpg": {
+  "title": "File:Eisenia fetida worm.JPG",
+  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ahmad6018&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ahmad6018 (page does not exist)\">Ahmad6018</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eisenia_fetida_worm.JPG"
  },
- "earthworm_5.jpg": {
-  "title": "File:Aquatic life (1916-1917) (19125979803).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/126377022@N07\">Internet Archive Book Images</a>",
-  "license": "No restrictions",
-  "page": "https://commons.wikimedia.org/wiki/File:Aquatic_life_(1916-1917)_(19125979803).jpg"
- },
- "scorpion2_0.jpg": {
-  "title": "File:Buthus occitanus.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/19328642@N00\">\u00c1lvaro Rodr\u00edguez Alberich</a>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Buthus_occitanus.jpg"
- },
- "scorpion2_1.jpg": {
-  "title": "File:Common Yellow Scorpion (Buthus occitanus) (36043322670).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65695019@N07\">Bernard DUPONT</a> from FRANCE",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Common_Yellow_Scorpion_(Buthus_occitanus)_(36043322670).jpg"
- },
- "scorpion2_2.jpg": {
-  "title": "File:Common yellow scorpion - Buthus occitanus.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:BouketenCate\" title=\"User:BouketenCate\">Bouke ten Cate</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Common_yellow_scorpion_-_Buthus_occitanus.jpg"
- },
- "scorpion2_3.jpg": {
-  "title": "File:Common Yellow Scorpion (Buthus occitanus) (36170223630).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65695019@N07\">Bernard DUPONT</a> from FRANCE",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Common_Yellow_Scorpion_(Buthus_occitanus)_(36170223630).jpg"
- },
- "scorpion2_4.jpg": {
-  "title": "File:Buthus occitanus Paris.jpeg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:IssamBarhoumi\" title=\"User:IssamBarhoumi\">IssamBarhoumi</a>",
+ "worm3_1.jpg": {
+  "title": "File:Eisenia fetida HC1.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Holger_Casselmann\" title=\"User:Holger Casselmann\">Holger Casselmann</a>",
   "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Buthus_occitanus_Paris.jpeg"
+  "page": "https://commons.wikimedia.org/wiki/File:Eisenia_fetida_HC1.jpg"
  },
- "scorpion2_5.jpg": {
-  "title": "File:Common European Scorpion (Buthus occitanus) found under a stone ... (43997341884).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65695019@N07\">Bernard DUPONT</a> from FRANCE",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Common_European_Scorpion_(Buthus_occitanus)_found_under_a_stone_..._(43997341884).jpg"
+ "worm3_2.jpg": {
+  "title": "File:Eisenia fetida on compost bin.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:99of9\" title=\"User:99of9\">Toby Hudson</a>",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eisenia_fetida_on_compost_bin.jpg"
  },
- "earthworm2_0.jpg": {
-  "title": "File:Earthworm lumbricus 40x skin.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Tgru001\" title=\"User:Tgru001\">Tgru001</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Earthworm_lumbricus_40x_skin.jpg"
+ "worm3_3.jpg": {
+  "title": "File:Eisenia foetida R.H. (8).JPG",
+  "artist": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Rob_Hille\" title=\"User:Rob Hille\">Rob Hille</a>",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eisenia_foetida_R.H._(8).JPG"
  },
- "earthworm2_1.jpg": {
-  "title": "File:Earthworm lumbricus 40x transverse section.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Tgru001\" title=\"User:Tgru001\">Tgru001</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Earthworm_lumbricus_40x_transverse_section.jpg"
+ "worm3_4.jpg": {
+  "title": "File:Eisenia foetida R.H. (7).JPG",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Rob_Hille\" title=\"User:Rob Hille\">Rob Hille</a>",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eisenia_foetida_R.H._(7).JPG"
  },
- "earthworm2_2.jpg": {
-  "title": "File:Earthworm (Lumbricus terrestris) Plug, Chapeltoun, Scotland.JPG",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Rosser1954\" title=\"User:Rosser1954\">Rosser1954</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Earthworm_(Lumbricus_terrestris)_Plug,_Chapeltoun,_Scotland.JPG"
- },
- "earthworm2_3.jpg": {
-  "title": "File:Common Earthworm (Lumbricus terrestris) Plug, Chapeltoun, Scotland.JPG",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Rosser1954\" title=\"User:Rosser1954\">Rosser1954</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Common_Earthworm_(Lumbricus_terrestris)_Plug,_Chapeltoun,_Scotland.JPG"
- },
- "earthworm2_4.jpg": {
-  "title": "File:Earthworm (Lumbricus terrestris) Plug (side view), Chapeltoun, Scotland.JPG",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Rosser1954\" title=\"User:Rosser1954\">Rosser1954</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Earthworm_(Lumbricus_terrestris)_Plug_(side_view),_Chapeltoun,_Scotland.JPG"
- },
- "earthworm2_5.jpg": {
-  "title": "File:Common Earthworm (Lumbricus terrestris) Cast and tunnel, Chapeltoun, North Ayrshire, Scotland.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Rosser1954\" title=\"User:Rosser1954\">Rosser1954</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Common_Earthworm_(Lumbricus_terrestris)_Cast_and_tunnel,_Chapeltoun,_North_Ayrshire,_Scotland.jpg"
+ "worm3_5.jpg": {
+  "title": "File:Eisenia foetida R.H. (9).JPG",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Rob_Hille\" title=\"User:Rob Hille\">Rob Hille</a>",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eisenia_foetida_R.H._(9).JPG"
  }
 }
