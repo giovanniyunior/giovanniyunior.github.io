@@ -1,611 +1,251 @@
 {
- "peas_0.jpg": {
-  "title": "File:Green pea pods.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Fumikas_Sagisavas\" title=\"User:Fumikas Sagisavas\">Fumikas Sagisavas</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Green_pea_pods.jpg"
- },
- "peas_1.jpg": {
-  "title": "File:Two Peas in a Pod, Barnes - geograph.org.uk - 2251927.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/43806\">Marathon</a>\u00a0<span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Two_Peas_in_a_Pod,_Barnes_-_geograph.org.uk_-_2251927.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Two_Peas_in_a_Pod,_Barnes_-_geograph.org.uk_-_2251927.jpg"
- },
- "peas_2.jpg": {
-  "title": "File:Two peas in a pod cupcake.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/42470676@N03\">Ana Fuji</a>",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Two_peas_in_a_pod_cupcake.jpg"
- },
- "peas_3.jpg": {
-  "title": "File:Peas pod.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Zmu%27az4Z\" title=\"User:Zmu'az4Z\">Zmu'az4Z</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Peas_pod.jpg"
- },
- "peas_4.jpg": {
-  "title": "File:Green vs yellow pea pods.png",
-  "artist": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:SadiesBurrow\" title=\"User:SadiesBurrow\">SadiesBurrow</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Green_vs_yellow_pea_pods.png"
- },
- "peas_5.jpg": {
-  "title": "File:Pea pod.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Zmu%27az4Z\" title=\"User:Zmu'az4Z\">Zmu'az4Z</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pea_pod.jpg"
- },
- "corn_0.jpg": {
-  "title": "File:Corncobs.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Asbestos&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Asbestos (page does not exist)\">User:Asbestos</a>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Corncobs.jpg"
- },
- "corn_1.jpg": {
-  "title": "File:Taco salad and corn on the cob.jpg",
-  "artist": "goblinbox_(queen_of_ad_hoc_bento)",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Taco_salad_and_corn_on_the_cob.jpg"
- },
- "corn_2.jpg": {
-  "title": "File:Boiled maize (Indian corn) from Korean grocer.jpg",
-  "artist": "The original uploader was <a href=\"https://en.wikipedia.org/wiki/User:ChildofMidnight\" class=\"extiw\" title=\"wikipedia:User:ChildofMidnight\">ChildofMidnight</a> at <a href=\"https://en.wikipedia.org/wiki/\" class=\"extiw\" title=\"wikipedia:\">English Wikipedia</a>.",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Boiled_maize_(Indian_corn)_from_Korean_grocer.jpg"
- },
- "corn_3.jpg": {
-  "title": "File:Liat Portal for Foodie Disorder - Fresh Corn on the Cob.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:HaJunkiyada&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:HaJunkiyada (page does not exist)\">HaJunkiyada</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Fresh_Corn_on_the_Cob.jpg"
- },
- "corn_4.jpg": {
-  "title": "File:Corn on the cob on a roadway in Beijing, China, October 2012.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/28984065@N04\">calflier001</a>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Corn_on_the_cob_on_a_roadway_in_Beijing,_China,_October_2012.jpg"
- },
- "corn_5.jpg": {
-  "title": "File:Corn and cider slushy.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Jaireeodell\" title=\"User:Jaireeodell\">Jaireeodell</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Corn_and_cider_slushy.jpg"
- },
- "peanuts_0.jpg": {
-  "title": "File:Peanuts (Arachis hypogaea) - in shell, shell cracked open, shelled, peeled.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Iifar\" title=\"User:Iifar\">Ivar Leidus</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Peanuts_(Arachis_hypogaea)_-_in_shell,_shell_cracked_open,_shelled,_peeled.jpg"
- },
- "peanuts_1.jpg": {
-  "title": "File:Peanuts in their shells.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:TorbeyCharbel\" title=\"User:TorbeyCharbel\">TorbeyCharbel</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Peanuts_in_their_shells.jpg"
- },
- "peanuts_2.jpg": {
-  "title": "File:Roasted Peanuts with shell.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Sanjay_ach\" title=\"User:Sanjay ach\">Sanjay Acharya</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Roasted_Peanuts_with_shell.jpg"
- },
- "peanuts_3.jpg": {
-  "title": "File:Arachis hypogaea - Peanuts in shell.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Piki-photow&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Piki-photow (page does not exist)\">T.K. Naliaka</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Arachis_hypogaea_-_Peanuts_in_shell.jpg"
- },
- "peanuts_4.jpg": {
-  "title": "File:Peanuts in a bowl..jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:DethWench&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:DethWench (page does not exist)\">Monika M. Wahi</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Peanuts_in_a_bowl..jpg"
- },
- "peanuts_5.jpg": {
-  "title": "File:Closeup of Peanuts, selling at a market in Jagadishpur Hat.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Billjones94\" title=\"User:Billjones94\">Billjones94</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Closeup_of_Peanuts,_selling_at_a_market_in_Jagadishpur_Hat.jpg"
- },
- "spinach_0.jpg": {
-  "title": "File:A pot of cut spinach leaves with carrots and onions.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Olgatladi2020\" title=\"User:Olgatladi2020\">Olgatladi2020</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:A_pot_of_cut_spinach_leaves_with_carrots_and_onions.jpg"
- },
- "spinach_1.jpg": {
-  "title": "File:Spinach leaves.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Nillerdk\" title=\"User:Nillerdk\">Nillerdk</a>",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Spinach_leaves.jpg"
- },
- "spinach_2.jpg": {
-  "title": "File:Spinach 4.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Suhayl&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Suhayl (page does not exist)\">suhayl</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Spinach_4.jpg"
- },
- "spinach_3.jpg": {
-  "title": "File:Spinach leaves and stems.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Nillerdk\" title=\"User:Nillerdk\">Nillerdk</a>",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Spinach_leaves_and_stems.jpg"
- },
- "spinach_4.jpg": {
-  "title": "File:Spinach leaves boiled.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Nillerdk\" title=\"User:Nillerdk\">Nillerdk</a>",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Spinach_leaves_boiled.jpg"
- },
- "spinach_5.jpg": {
-  "title": "File:African Spinach Leaves in Northern Ghana.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ibn_Shiraz&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ibn Shiraz (page does not exist)\">Ibn Shiraz</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:African_Spinach_Leaves_in_Northern_Ghana.jpg"
- },
- "lettuce_0.jpg": {
-  "title": "File:Liz Truss VS Daily Star Lettuce.png",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Di_(they-them)\" title=\"User:Di (they-them)\">Di (they-them)</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Liz_Truss_VS_Daily_Star_Lettuce.png"
- },
- "lettuce_1.jpg": {
-  "title": "File:Lettuce in a stack.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Veronicasgardentracker&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Veronicasgardentracker (page does not exist)\">Jeffery Martin</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lettuce_in_a_stack.jpg"
- },
- "lettuce_2.jpg": {
-  "title": "File:Lettuce stack wide.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Veronicasgardentracker&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Veronicasgardentracker (page does not exist)\">Jeffery Martin</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lettuce_stack_wide.jpg"
- },
- "lettuce_3.jpg": {
-  "title": "File:Stack of romaine lettuce heads.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Veronicasgardentracker&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Veronicasgardentracker (page does not exist)\">Jeffery Martin</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Stack_of_romaine_lettuce_heads.jpg"
- },
- "lettuce_4.jpg": {
-  "title": "File:Lettuce head measuring 19 inches from Mrs Dieringer's garden, Valdez, Alaska, circa 1908 (AL+CA 4772).jpg",
-  "artist": "<bdi><a href=\"https://www.wikidata.org/wiki/Q62609537\" class=\"extiw\" title=\"d:Q62609537\"><span title=\"Photographer (1866\u20131917)\">Phinney S. Hunt</span></a></bdi>",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Lettuce_head_measuring_19_inches_from_Mrs_Dieringer%27s_garden,_Valdez,_Alaska,_circa_1908_(AL%2BCA_4772).jpg"
- },
- "lettuce_5.jpg": {
-  "title": "File:Head of lettuce (3010140038).jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/54359128@N00\">Geoff Peters</a> from Vancouver, BC, Canada",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Head_of_lettuce_(3010140038).jpg"
- },
- "cabbage_0.jpg": {
-  "title": "File:Fresh green cabbage heads.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:CharlesPoterai\" title=\"User:CharlesPoterai\">CharlesPoterai</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Fresh_green_cabbage_heads.jpg"
- },
- "cabbage_1.jpg": {
-  "title": "File:Cabbage in a stack.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Veronicasgardentracker&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Veronicasgardentracker (page does not exist)\">Jeffery Martin</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Cabbage_in_a_stack.jpg"
- },
- "cabbage_2.jpg": {
-  "title": "File:PikiWiki Israel 28686 Green Cabbage.jpg",
-  "artist": "\u05de\u05e8\u05d5\u05d4 \u05e2\u05e1\u05d0\u05e7\u05dc\u05d4",
-  "license": "CC BY 2.5",
-  "page": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_28686_Green_Cabbage.jpg"
- },
- "cabbage_3.jpg": {
-  "title": "File:Savoy Cabbage wrinkles.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/sheila_sund/\">Sheila Sund</a>\u00a0<span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Savoy_Cabbage_wrinkles.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Savoy_Cabbage_wrinkles.jpg"
- },
- "cabbage_4.jpg": {
-  "title": "File:Water cabbage plant.jpg",
-  "artist": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Prathvi_Acharya\" title=\"User:Prathvi Acharya\">Prathvi Acharya</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Water_cabbage_plant.jpg"
- },
- "cabbage_5.jpg": {
-  "title": "File:Chou pomm\u00e9 02.jpg",
-  "artist": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Cheikh_cherif?action=edit&amp;redlink=1\" title=\"User:Cheikh cherif (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Cheikh cherif\"]}}'>Cheikh cherif</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Chou_pomm%C3%A9_02.jpg"
- },
- "sweetpotato_0.jpg": {
-  "title": "File:Sweet potato sprouting slips.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Geo_Lightspeed7\" title=\"User:Geo Lightspeed7\">Geo Lightspeed7</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sweet_potato_sprouting_slips.jpg"
- },
- "sweetpotato_1.jpg": {
-  "title": "File:Pile of Sweet Potatoes at Barkin Dogo Market, Kaduna North 02.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Samsule2&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Samsule2 (page does not exist)\">Samsule2</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pile_of_Sweet_Potatoes_at_Barkin_Dogo_Market,_Kaduna_North_02.jpg"
- },
- "sweetpotato_2.jpg": {
-  "title": "File:Pile of Sweet Potatoes at Barkin Dogo Market, Kaduna North 01.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Samsule2&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Samsule2 (page does not exist)\">Samsule2</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pile_of_Sweet_Potatoes_at_Barkin_Dogo_Market,_Kaduna_North_01.jpg"
- },
- "sweetpotato_3.jpg": {
-  "title": "File:Dried sweet potato shreds.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Fumikas_Sagisavas\" title=\"User:Fumikas Sagisavas\">Fumikas Sagisavas</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Dried_sweet_potato_shreds.jpg"
- },
- "sweetpotato_4.jpg": {
-  "title": "File:Sweet potato in Nigeria.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Iyinolamercy&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Iyinolamercy (page does not exist)\">Iyinolamercy</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sweet_potato_in_Nigeria.jpg"
- },
- "sweetpotato_5.jpg": {
-  "title": "File:Raw sweet potato.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Fumikas_Sagisavas\" title=\"User:Fumikas Sagisavas\">Fumikas Sagisavas</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Raw_sweet_potato.jpg"
- },
- "potato_0.jpg": {
-  "title": "File:Ipomoea batatasL ja01.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Miya\" title=\"User:Miya\">miya</a> (<a href=\"//commons.wikimedia.org/wiki/User_talk:Miya\" title=\"User talk:Miya\"><span class=\"signature-talk\">talk</span></a>)",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Ipomoea_batatasL_ja01.jpg"
- },
- "potato_1.jpg": {
-  "title": "File:Bakar Batu.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Keenan63&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Keenan63 (page does not exist)\">Keenan63</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bakar_Batu.jpg"
- },
- "potato_2.jpg": {
-  "title": "File:Botryphallus tuber 01.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Llez\" title=\"User:Llez\">H. Zell</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Botryphallus_tuber_01.jpg"
- },
- "potato_3.jpg": {
-  "title": "File:Lithopoma tuber 01.JPG",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Llez\" title=\"User:Llez\">H. Zell</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Lithopoma_tuber_01.JPG"
- },
- "potato_4.jpg": {
-  "title": "File:Colonization of potato tubers by bacteria.png",
-  "artist": "Franziska Buchholz, Livio Antonielli, Tanja Kosti\u0107, Angela Sessitsch and Birgit Mitter",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Colonization_of_potato_tubers_by_bacteria.png"
- },
- "potato_5.jpg": {
-  "title": "File:Sets of a small tuber species on sale at Monday Market, Kaduna 01.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Kambai_Akau\" title=\"User:Kambai Akau\">Kambai Akau</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Sets_of_a_small_tuber_species_on_sale_at_Monday_Market,_Kaduna_01.jpg"
- },
- "carrot_0.jpg": {
-  "title": "File:The Bunch of Carrots PH - geograph.org.uk - 4725477.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/8569\">Jonathan Billinger</a>\u00a0<span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:The_Bunch_of_Carrots_PH_-_geograph.org.uk_-_4725477.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:The_Bunch_of_Carrots_PH_-_geograph.org.uk_-_4725477.jpg"
- },
- "carrot_1.jpg": {
-  "title": "File:Bunch of Carrots - geograph.org.uk - 559306.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/13903\">Pauline Eccles</a>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bunch_of_Carrots_-_geograph.org.uk_-_559306.jpg"
- },
- "carrot_2.jpg": {
-  "title": "File:The Bunch of Carrots - geograph.org.uk - 1456143.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/23295\">Roger Davies</a>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:The_Bunch_of_Carrots_-_geograph.org.uk_-_1456143.jpg"
- },
- "carrot_3.jpg": {
-  "title": "File:Bunch of Carrots (Hampton Bishop) - geograph.org.uk - 7123367.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/125723\">Fabian Musto</a>\u00a0<span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Bunch_of_Carrots_(Hampton_Bishop)_-_geograph.org.uk_-_7123367.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bunch_of_Carrots_(Hampton_Bishop)_-_geograph.org.uk_-_7123367.jpg"
- },
- "carrot_4.jpg": {
-  "title": "File:Interior, Bunch of Carrots - geograph.org.uk - 1496560.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/13903\">Pauline Eccles</a>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Interior,_Bunch_of_Carrots_-_geograph.org.uk_-_1496560.jpg"
- },
- "carrot_5.jpg": {
-  "title": "File:Bunch of carrots.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10390868@N07\">BazzaDaRambler</a>",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bunch_of_carrots.jpg"
- },
- "radish_0.jpg": {
-  "title": "File:A Bunch of Radishes 3D.JPG",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:TeWeBs\" title=\"User:TeWeBs\">TeWeBs</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:A_Bunch_of_Radishes_3D.JPG"
- },
- "radish_1.jpg": {
-  "title": "File:A Bunch of Radishes.JPG",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:TeWeBs\" title=\"User:TeWeBs\">TeWeBs</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:A_Bunch_of_Radishes.JPG"
- },
- "radish_2.jpg": {
-  "title": "File:Radish bunches.jpg",
-  "artist": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Veronicasgardentracker?action=edit&amp;redlink=1\" title=\"User:Veronicasgardentracker (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Veronicasgardentracker\"]}}'>Jeffery Martin</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Radish_bunches.jpg"
- },
- "radish_3.jpg": {
-  "title": "File:Radishes fresh from the garden.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Capvideo\" title=\"User:Capvideo\">Capvideo</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Radishes_fresh_from_the_garden.jpg"
- },
- "radish_4.jpg": {
-  "title": "File:Radishes.JPG",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:BKP\" title=\"User:BKP\">BKP</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Radishes.JPG"
- },
- "radish_5.jpg": {
-  "title": "File:Fresh radishes (Unsplash).jpg",
-  "artist": "Damien Creatz <a rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@creatz\">creatz</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Fresh_radishes_(Unsplash).jpg"
- },
- "broccoli_0.jpg": {
-  "title": "File:Liat Portal for Foodie Disorder - Broccoli from San Francisco farmers market.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:HaJunkiyada&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:HaJunkiyada (page does not exist)\">HaJunkiyada</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Broccoli_from_San_Francisco_farmers_market.jpg"
- },
- "broccoli_1.jpg": {
-  "title": "File:Broccoli DSC00861.png",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:David.Monniaux\" title=\"User:David.Monniaux\">David Monniaux</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Broccoli_DSC00861.png"
- },
- "broccoli_2.jpg": {
-  "title": "File:Fire-Tuscarora Organic Growers - Broccoli head.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/41284017@N08\">U.S. Department of Agriculture</a>",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Fire-Tuscarora_Organic_Growers_-_Broccoli_head.jpg"
- },
- "broccoli_3.jpg": {
-  "title": "File:Broccoli DSC00862.png",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:David.Monniaux\" title=\"User:David.Monniaux\">David Monniaux</a>",
-  "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Broccoli_DSC00862.png"
- },
- "broccoli_4.jpg": {
-  "title": "File:Liat Portal for Foodie Disorder - Fresh Broccoli.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:HaJunkiyada&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:HaJunkiyada (page does not exist)\">HaJunkiyada</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Fresh_Broccoli.jpg"
- },
- "broccoli_5.jpg": {
-  "title": "File:Head of Broccoil.jpg",
-  "artist": "Alabama Extension",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Head_of_Broccoil.jpg"
- },
- "cauliflower_0.jpg": {
-  "title": "File:Stack of cauliflower heads.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Veronicasgardentracker&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Veronicasgardentracker (page does not exist)\">Jeffery Martin</a>",
-  "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Stack_of_cauliflower_heads.jpg"
- },
- "cauliflower_1.jpg": {
-  "title": "File:Cauliflower field - geograph.org.uk - 104126.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/769\">Sheila Russell</a>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Cauliflower_field_-_geograph.org.uk_-_104126.jpg"
- },
- "cauliflower_2.jpg": {
-  "title": "File:Liat Portal for Foodie Disorder - Cauliflower from San Francisco farmers market.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:HaJunkiyada&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:HaJunkiyada (page does not exist)\">HaJunkiyada</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Cauliflower_from_San_Francisco_farmers_market.jpg"
- },
- "cauliflower_3.jpg": {
-  "title": "File:Liat Portal for Foodie Disorder - Cauliflower from SF farmers' market.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:HaJunkiyada&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:HaJunkiyada (page does not exist)\">HaJunkiyada</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Cauliflower_from_SF_farmers%27_market.jpg"
- },
- "cauliflower_4.jpg": {
-  "title": "File:Field of young cauliflower at Place Barton. - geograph.org.uk - 1422954.jpg",
-  "artist": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.geograph.org.uk/profile/22976\" class=\"external text\">Rod Allday</a>",
-  "license": "CC BY-SA 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Field_of_young_cauliflower_at_Place_Barton._-_geograph.org.uk_-_1422954.jpg"
- },
- "cauliflower_5.jpg": {
-  "title": "File:Liat Portal for Foodie Disorder - Roasted cauliflower with asparagus and smashed potatoes.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:HaJunkiyada&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:HaJunkiyada (page does not exist)\">HaJunkiyada</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Roasted_cauliflower_with_asparagus_and_smashed_potatoes.jpg"
- },
- "celery_0.jpg": {
-  "title": "File:Bloody Mary Coctail with celery stalk - Evan Swigart.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/72949902@N00\">Evan Swigart</a> from Chicago, USA",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bloody_Mary_Coctail_with_celery_stalk_-_Evan_Swigart.jpg"
- },
- "celery_1.jpg": {
-  "title": "File:Celery (177029685).jpeg",
-  "artist": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/seedmonkey\">Chuck Spidell</a></div>",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Celery_(177029685).jpeg"
- },
- "celery_2.jpg": {
-  "title": "File:2017-10-04 21 29 29 Honey-barbecue boneless buffalo wings with ranch dressing and celery stalks at the Applebee's on Virginia State Route 7 (Harry Byrd Highway) in Countryside, Loudoun County, Virginia.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Famartin\" title=\"User:Famartin\">Famartin</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:2017-10-04_21_29_29_Honey-barbecue_boneless_buffalo_wings_with_ranch_dressing_and_celery_stalks_at_the_Applebee%27s_on_Virginia_State_Route_7_(Harry_Byrd_Highway)_in_Countryside,_Loudoun_County,_Virginia.jpg"
- },
- "celery_3.jpg": {
-  "title": "File:Celery and peanut butter.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Douglaspperkins\" title=\"User:Douglaspperkins\">Douglas Paul Perkins</a>",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Celery_and_peanut_butter.jpg"
- },
- "celery_4.jpg": {
-  "title": "File:Bloody Mary Coctail with celery stalk and pitcher - Evan Swigart.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/72949902@N00\">Evan Swigart</a> from Chicago, USA",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Bloody_Mary_Coctail_with_celery_stalk_and_pitcher_-_Evan_Swigart.jpg"
- },
- "celery_5.jpg": {
-  "title": "File:Celery (1).jpg",
-  "artist": "Renee Comet (Photographer)",
-  "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Celery_(1).jpg"
- },
- "pumpkin_0.jpg": {
-  "title": "File:Cucurbita 2011 G1.jpg",
+ "peas2_0.jpg": {
+  "title": "File:Peas in pods 2016 G1.jpg",
   "artist": "<a href=\"//commons.wikimedia.org/wiki/User:George_Chernilevsky\" title=\"User:George Chernilevsky\">George Chernilevsky</a>",
   "license": "Public domain",
-  "page": "https://commons.wikimedia.org/wiki/File:Cucurbita_2011_G1.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Peas_in_pods_2016_G1.jpg"
  },
- "pumpkin_1.jpg": {
-  "title": "File:Pumpkin 2108-1292.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Mozzihh\" title=\"User:Mozzihh\">Mozzihh</a>",
+ "peas2_1.jpg": {
+  "title": "File:Pisum sativum var. macrocarpum Ilowiecki 2017-04-15 7157.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Salicyna\" title=\"User:Salicyna\">Salicyna</a>",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pumpkin_2108-1292.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Pisum_sativum_var._macrocarpum_Ilowiecki_2017-04-15_7157.jpg"
  },
- "pumpkin_2.jpg": {
-  "title": "File:Pumpkin festival - Ludwigsburg 2024 - 28.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Llez\" title=\"User:Llez\">Llez</a>",
+ "peas2_2.jpg": {
+  "title": "File:Pisum sativum var. macrocarpum Ilowiecki 2017-04-26 8700.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Salicyna\" title=\"User:Salicyna\">Salicyna</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pisum_sativum_var._macrocarpum_Ilowiecki_2017-04-26_8700.jpg"
+ },
+ "peas2_3.jpg": {
+  "title": "File:Pisum sativum var. macrocarpum Ilowiecki 2017-04-14 6973.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Salicyna\" title=\"User:Salicyna\">Salicyna</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pisum_sativum_var._macrocarpum_Ilowiecki_2017-04-14_6973.jpg"
+ },
+ "peas2_4.jpg": {
+  "title": "File:Pisum sativum var. macrocarpum Ilowiecki 2017-04-26 8701.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Salicyna\" title=\"User:Salicyna\">Salicyna</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pisum_sativum_var._macrocarpum_Ilowiecki_2017-04-26_8701.jpg"
+ },
+ "peas2_5.jpg": {
+  "title": "File:Pisum sativum var. macrocarpum Ilowiecki 2017-04-15 7156.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Salicyna\" title=\"User:Salicyna\">Salicyna</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pisum_sativum_var._macrocarpum_Ilowiecki_2017-04-15_7156.jpg"
+ },
+ "corn2_0.jpg": {
+  "title": "File:DFC 0319 A heaping pile of fresh yellow corn kernels on a woven bamboo tray ready to be cooked or served.jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/PattayaPatrol/\">PattayaPatrol</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DFC_0319_A_heaping_pile_of_fresh_yellow_corn_kernels_on_a_woven_bamboo_tray_ready_to_be_cooked_or_served.jpg"
+ },
+ "corn2_1.jpg": {
+  "title": "File:Annual catalogue for 1881 containing a list of garden, field and flower seeds, together with prices and cultural directions (1881) (17801457574).jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/126377022@N07\">Internet Archive Book Images</a>",
+  "license": "No restrictions",
+  "page": "https://commons.wikimedia.org/wiki/File:Annual_catalogue_for_1881_containing_a_list_of_garden,_field_and_flower_seeds,_together_with_prices_and_cultural_directions_(1881)_(17801457574).jpg"
+ },
+ "corn2_2.jpg": {
+  "title": "File:\"Seed annual\" - vegetable and flwoer seeds, grass, clover and field seeds, plants, bulbs and roots (1900) (20373065188).jpg",
+  "artist": "<p>Wernich Seed Co;\n</p>\nHenry G. Gilbert Nursery and Seed Trade Catalog Collection",
+  "license": "No restrictions",
+  "page": "https://commons.wikimedia.org/wiki/File:%22Seed_annual%22_-_vegetable_and_flwoer_seeds,_grass,_clover_and_field_seeds,_plants,_bulbs_and_roots_(1900)_(20373065188).jpg"
+ },
+ "corn2_3.jpg": {
+  "title": "File:1896 catalogue (1896) (20358055559).jpg",
+  "artist": "<p>Sunset Seed and Plant Co;\n</p>\nHenry G. Gilbert Nursery and Seed Trade Catalog Collection",
+  "license": "No restrictions",
+  "page": "https://commons.wikimedia.org/wiki/File:1896_catalogue_(1896)_(20358055559).jpg"
+ },
+ "corn2_4.jpg": {
+  "title": "File:Rennie's 1902 (1902) (20572776751).jpg",
+  "artist": "<p>Wm. Rennie Co;\n</p>\nHenry G. Gilbert Nursery and Seed Trade Catalog Collection",
+  "license": "No restrictions",
+  "page": "https://commons.wikimedia.org/wiki/File:Rennie%27s_1902_(1902)_(20572776751).jpg"
+ },
+ "corn2_5.jpg": {
+  "title": "File:Garden and farm seeds (16250335248).jpg",
+  "artist": "A. Currie &amp; Company.; Henry G. Gilbert Nursery and Seed Trade Catalog Collection.",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Garden_and_farm_seeds_(16250335248).jpg"
+ },
+ "lettuce2_0.jpg": {
+  "title": "File:Romaine lettuce.jpg",
+  "artist": "Rainer Zenz",
   "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pumpkin_festival_-_Ludwigsburg_2024_-_28.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Romaine_lettuce.jpg"
  },
- "pumpkin_3.jpg": {
-  "title": "File:Pumpkin Seeds macro 1.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Dschwen\" title=\"User:Dschwen\">Daniel Schwen</a>",
-  "license": "CC BY 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Pumpkin_Seeds_macro_1.jpg"
- },
- "pumpkin_4.jpg": {
-  "title": "File:Illuminated facade of a restaurant serving traditional food with fresh vegetables in Chiyoda, Tokyo.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Basile_Morin\" title=\"User:Basile Morin\">Basile Morin</a>",
+ "lettuce2_1.jpg": {
+  "title": "File:2018-06-18 (109) Lactuca sativa (garden lettuce) at Bichlh\u00e4usl in Frankenfels, Austria.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:GT1976\" title=\"User:GT1976\">GT1976</a>",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Illuminated_facade_of_a_restaurant_serving_traditional_food_with_fresh_vegetables_in_Chiyoda,_Tokyo.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:2018-06-18_(109)_Lactuca_sativa_(garden_lettuce)_at_Bichlh%C3%A4usl_in_Frankenfels,_Austria.jpg"
  },
- "pumpkin_5.jpg": {
-  "title": "File:020231014 181140 Halloween Pumpkin.jpg",
-  "artist": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Silar?action=edit&amp;redlink=1\" title=\"User:Silar (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Silar\"]}}'>Silar</a>",
+ "lettuce2_2.jpg": {
+  "title": "File:2018-06-01 (129) Lactuca sativa (garden lettuce) Nature at Bichlh\u00e4usl in Frankenfels, Austria.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:GT1976\" title=\"User:GT1976\">GT1976</a>",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:020231014_181140_Halloween_Pumpkin.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:2018-06-01_(129)_Lactuca_sativa_(garden_lettuce)_Nature_at_Bichlh%C3%A4usl_in_Frankenfels,_Austria.jpg"
  },
- "tomato_0.jpg": {
-  "title": "File:Bright red tomato and cross section02.jpg",
-  "artist": "<p><br style=\"clear:both\">\n</p>\n<table align=\"CENTER\" style=\"width:80%; background-color:#f7f8ff; border:2px solid #8888aa; padding:5px;\">\n\n<tbody><tr>\n<td><table border=\"0\" width=\"100%\" style=\"background-color:#f7f8ff;\">\n\t<tbody><tr style=\"font-family: Segoe UI, Trebuchet MS, serif;\">\n\t\t<td align=\"center\" valign=\"top\">\n\t\t<div style=\"padding-bottom:25px;\"><span style=\"font-size:large\"><b><a href=\"https://en.wikipedia.org/wiki/User:Fir0002\" class=\"extiw\" title=\"en:User:Fir0002\">fir0002</a> <br> flagstaffotos [at] gmail.com</b></span></div>\n\t\t<div style=\"font-size:11pt\">Canon 20D + Sigma 150mm f/2.8</div>\n</td>\n\t\t<td valign=\"top\" align=\"left\">\n                    <table border=\"0\" width=\"240\" style=\"background-color:#f7f8ff;\">\n                         <tbody><tr>\n                         <td valign=\"top\"><figure class=\"mw-halign-left\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Sigma_150_macro.jpg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Sigma_150_macro.jpg/120px-Sigma_150_macro.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"120\" height=\"80\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Sigma_150_macro.jpg/250px-Sigma_150_macro.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"1600\" data-file-height=\"1067\"></a><figcaption></figcaption></figure></td>\n                         <td valign=\"top\"><figure class=\"mw-halign-left\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Sigma_150_macro02.jpg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Sigma_150_macro02.jpg/120px-Sigma_150_macro02.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"120\" height=\"80\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Sigma_150_macro02.jpg/250px-Sigma_150_macro02.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"1600\" data-file-height=\"1067\"></a><figcaption></figcaption></figure></td>\n                         <td valign=\"top\"><figure class=\"mw-halign-left\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Sigma_150_macro03.jpg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Sigma_150_macro03.jpg/120px-Sigma_150_macro03.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"120\" height=\"80\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Sigma_150_macro03.jpg/250px-Sigma_150_macro03.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"1600\" data-file-height=\"1067\"></a><figcaption></figcaption></figure></td>\n                         </tr>\n                         </tbody></table>\n\t\t</td>\n\t</tr>\n</tbody></table>\n</td></tr></tbody></table>",
-  "license": "GFDL 1.2",
-  "page": "https://commons.wikimedia.org/wiki/File:Bright_red_tomato_and_cross_section02.jpg"
- },
- "tomato_1.jpg": {
-  "title": "File:Organic home-grown tomatoes - unripe to ripe.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Podzemnik\" title=\"User:Podzemnik\">Michal Klajban</a>",
+ "lettuce2_3.jpg": {
+  "title": "File:Lactuca sativa 'Ashbrook'.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:DeFacto\" title=\"User:DeFacto\">DeFacto</a>",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Organic_home-grown_tomatoes_-_unripe_to_ripe.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Lactuca_sativa_%27Ashbrook%27.jpg"
  },
- "tomato_2.jpg": {
-  "title": "File:Tomato plant 2026 G2.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:George_Chernilevsky\" title=\"User:George Chernilevsky\">George Chernilevsky</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tomato_plant_2026_G2.jpg"
+ "lettuce2_4.jpg": {
+  "title": "File:Lettuce (Lactuca sativa) growing in a pot.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:999real\" title=\"User:999real\">999real</a>",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lettuce_(Lactuca_sativa)_growing_in_a_pot.jpg"
  },
- "tomato_3.jpg": {
-  "title": "File:Round Red Tomato.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:%E0%AE%A4%E0%AF%80%E0%AE%AA%E0%AF%8D%E0%AE%A4%E0%AE%BF_%E0%AE%9A%E0%AF%86%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%B2%E0%AF%8D&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:\u0ba4\u0bc0\u0baa\u0bcd\u0ba4\u0bbf \u0b9a\u0bc6\u0ba8\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd (page does not exist)\">\u0ba4\u0bc0\u0baa\u0bcd\u0ba4\u0bbf \u0b9a\u0bc6\u0ba8\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd</a>",
+ "lettuce2_5.jpg": {
+  "title": "File:Lactuca Salat 1 - Lettuce mosaic virus - Roswitha Ulrich.jpg",
+  "artist": "Roswitha Ulrich, Pflanzenschutzdienst, Hessen",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Round_Red_Tomato.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Lactuca_Salat_1_-_Lettuce_mosaic_virus_-_Roswitha_Ulrich.jpg"
  },
- "tomato_4.jpg": {
-  "title": "File:Red tomatoes. img 05.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Knopik-som\" title=\"User:Knopik-som\">Dmitry Makeev</a>",
+ "potato2_0.jpg": {
+  "title": "File:Solanales - Solanum tuberosum - 5.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:DenesFeri\" title=\"User:DenesFeri\">DenesFeri</a>",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Red_tomatoes._img_05.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Solanales_-_Solanum_tuberosum_-_5.jpg"
  },
- "tomato_5.jpg": {
-  "title": "File:Red tomatoes. img 16.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Knopik-som\" title=\"User:Knopik-som\">Dmitry Makeev</a>",
+ "potato2_1.jpg": {
+  "title": "File:Solanales - Solanum tuberosum - 4.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:DenesFeri\" title=\"User:DenesFeri\">DenesFeri</a>",
   "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Red_tomatoes._img_16.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Solanales_-_Solanum_tuberosum_-_4.jpg"
  },
- "apple_0.jpg": {
-  "title": "File:Red Apple.jpg",
-  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/24340456@N03\">Abhijit Tembhekar</a> from Mumbai, India",
-  "license": "CC BY 2.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Red_Apple.jpg"
+ "potato2_2.jpg": {
+  "title": "File:Solanales - Solanum tuberosum - 3.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:DenesFeri\" title=\"User:DenesFeri\">DenesFeri</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Solanales_-_Solanum_tuberosum_-_3.jpg"
  },
- "apple_1.jpg": {
-  "title": "File:Tree with red apples in Barkedal 4.jpg",
+ "potato2_3.jpg": {
+  "title": "File:Solanum tuberosum 15-p.bot-solana.tuber-01.jpg",
+  "artist": "<div class=\"fn value\">\nAyotte, Gilles, 1948-</div>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Solanum_tuberosum_15-p.bot-solana.tuber-01.jpg"
+ },
+ "potato2_4.jpg": {
+  "title": "File:Solanum tuberosum 15-p.bot-solana.tuber-24.jpg",
+  "artist": "<div class=\"fn value\">\nAyotte, Gilles, 1948-</div>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Solanum_tuberosum_15-p.bot-solana.tuber-24.jpg"
+ },
+ "potato2_5.jpg": {
+  "title": "File:Solanum tuberosum 15-p.bot-solana.tuber-04.jpg",
+  "artist": "<div class=\"fn value\">\nAyotte, Gilles, 1948-</div>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Solanum_tuberosum_15-p.bot-solana.tuber-04.jpg"
+ },
+ "carrot2_0.jpg": {
+  "title": "File:Carrots of many colors.jpg",
+  "artist": "Stephen Ausmus",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Carrots_of_many_colors.jpg"
+ },
+ "carrot2_1.jpg": {
+  "title": "File:Preparing and slicing carrots.jpg",
   "artist": "<a href=\"//commons.wikimedia.org/wiki/User:W.carter\" title=\"User:W.carter\">W.carter</a>",
   "license": "CC0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tree_with_red_apples_in_Barkedal_4.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Preparing_and_slicing_carrots.jpg"
  },
- "apple_2.jpg": {
-  "title": "File:Tastee-Candy-Apple-Red-Caramel-wPeanuts.jpg",
+ "carrot2_2.jpg": {
+  "title": "File:Carrot-carving.JPG",
+  "artist": "<a href=\"https://en.wikipedia.org/wiki/ml:User:Aruna\" class=\"extiw\" title=\"w:ml:User:Aruna\">Aruna</a> at <a href=\"https://en.wikipedia.org/wiki/ml:\" class=\"extiw\" title=\"w:ml:\">Malayalam Wikipedia</a>",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carrot-carving.JPG"
+ },
+ "carrot2_3.jpg": {
+  "title": "File:Open refrigerator with food at night.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:W.carter\" title=\"User:W.carter\">W.carter</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Open_refrigerator_with_food_at_night.jpg"
+ },
+ "carrot2_4.jpg": {
+  "title": "File:Carrots at Ljubljana Central Market.JPG",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Domdomegg\" title=\"User:Domdomegg\">domdomegg</a>",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carrots_at_Ljubljana_Central_Market.JPG"
+ },
+ "carrot2_5.jpg": {
+  "title": "File:Carrot on plate.jpg",
+  "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/39107352@N08\">Ramesh NG</a>",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Carrot_on_plate.jpg"
+ },
+ "asparagus2_0.jpg": {
+  "title": "File:Steam-boiling green asparagus.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:W.carter\" title=\"User:W.carter\">W.carter</a>",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Steam-boiling_green_asparagus.jpg"
+ },
+ "asparagus2_1.jpg": {
+  "title": "File:Asparagus soup (spargelsuppe).jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:PetarM\" title=\"User:PetarM\">Petar Milo\u0161evi\u0107</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Asparagus_soup_(spargelsuppe).jpg"
+ },
+ "asparagus2_2.jpg": {
+  "title": "File:Asparagus-Bundle.jpg",
   "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Evan-Amos\" title=\"User:Evan-Amos\">Evan-Amos</a>",
   "license": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tastee-Candy-Apple-Red-Caramel-wPeanuts.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:Asparagus-Bundle.jpg"
  },
- "apple_3.jpg": {
-  "title": "File:Kullu Valley, Vashisht, Manali, Apples, India.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
+ "asparagus2_3.jpg": {
+  "title": "File:Green asparagus in a supermarket packaging in Canada.jpg",
+  "artist": "Marc-Lautenbacher",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Green_asparagus_in_a_supermarket_packaging_in_Canada.jpg"
+ },
+ "asparagus2_4.jpg": {
+  "title": "File:Poached egg with green asparagus and Caviar 01.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:ArildV\" title=\"User:ArildV\">Arild V\u00e5gen</a>",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Poached_egg_with_green_asparagus_and_Caviar_01.jpg"
+ },
+ "asparagus2_5.jpg": {
+  "title": "File:20200424 184047 Puff pastry with green asparagus and goat cheese.jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Bernard_Ladenthin\" title=\"User:Bernard Ladenthin\">Bernard Ladenthin</a>",
   "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Kullu_Valley,_Vashisht,_Manali,_Apples,_India.jpg"
+  "page": "https://commons.wikimedia.org/wiki/File:20200424_184047_Puff_pastry_with_green_asparagus_and_goat_cheese.jpg"
  },
- "apple_4.jpg": {
-  "title": "File:Red Delicious Apple 2021.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Commonists\" title=\"User:Commonists\">Commonists</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Red_Delicious_Apple_2021.jpg"
- },
- "apple_5.jpg": {
-  "title": "File:Australian Red delicious apples at the store.jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Maxim75\" title=\"User:Maxim75\">Maksym Kozlenko</a>",
-  "license": "CC BY-SA 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Australian_Red_delicious_apples_at_the_store.jpg"
- },
- "zucchini_0.jpg": {
+ "zucchini2_0.jpg": {
   "title": "File:Calabac\u00edn, M\u00fanich, Alemania, 2013-03-30, DD 01.JPG",
   "artist": "<bdi><a href=\"https://www.wikidata.org/wiki/Q28147777\" class=\"extiw\" title=\"d:Q28147777\"><span title=\"Spanish photographer\">Diego Delso</span></a></bdi>",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Calabac%C3%ADn,_M%C3%BAnich,_Alemania,_2013-03-30,_DD_01.JPG"
  },
- "zucchini_1.jpg": {
+ "zucchini2_1.jpg": {
   "title": "File:2019-07-01 (100) Hanging leaves of Cucurbita pepo subsp. pepo Zucchini (zucchini) at Bichlh\u00e4usl, Tiefgrabenrotte, Frankenfels, Austria.jpg",
   "artist": "<a href=\"//commons.wikimedia.org/wiki/User:GT1976\" title=\"User:GT1976\">GT1976</a>",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:2019-07-01_(100)_Hanging_leaves_of_Cucurbita_pepo_subsp._pepo_Zucchini_(zucchini)_at_Bichlh%C3%A4usl,_Tiefgrabenrotte,_Frankenfels,_Austria.jpg"
  },
- "zucchini_2.jpg": {
+ "zucchini2_2.jpg": {
   "title": "File:Zucchini in basket 2021 G1.jpg",
   "artist": "<a href=\"//commons.wikimedia.org/wiki/User:George_Chernilevsky\" title=\"User:George Chernilevsky\">George Chernilevsky</a>",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Zucchini_in_basket_2021_G1.jpg"
  },
- "zucchini_3.jpg": {
-  "title": "File:Female human being holding a homegrown zucchini in Quesnel, British Columbia (DSCF5368).jpg",
-  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Trougnouf\" title=\"User:Trougnouf\">Trougnouf (Benoit Brummer)</a>",
-  "license": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Female_human_being_holding_a_homegrown_zucchini_in_Quesnel,_British_Columbia_(DSCF5368).jpg"
- },
- "zucchini_4.jpg": {
+ "zucchini2_3.jpg": {
   "title": "File:TwinZucchini.jpg",
   "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Jonathunder\" title=\"User:Jonathunder\">Jonathunder</a>",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:TwinZucchini.jpg"
  },
- "zucchini_5.jpg": {
+ "zucchini2_4.jpg": {
+  "title": "File:Female human being holding a homegrown zucchini in Quesnel, British Columbia (DSCF5368).jpg",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Trougnouf\" title=\"User:Trougnouf\">Trougnouf (Benoit Brummer)</a>",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Female_human_being_holding_a_homegrown_zucchini_in_Quesnel,_British_Columbia_(DSCF5368).jpg"
+ },
+ "zucchini2_5.jpg": {
   "title": "File:Courgette Cucurbita pepo 2.jpg",
   "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Meanos\" title=\"User:Meanos\">Meanos</a>",
   "license": "Public domain",
