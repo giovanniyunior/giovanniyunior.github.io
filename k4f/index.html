@@ -1,4 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title data-own>K4F Greeting Time</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}.tkbird .tkf.on{cursor:pointer}
+.tkbird .tkf.hit{stroke:#2fbf4a;stroke-width:8}
+.tkmarks{pointer-events:none}
+.tkleft .btn{font-size:28px}
+.tkshow .pmvis{height:300px}
+</style></head><body><title data-own>K4F Greeting Time</title>
 <link data-own rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Sniglet&display=swap">
 <script data-own src="voice.js" async></script>
 <style data-own>
@@ -1106,10 +1111,10 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
 /* thanksgiving */
 .spk.fall{background:repeating-conic-gradient(#e07a1f 0 25%,#8b4a1c 0 50%) 0 0/60px 60px;border-color:#5e3a17}
 .spk.fall .spkin{border-color:#f6c21a}
-.tkstage{display:grid;grid-template-columns:520px 1fr;gap:20px;align-items:center;width:100%;flex:1;min-height:0;padding:0 30px}
+.tkstage{display:grid;grid-template-columns:560px 1fr;gap:20px;align-items:center;width:100%;flex:1;min-height:0;padding:0 30px}
 .tkleft{display:grid;justify-items:center;gap:6px}
-.tkbird{width:420px;border:0;background:none;padding:0;cursor:pointer}
-.tkbird svg{width:100%;height:auto}
+.tkbird{width:440px;border:0;background:none;padding:0;cursor:pointer}
+.tkbird svg{width:100%;height:auto;overflow:visible}
 .tkbird .tkf.on{stroke:#fff;stroke-dasharray:none}
 .tkbird.wob{animation:wiggle .25s ease-in-out 2 alternate}
 .tkshow{display:grid;justify-items:center;gap:8px;text-align:center}
@@ -1310,9 +1315,9 @@ body.adv .nav button[aria-selected="true"]{background:#7c5cd6}
       <div class="spk fall" id="tkSpk">
         <div class="spkin">
           <div class="spktitle"><span class="multi" id="tkTitle"></span></div>
-          <div class="seqtabs" id="tkModes"><button type="button" data-m="th" aria-pressed="true">🙏 I am thankful for…</button><button type="button" data-m="wd" aria-pressed="false">🍽️ Thanksgiving words</button></div>
+          <div class="seqtabs" id="tkModes"><button type="button" data-m="col" aria-pressed="true">🎨 Colors</button><button type="button" data-m="abc" aria-pressed="false">🔤 Letters</button><button type="button" data-m="num" aria-pressed="false">🔢 Numbers</button><button type="button" data-m="shp" aria-pressed="false">🔷 Shapes</button><button type="button" data-m="th" aria-pressed="false">🙏 Thankful</button></div>
           <div class="tkstage">
-            <div class="tkleft"><button class="tkbird" type="button" id="tkBird" aria-label="Add a feather"><span data-art="turkey" class="artin"></span></button><button class="btn go" type="button" id="tkGo">🪶 Add a feather!</button><p class="tkcount" id="tkCount"></p></div>
+            <div class="tkleft"><button class="tkbird" type="button" id="tkBird" aria-label="Add a feather"><span data-art="turkey" class="artin"></span></button><button class="btn go" type="button" id="tkGo">🪶 Add a feather!</button><button class="btn green" type="button" id="tkFind" hidden>🔎 Find the feather!</button><p class="tkcount" id="tkCount"></p></div>
             <div class="tkshow" id="tkShow"><p>Tap the turkey! 🦃</p></div>
           </div>
         </div>
@@ -1872,6 +1877,8 @@ var LETTERKEY = /^(name|sound|for|big|little):([A-Z])$/;
 function sysText(k){
   if (k.indexOf('snd:') === 0) return SOUND[k.slice(4)];
   if (/^num:\d+$/.test(k)) return k.slice(4);
+  var fl = /^findl:([A-Za-z])$/.exec(k); if (fl) return 'Find the ' + (fl[1] === fl[1].toUpperCase() ? 'big ' : 'little ') + fl[1].toLowerCase() + '!';
+  if (/^findn:\d+$/.test(k)) return 'Find number ' + k.slice(6) + '!';
   if (/^ord:\d+$/.test(k)) return 'the ' + ORD[+k.slice(4)];
   var fw = /^forw:([A-Z]):(.+)$/.exec(k); if (fw) return fw[1].toLowerCase() + ' is for ' + fw[2];
   var m = LETTERKEY.exec(k); if (!m) return k;
@@ -3310,29 +3317,62 @@ $('eatWs2').onclick = function(){ eatOv('ws_eat2', 'Worksheet 2 · Flower'); };
 $('eatClose').onclick = function(){ $('eatOv').hidden = true; };
 $('eatPrint').onclick = function(){ var k = $('eatPrint').dataset.img; try{ var w = window.open('', '_blank'); w.document.write('<title>Worksheet</title><style>@page{margin:10mm}body{margin:0}img{width:100%}</style><img src="' + IMG[k] + '" onload="setTimeout(function(){print()},300)">'); w.document.close(); }catch(e){} };
 eatReset(true);
-/* ---- Thanksgiving turkey: each tap adds a feather and a word ---- */
+/* ---- Thanksgiving turkey: each tap adds a feather to practice colors, letters, numbers, shapes ---- */
 var FEATHER = ['#e2453b','#f39418','#f6c21a','#6aa055','#8b5a2b','#e07a1f','#c0392b','#d4a017'];
-var TKSETS = {
-  th:[['my family','👨‍👩‍👧'],['my friends','👫'],['my teacher','img:teacher'],['my home','🏠'],['my food','🍎'],['my school','🏫'],['my toys','🧸'],['my pet','🐶']],
-  wd:[['turkey','🦃'],['pie','🥧'],['corn','🌽'],['leaves','🍂'],['bread','🍞'],['potatoes','🥔'],['family dinner','🍽️'],['pumpkin pie','img:fd_pumpkin']]
-};
-var tkMode = 'th', tkBag = [], tkN = 0;
+var TKCOL = [['red','#e2453b'],['orange','#f39418'],['yellow','#f6d21a'],['green','#3cae4a'],['blue','#2b8fd6'],['purple','#8e3ad6'],['pink','#f27bb5'],['brown','#8b5a2b']];
+var TKSHAPE = [['circle','#e2453b'],['square','#2b8fd6'],['triangle','#f6c21a'],['rectangle','#3cae4a'],['star','#f39418'],['heart','#f27bb5'],['oval','#8e3ad6'],['diamond','#1fa79c']];
+var TKTH = [['my family','👨‍👩‍👧'],['my friends','👫'],['my teacher','img:teacher'],['my home','🏠'],['my food','🍎'],['my school','🏫'],['my toys','🧸'],['my pet','🐶']];
+function tkItems(mode){
+  if (mode === 'col') return shuffle(TKCOL.slice()).map(function(c){ return {say:c[0], fill:c[1], mark:'', big:splat(c[1]), lbl:c[0], ask:'Find the ' + c[0] + ' feather!'}; });
+  if (mode === 'abc') return shuffle(['A','a','B','b','C','c','D','d','E','e']).slice(0, 8).map(function(l){ var U = l.toUpperCase(), w = ABC[U][0];
+    return {say:(l === U ? 'big:' : 'little:') + U, mark:'<text>' + l + '</text>', big:'<div class="pmlet"><b>' + l + '</b><span class="pic">' + pic(w[1]) + '</span></div>', lbl:(l === U ? 'Big ' : 'Little ') + l, ask:'Find the ' + (l === U ? 'big ' : 'little ') + l + '!', askKey:'findl:' + l}; });
+  if (mode === 'num') return shuffle([1,2,3,4,5,6,7,8,9,10]).slice(0, 8).map(function(n){ var dots = ''; for (var i = 0; i < n; i++) dots += '<i style="--c:' + NCOL[n] + '"></i>';
+    return {say:'num:' + n, mark:'<text>' + n + '</text>', big:'<div class="pmnum">' + digit(n) + '<div class="pmdots">' + dots + '</div></div>', lbl:WORDS[n], ask:'Find number ' + n + '!', askKey:'findn:' + n}; });
+  if (mode === 'shp') return shuffle(TKSHAPE.slice()).map(function(x){ return {say:x[0], shape:x[0], mark:'', big:shapeSvg(x[0], x[1]), lbl:x[0], ask:'Find the ' + x[0] + '!'}; });
+  return shuffle(TKTH.slice()).map(function(t){ return {say:'I am thankful for ' + t[0] + '!', mark:'', big:'<span class="pic">' + tkIcon(t[1]) + '</span>', lbl:'I am thankful for <u>' + t[0] + '</u>!', ask:null}; });
+}
+var tkMode = 'col', tkBag = [], tkN = 0, tkPlaced = [], tkWant = null;
 $('tkTitle').innerHTML = multi('Happy Thanksgiving!');
 function tkIcon(e){ return e.indexOf('img:') === 0 ? '<img src="' + IMG[e.slice(4)] + '" alt="">' : e; }
-function tkReset(){ tkBag = shuffle(TKSETS[tkMode].slice()); tkN = 0; document.querySelectorAll('#tkBird .tkf').forEach(function(f){ f.classList.remove('on'); f.setAttribute('fill', '#f3e6d3'); });
-  $('tkShow').innerHTML = '<p>Tap the turkey! 🦃</p>'; $('tkCount').textContent = '0 feathers'; $('tkGo').textContent = '🪶 Add a feather!'; }
+function tkSvg(){ return document.querySelector('#tkBird svg'); }
+function tkReset(){
+  tkBag = tkItems(tkMode); tkN = 0; tkPlaced = []; tkWant = null;
+  document.querySelectorAll('#tkBird .tkf').forEach(function(f){ f.classList.remove('on','hit'); f.setAttribute('fill', '#f3e6d3'); });
+  var old = tkSvg().querySelector('.tkmarks'); if (old) old.remove();
+  var g = document.createElementNS('http://www.w3.org/2000/svg', 'g'); g.setAttribute('class', 'tkmarks'); tkSvg().insertBefore(g, tkSvg().querySelector('.tkf + ellipse:not(.tkf)') || null);
+  $('tkShow').innerHTML = '<p>Tap the turkey! 🦃</p>'; $('tkCount').textContent = '0 feathers'; $('tkGo').textContent = '🪶 Add a feather!'; $('tkFind').hidden = true;
+}
+function tkMark(f, it){
+  var bb = f.getBBox(), mx = bb.x + bb.width / 2 - 110, my = bb.y + bb.height / 2 - 118, ml = Math.sqrt(mx * mx + my * my) || 1, cx = 110 + mx / ml * 102, cy = 118 + my / ml * 102, g = tkSvg().querySelector('.tkmarks'), s = '';
+  if (it.mark) s = '<g transform="translate(' + cx + ' ' + (cy + 9) + ')">' + it.mark.replace('<text>', '<text text-anchor="middle" font-family="Andika,system-ui" font-weight="700" font-size="30" fill="#fff" stroke="#5e3a17" stroke-width="5" paint-order="stroke">') + '</g>';
+  if (it.shape) s = '<g transform="translate(' + (cx - 15) + ' ' + (cy - 15) + ') scale(.15)">' + shapeSvg(it.shape, '#fff').replace(/^<svg[^>]*>|<\/svg>$/g, '') + '</g>';
+  g.insertAdjacentHTML('beforeend', s);
+}
+function tkShowIt(it){ $('tkShow').innerHTML = '<div class="pmitem"><div class="pmvis">' + it.big + '</div><p class="pmlbl">' + it.lbl + '</p></div>'; }
 function tkAdd(){
   if (!tkBag.length){ tkReset(); return; }
   var it = tkBag.pop(), f = document.querySelector('#tkBird .tkf[data-f="' + tkN + '"]');
-  if (f){ f.setAttribute('fill', FEATHER[tkN % 8]); f.classList.add('on'); }
-  tkN++; var b = $('tkBird'); b.classList.remove('wob'); void b.offsetWidth; b.classList.add('wob');
-  var line = tkMode === 'th' ? 'I am thankful for <u>' + it[0] + '</u>!' : '<u>' + it[0] + '</u>';
-  $('tkShow').innerHTML = '<span class="pic">' + tkIcon(it[1]) + '</span><p>' + line + '</p>';
-  $('tkCount').textContent = tkN + (tkN === 1 ? ' feather' : ' feathers');
-  say(tkMode === 'th' ? 'I am thankful for ' + it[0] + '!' : it[0]);
-  if (!tkBag.length){ $('tkGo').textContent = '↺ Again'; setTimeout(function(){ if (!tkBag.length) say('Happy Thanksgiving!'); }, 2600); }
+  if (f){ f.setAttribute('fill', it.fill || FEATHER[tkN % 8]); f.classList.add('on'); tkMark(f, it); }
+  tkPlaced[tkN] = it; tkN++;
+  var b = $('tkBird'); b.classList.remove('wob'); void b.offsetWidth; b.classList.add('wob');
+  tkShowIt(it); $('tkCount').textContent = tkN + (tkN === 1 ? ' feather' : ' feathers'); say(it.say);
+  if (tkN >= 3 && it.ask !== null) $('tkFind').hidden = false;
+  if (!tkBag.length){ $('tkGo').textContent = '↺ Again'; setTimeout(function(){ if (!tkBag.length) say('Happy Thanksgiving!'); }, 2400); }
 }
-$('tkBird').onclick = tkAdd; $('tkGo').onclick = tkAdd;
+function tkClick(e){
+  var f = e.target.closest && e.target.closest('.tkf');
+  if (f && f.classList.contains('on')){
+    var i = +f.dataset.f, it = tkPlaced[i];
+    if (tkWant == null){ tkShowIt(it); say(it.say); return; }
+    if (i === tkWant){ f.classList.add('hit'); setTimeout(function(){ f.classList.remove('hit'); }, 1200); tkShowIt(it); $('tkCount').textContent = '✅ Yes!'; say(['Yes!', it.say]); tkWant = null; }
+    else { $('tkCount').textContent = '🤔 Try again!'; say('Try again!'); }
+    return;
+  }
+  if (tkWant == null) tkAdd();
+}
+$('tkBird').onclick = tkClick; $('tkGo').onclick = tkAdd;
+$('tkFind').onclick = function(){ var opts = []; tkPlaced.forEach(function(it, i){ if (it) opts.push(i); }); if (!opts.length) return; tkWant = opts[Math.floor(Math.random() * opts.length)];
+  var it = tkPlaced[tkWant]; $('tkShow').innerHTML = '<p>🔎 ' + it.ask.replace('Find', 'Find') + '</p>'; $('tkCount').textContent = 'Tap the feather!'; say(it.askKey || it.ask); };
 $('tkModes').querySelectorAll('button').forEach(function(b){ b.onclick = function(){ tkMode = b.dataset.m; $('tkModes').querySelectorAll('button').forEach(function(o){ o.setAttribute('aria-pressed', String(o === b)); }); tkReset(); }; });
 tkReset();
 /* ---- pumpkin surprise: one thing comes out each time ---- */
